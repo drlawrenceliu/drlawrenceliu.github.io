@@ -1,0 +1,426 @@
+/* =====================
+   Global Reset & Base
+   ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
+  color: #333;
+  background: #f8f9fa;
+  line-height: 1.8;
+}
+
+a {
+  color: #1a7a8a;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =====================
+   Header & Navigation
+   ===================== */
+header {
+  background: #1a7a8a;
+  color: white;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.site-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: white;
+  margin-left: 32px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+  opacity: 1;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+  padding-bottom: 2px;
+}
+
+/* =====================
+   Hero Banner
+   ===================== */
+.hero {
+  background: linear-gradient(135deg, #1a7a8a 0%, #0d5f6e 100%);
+  color: white;
+  padding: 60px 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 960px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.hero-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 40% center;
+  border: 4px solid rgba(255,255,255,0.4);
+  flex-shrink: 0;
+}
+
+.hero-photo-placeholder {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  flex-shrink: 0;
+  border: 4px solid rgba(255,255,255,0.4);
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.hero-text h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.85;
+  margin-bottom: 14px;
+}
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background: rgba(255,255,255,0.2);
+  border: 1px solid rgba(255,255,255,0.4);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+}
+
+/* =====================
+   Main Content Layout
+   ===================== */
+main {
+  max-width: 960px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+}
+
+/* =====================
+   Section Cards
+   ===================== */
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 32px 36px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.card h3 {
+  font-size: 1.15rem;
+  color: #1a7a8a;
+  border-left: 4px solid #1a7a8a;
+  padding-left: 12px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* =====================
+   Timeline (Education / Experience)
+   ===================== */
+.timeline {
+  list-style: none;
+}
+
+.timeline li {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 16px;
+}
+
+.timeline li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.timeline .year {
+  color: #1a7a8a;
+  font-weight: 700;
+  min-width: 100px;
+  font-size: 0.9rem;
+  padding-top: 2px;
+}
+
+.timeline .detail strong {
+  display: block;
+  color: #222;
+  font-size: 0.95rem;
+}
+
+.timeline .detail span {
+  color: #666;
+  font-size: 0.88rem;
+}
+
+/* =====================
+   Two-column grid
+   ===================== */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+/* =====================
+   Tags / Badges list
+   ===================== */
+.badge-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.badge {
+  background: #e8f4f6;
+  color: #1a7a8a;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+/* =====================
+   Contact Info
+   ===================== */
+.contact-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px 16px;
+  align-items: start;
+}
+
+.contact-grid .label {
+  color: #1a7a8a;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.contact-grid .value {
+  color: #444;
+  font-size: 0.9rem;
+}
+
+/* =====================
+   Health Articles
+   ===================== */
+.article-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.article-card {
+  background: white;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.article-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.article-card .category {
+  background: #e8f4f6;
+  color: #1a7a8a;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.article-card h4 {
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.article-card p {
+  font-size: 0.88rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.coming-soon {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+  font-size: 0.95rem;
+}
+
+/* =====================
+   Research Publications
+   ===================== */
+.pub-list {
+  list-style: none;
+}
+
+.pub-list li {
+  padding: 16px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+.pub-list li:last-child {
+  border-bottom: none;
+}
+
+.pub-list .pub-year {
+  display: inline-block;
+  background: #1a7a8a;
+  color: white;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.pub-list .pub-star {
+  color: #e67e22;
+  font-weight: 700;
+}
+
+.trial-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.trial-badge {
+  background: #fff3e0;
+  color: #e67e22;
+  border: 1px solid #f0c070;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+/* =====================
+   Page Hero (non-home)
+   ===================== */
+.page-hero {
+  background: linear-gradient(135deg, #1a7a8a 0%, #0d5f6e 100%);
+  color: white;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.page-hero h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.page-hero p {
+  opacity: 0.85;
+  font-size: 0.95rem;
+}
+
+/* =====================
+   Footer
+   ===================== */
+footer {
+  background: #1a7a8a;
+  color: rgba(255,255,255,0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+}
+
+/* =====================
+   Responsive
+   ===================== */
+@media (max-width: 640px) {
+  header {
+    padding: 0 16px;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 8px;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-right: 16px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 32px 20px;
+    margin: 20px 16px;
+  }
+
+  .hero-tags {
+    justify-content: center;
+  }
+
+  .two-col,
+  .article-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
