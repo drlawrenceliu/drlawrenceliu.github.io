@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2026 全新血脂治療指引：對病人有什麼意義？｜劉俞旻醫師</title>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HD804754WT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HD804754WT');
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    /* === 閱讀友善元素（共用） === */
+    .tldr-box { background: linear-gradient(135deg, #f3e9d9 0%, #faf2e3 100%); border-left: 4px solid var(--accent, #c9a47a); border-radius: 10px; padding: 22px 26px; margin: 0 0 28px; }
+    .tldr-box .tldr-label { display: inline-block; font-size: 0.72rem; font-weight: 700; letter-spacing: 3px; color: #8a6f4a; background: rgba(255,255,255,0.6); padding: 4px 12px; border-radius: 999px; margin-bottom: 12px; text-transform: uppercase; }
+    .tldr-box ul { margin: 8px 0 0 18px; padding: 0; font-size: 0.96rem; line-height: 1.85; color: var(--text, #2c2c2c); }
+    .tldr-box ul li { margin-bottom: 6px; }
+    .tldr-box ul li strong { color: var(--primary-dark, #3d6b60); }
+    .audience-line { font-size: 0.9rem; color: var(--text-muted, #7a7a7a); padding: 10px 14px; background: var(--surface-soft, #f3efe7); border-radius: 6px; margin-bottom: 28px; letter-spacing: 0.3px; }
+    .audience-line strong { color: var(--primary-dark, #3d6b60); font-weight: 600; }
+    .big-number-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin: 28px 0; }
+    .big-number { background: var(--surface, #fff); border: 1px solid var(--border, #ece7dc); border-radius: 10px; padding: 22px 18px; text-align: center; }
+    .big-number .num { font-size: 2.6rem; font-weight: 700; color: var(--primary-dark, #3d6b60); line-height: 1; letter-spacing: -1px; display: block; margin-bottom: 6px; }
+    .big-number .num .arrow { display: inline-block; transform: translateY(-3px); color: var(--accent, #c9a47a); margin-right: 2px; }
+    .big-number .label { font-size: 0.82rem; color: var(--text-muted, #7a7a7a); line-height: 1.5; }
+    .lead-sentence { font-weight: 700; color: var(--text, #2c2c2c); }
+    .one-liner { background: var(--primary-soft, #e8efe9); border-radius: 10px; padding: 22px 26px; margin: 32px 0 16px; font-size: 1.02rem; line-height: 1.85; text-align: center; color: var(--primary-dark, #3d6b60); font-weight: 500; }
+    .one-liner .icon { display: block; font-size: 1.3rem; margin-bottom: 6px; }
+    .infographic { background: var(--surface, #fff); border: 1px solid var(--border, #ece7dc); border-radius: 12px; padding: 32px 28px; margin: 36px 0; box-shadow: 0 2px 12px rgba(60,50,40,0.04); }
+    .infographic-title { font-size: 0.78rem; font-weight: 700; letter-spacing: 3px; color: var(--primary-dark, #3d6b60); text-transform: uppercase; text-align: center; margin-bottom: 6px; }
+    .infographic-subtitle { font-size: 1.05rem; font-weight: 600; color: var(--text, #2c2c2c); text-align: center; margin-bottom: 24px; line-height: 1.5; }
+
+    /* === before/after 比較表 === */
+    .ba-grid { display: grid; gap: 14px; }
+    .ba-row { display: grid; grid-template-columns: 1.1fr 1fr 0.4fr 1.2fr; gap: 14px; align-items: stretch; background: var(--surface-soft, #f3efe7); border-radius: 10px; padding: 14px 18px; }
+    .ba-row .ba-label { font-size: 0.88rem; font-weight: 600; color: var(--text, #2c2c2c); align-self: center; line-height: 1.4; }
+    .ba-row .ba-before { background: white; border: 1px solid var(--border, #ece7dc); border-radius: 6px; padding: 10px 12px; font-size: 0.86rem; color: var(--text-muted, #7a7a7a); line-height: 1.5; display: flex; flex-direction: column; justify-content: center; }
+    .ba-row .ba-before::before { content: "2018 舊指引"; display: block; font-size: 0.68rem; font-weight: 700; letter-spacing: 2px; color: var(--text-soft, #a0a0a0); text-transform: uppercase; margin-bottom: 4px; }
+    .ba-row .ba-arrow { display: flex; align-items: center; justify-content: center; color: var(--primary, #5a8a7e); font-size: 1.3rem; font-weight: 700; }
+    .ba-row .ba-after { background: var(--primary-soft, #e8efe9); border: 1px solid rgba(90,138,126,0.3); border-radius: 6px; padding: 10px 12px; font-size: 0.88rem; color: var(--primary-dark, #3d6b60); line-height: 1.5; font-weight: 500; display: flex; flex-direction: column; justify-content: center; }
+    .ba-row .ba-after::before { content: "2026 新指引"; display: block; font-size: 0.68rem; font-weight: 700; letter-spacing: 2px; color: var(--primary-dark, #3d6b60); text-transform: uppercase; margin-bottom: 4px; }
+    .ba-row .ba-after strong { color: var(--primary-dark, #3d6b60); }
+
+    @media (max-width: 700px) {
+      .ba-row { grid-template-columns: 1fr; gap: 8px; padding: 16px; }
+      .ba-row .ba-arrow { transform: rotate(90deg); padding: 4px 0; }
+      .ba-row .ba-label { font-size: 0.95rem; margin-bottom: 4px; padding-bottom: 8px; border-bottom: 1px dashed var(--border); }
+    }
+    @media (max-width: 560px) { .infographic { padding: 24px 18px; } }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="site-title">劉俞旻醫師 <span>心臟內科</span></div>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="health.html">衛教資訊</a>
+      <a href="news.html" class="active">最新醫訊</a>
+      <a href="about.html">關於我</a>
+      <a href="research.html">研究成果</a>
+    </nav>
+  </header>
+
+  <div class="page-hero">
+    <h1>2026 全新血脂治療指引</h1>
+    <p>美國心臟學會（ACC/AHA）八年來首度大改版，對病人有什麼意義？</p>
+  </div>
+
+  <main style="max-width: 800px; margin: 0 auto; padding: 0 20px 60px;">
+
+    <a href="news.html" class="back-link">← 返回最新醫訊</a>
+
+    <div class="article-body">
+
+      <div class="article-meta">
+        作者：劉俞旻醫師｜新竹馬偕紀念醫院 心臟內科暨心血管中心主任<br>
+        資料來源：<em>Circulation</em> 2026; 153:e1154–e1276；<em>Circulation</em> 2026; 153:1265–1267
+      </div>
+
+      <!-- 30 秒重點 -->
+      <div class="tldr-box">
+        <span class="tldr-label">30 秒重點</span>
+        <ul>
+          <li>2026 年 4 月，美國心臟學會（AHA/ACC）聯合 11 個學會發表<strong>過去 8 年來第一份血脂治療大改版指引</strong></li>
+          <li>核心觀念：動脈硬化是<strong>「一生累積」</strong>的疾病，愈早控制效果愈好——不只看「現在的數值」</li>
+          <li>建議每位成人<strong>一生至少抽一次 Lp(a)</strong>（脂蛋白(a)）——基因決定，但被長期忽略的關鍵指標</li>
+          <li>降低開始治療的門檻、強化目標、把 PCSK9 抑制劑、ezetimibe 等納入<strong>標準階梯</strong>（不再是最後手段）</li>
+          <li>對病人來說：醫師可能會建議您做<strong>新檢查、提早治療、或設定更嚴格的 LDL 目標</strong></li>
+        </ul>
+      </div>
+
+      <!-- 適合誰閱讀 -->
+      <div class="audience-line">
+        <strong>適合閱讀對象：</strong>關心自己心血管健康的成人；高血脂、糖尿病、家族中有早發心臟病者；正在使用降脂藥物者；以及希望了解最新治療方向的患者與家屬。
+      </div>
+
+      <!-- 關鍵數字 -->
+      <div class="big-number-row">
+        <div class="big-number">
+          <span class="num">8</span>
+          <span class="label">指引重大變化<br>（影響每位病人）</span>
+        </div>
+        <div class="big-number">
+          <span class="num">1<span style="font-size:1rem;">次</span></span>
+          <span class="label">建議每人一生<br>檢驗 Lp(a)</span>
+        </div>
+        <div class="big-number">
+          <span class="num">55<span style="font-size:1.2rem;"> mg/dL</span></span>
+          <span class="label">已有心血管疾病<br>的新 LDL 目標</span>
+        </div>
+      </div>
+
+      <h2>為什麼這個指引重要？</h2>
+      <p>
+        <span class="lead-sentence">美國 ACC/AHA 指引是全球心血管預防的最高參考標準，台灣、亞洲、歐洲的臨床決策都會直接或間接受到影響。</span>
+        新指引長達 123 頁，整合了過去 8 年的所有重要研究（包括我們在<a href="article-ezpave.html">「壞膽固醇要降到多低？」</a>與<a href="article-vesalius.html">「糖尿病沒冠心症也該打 PCSK9？」</a>中介紹的關鍵試驗），重新定義了「誰該治療、治療多積極、如何衡量成效」。
+      </p>
+      <p>
+        對病人而言，這些變化代表：您的醫師可能會建議您接受新檢查、提早開始治療，或把 LDL 目標設得更嚴。本文用淺顯的語言整理<strong>八個對您最有意義的改變</strong>。
+      </p>
+
+      <h2>結論先講：核心觀念的轉變</h2>
+      <p>
+        <span class="lead-sentence">過去看膽固醇，往往只看「現在抽血是多少」——像拍一張快照。新指引強調動脈硬化是一生累積的結果，<strong>愈早控制、累積暴露愈少，預防效果愈好</strong>。</span>
+        這個觀念上的轉變，是後續所有具體變化的基礎。
+      </p>
+
+      <!-- 圖解：2018 vs 2026 八大改變 -->
+      <div class="infographic">
+        <div class="infographic-title">📊 圖解</div>
+        <div class="infographic-subtitle">2018 舊指引 vs 2026 新指引：八大關鍵改變</div>
+
+        <div class="ba-grid">
+
+          <div class="ba-row">
+            <div class="ba-label">Lp(a) 檢驗</div>
+            <div class="ba-before">選擇性，少數人才驗</div>
+            <div class="ba-arrow">→</div>
+            <div class="ba-after"><strong>每人一生至少一次</strong>（Class I 最強建議）</div>
+          </div>
+
+          <div class="ba-row">
+            <div class="ba-label">風險計算工具</div>
+            <div class="ba-before">Pooled Cohort 方程式（對亞洲人可能高估）</div>
+            <div class="ba-arrow">→</div>
+            <div class="ba-after"><strong>PREVENT 方程式</strong>（更新、跨種族更準）</div>
+          </div>
+
+          <div class="ba-row">
+            <div class="ba-label">開始 statin 的門檻</div>
+            <div class="ba-before">10 年風險 ≥ 7.5%</div>
+            <div class="ba-arrow">→</div>
+            <div class="ba-after">風險低至 <strong>3%</strong> 即可考慮（個別化決策）</div>
+          </div>
+
+          <div class="ba-row">
+            <div class="ba-label">LDL 目標數字</div>
+            <div class="ba-before">強調「降幅 %」、目標數字較模糊</div>
+            <div class="ba-arrow">→</div>
+            <div class="ba-after"><strong>正式恢復具體數字</strong>：極高風險 &lt; 55、ASCVD &lt; 70、高風險 &lt; 100 mg/dL</div>
+          </div>
+
+          <div class="ba-row">
+            <div class="ba-label">非 statin 藥物</div>
+            <div class="ba-before">「最後手段」——statin 失敗才考慮</div>
+            <div class="ba-arrow">→</div>
+            <div class="ba-after"><strong>標準階梯選項</strong>（ezetimibe、PCSK9、inclisiran、bempedoic acid）</div>
+          </div>
+
+          <div class="ba-row">
+            <div class="ba-label">冠狀動脈鈣化（CAC）</div>
+            <div class="ba-before">「風險指標」</div>
+            <div class="ba-arrow">→</div>
+            <div class="ba-after">視為<strong>「亞臨床疾病」</strong>；CAC ≥ 100 → Class I statin；CAC ≥ 300 → 比照心血管病患目標</div>
+          </div>
+
+          <div class="ba-row">
+            <div class="ba-label">apoB 檢驗</div>
+            <div class="ba-before">不常規使用</div>
+            <div class="ba-arrow">→</div>
+            <div class="ba-after">糖尿病、高三酸甘油酯、殘餘風險者<strong>建議加測</strong></div>
+          </div>
+
+          <div class="ba-row">
+            <div class="ba-label">早期治療對象</div>
+            <div class="ba-before">主要針對中高齡</div>
+            <div class="ba-arrow">→</div>
+            <div class="ba-after"><strong>鼓勵 30–59 歲</strong>有家族史或 LDL ≥ 160 mg/dL 者提早開始</div>
+          </div>
+
+        </div>
+
+        <p style="margin-top:20px; padding-top:14px; border-top:1px dashed var(--border); font-size:0.86rem; color:var(--text-muted); line-height:1.7;">
+          <strong style="color:var(--primary-dark);">為什麼這些改變這麼重要？</strong>
+          以前的觀念是「等風險夠高才治療」；新觀念是<strong>「累積暴露愈少愈好」</strong>。
+          研究估算，從 40 歲就開始把 LDL 控制好，30 年下來能避免的心血管事件比 60 歲後才治療多出數倍。早一天介入，等於少一年的血管傷害。
+        </p>
+      </div>
+
+      <h2>需要保持謹慎的地方</h2>
+      <p>
+        <span class="lead-sentence">新指引引入許多「更精準」的工具，但並非每項都已有完整的「臨床終點實證」。</span>
+        <em>Circulation</em> 同期評論（Watson 與 Fonarow 教授）提醒：
+      </p>
+      <ul>
+        <li><strong>apoB 治療：</strong>apoB 是更好的風險指標，但「以 apoB 為目標調整治療」是否能比 LDL-C 為目標多減少心血管事件，尚無大型隨機試驗證實</li>
+        <li><strong>CAC 引導治療：</strong>CAC 確實能更準確預測風險，但「依 CAC 結果加強治療」本身是否降低事件率，仍待大型研究確認</li>
+        <li><strong>Lp(a) 標靶治療：</strong>檢驗 Lp(a) 是好事，但是否「治療 Lp(a)」能改善預後，要等 Lp(a)HORIZON 等大型試驗結果（預計 2026 年完成）</li>
+      </ul>
+      <p>
+        因此，新指引的精神是<strong>「在實證範圍內提供更精準的決策框架」</strong>，並非鼓勵在缺乏實證的情況下盲目積極。
+      </p>
+
+      <h2>對台灣患者的實用建議</h2>
+      <ol style="margin-left: 22px; color: var(--text); font-size: 0.97rem; line-height: 1.95;">
+        <li><strong>主動詢問醫師檢驗 Lp(a)</strong>——一生抽一次即可，特別是有早發心臟病家族史的人。<em>延伸閱讀：<a href="article-lpa.html">脂蛋白(a)：被忽略的心血管危險因子</a></em></li>
+        <li><strong>了解自己的 10 年心血管風險</strong>——可請醫師用 PREVENT 公式計算</li>
+        <li>若您是中年人且有家族史，<strong>不要等到「真的出事」才開始 statin</strong></li>
+        <li>若 statin 加 ezetimibe 仍未達 LDL 目標，<strong>與醫師討論加用 PCSK9 抑制劑的可能性</strong>（健保有條件給付二級預防患者）</li>
+        <li>若您做過胸部 CT，<strong>請醫師確認是否有 CAC 分數</strong>——這可能影響您的治療決策</li>
+        <li>不要因為「藥變多了」而焦慮——這些選項是<strong>讓治療更個別化、更安全有效</strong>，而不是每個人都要用</li>
+      </ol>
+
+      <h2>不變的基礎：健康生活型態</h2>
+      <p>
+        新指引再次強調，無論用什麼藥，<strong>健康生活型態仍是預防心血管疾病的根本</strong>：地中海式飲食、得舒（DASH）飲食、規律運動（每週至少 150 分鐘中強度有氧）、維持理想體重、戒菸限酒、充足睡眠與壓力管理。藥物是「加分」，不是「替代」。
+      </p>
+
+      <!-- 一句話總結 -->
+      <div class="one-liner">
+        <span class="icon">🎯</span>
+        2026 新指引強調「動脈硬化是一生累積」——<br>更早識別風險、更積極治療、更個別化選擇藥物。
+      </div>
+
+      <div class="warning-box">
+        ⚠️ <strong>重要提醒：</strong>本文是 2026 ACC/AHA 新指引的<strong>摘要說明</strong>，僅供衛教參考。指引是醫師決策的<strong>參考框架</strong>，最終仍需依您的個別狀況（年齡、共病、藥物耐受性、家族史、生活型態、健保給付等）綜合判斷。請與您的心臟科或新陳代謝科醫師討論，不要自行調整或停用既有的降脂藥物。
+      </div>
+
+      <p style="font-size: 0.85rem; color: var(--text-soft); margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--border);">
+        <strong>主要資料來源：</strong><br>
+        Blumenthal RS, Morris PB, Gaudino M, et al. 2026 ACC/AHA/AACVPR/ABC/ACPM/ADA/AGS/APhA/ASPC/NLA/PCNA Guideline on the Management of Dyslipidemia. <em>Circulation</em> 2026;153:e1154–e1276.
+        DOI: <a href="https://doi.org/10.1161/CIR.0000000000001423" target="_blank">10.1161/CIR.0000000000001423</a><br><br>
+        Watson KE, Fonarow GC. The 2026 ACC/AHA Multisociety Guideline on the Management of Dyslipidemia: A More Precise—But More Complicated—Framework. <em>Circulation</em> 2026;153:1265–1267.
+        DOI: <a href="https://doi.org/10.1161/CIRCULATIONAHA.126.079538" target="_blank">10.1161/CIRCULATIONAHA.126.079538</a>
+      </p>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 劉俞旻醫師 Lawrence Yu-Min Liu, MD, PhD, FESC｜新竹馬偕紀念醫院 心臟內科</p>
+  </footer>
+
+</body>
+</html>

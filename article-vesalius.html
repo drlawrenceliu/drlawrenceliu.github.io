@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>糖尿病沒冠心症也該打 PCSK9？VESALIUS-CV 試驗結果｜劉俞旻醫師</title>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HD804754WT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HD804754WT');
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    /* === 閱讀友善元素（共用樣式） === */
+    .tldr-box { background: linear-gradient(135deg, #f3e9d9 0%, #faf2e3 100%); border-left: 4px solid var(--accent, #c9a47a); border-radius: 10px; padding: 22px 26px; margin: 0 0 28px; }
+    .tldr-box .tldr-label { display: inline-block; font-size: 0.72rem; font-weight: 700; letter-spacing: 3px; color: #8a6f4a; background: rgba(255,255,255,0.6); padding: 4px 12px; border-radius: 999px; margin-bottom: 12px; text-transform: uppercase; }
+    .tldr-box ul { margin: 8px 0 0 18px; padding: 0; font-size: 0.96rem; line-height: 1.85; color: var(--text, #2c2c2c); }
+    .tldr-box ul li { margin-bottom: 6px; }
+    .tldr-box ul li strong { color: var(--primary-dark, #3d6b60); }
+    .audience-line { font-size: 0.9rem; color: var(--text-muted, #7a7a7a); padding: 10px 14px; background: var(--surface-soft, #f3efe7); border-radius: 6px; margin-bottom: 28px; letter-spacing: 0.3px; }
+    .audience-line strong { color: var(--primary-dark, #3d6b60); font-weight: 600; }
+    .big-number-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin: 28px 0; }
+    .big-number { background: var(--surface, #fff); border: 1px solid var(--border, #ece7dc); border-radius: 10px; padding: 22px 18px; text-align: center; }
+    .big-number .num { font-size: 2.6rem; font-weight: 700; color: var(--primary-dark, #3d6b60); line-height: 1; letter-spacing: -1px; display: block; margin-bottom: 6px; }
+    .big-number .num .arrow { display: inline-block; transform: translateY(-3px); color: var(--accent, #c9a47a); margin-right: 2px; }
+    .big-number .label { font-size: 0.82rem; color: var(--text-muted, #7a7a7a); line-height: 1.5; }
+    .lead-sentence { font-weight: 700; color: var(--text, #2c2c2c); }
+    .one-liner { background: var(--primary-soft, #e8efe9); border-radius: 10px; padding: 22px 26px; margin: 32px 0 16px; font-size: 1.02rem; line-height: 1.85; text-align: center; color: var(--primary-dark, #3d6b60); font-weight: 500; }
+    .one-liner .icon { display: block; font-size: 1.3rem; margin-bottom: 6px; }
+    .infographic { background: var(--surface, #fff); border: 1px solid var(--border, #ece7dc); border-radius: 12px; padding: 32px 28px; margin: 36px 0; box-shadow: 0 2px 12px rgba(60,50,40,0.04); }
+    .infographic-title { font-size: 0.78rem; font-weight: 700; letter-spacing: 3px; color: var(--primary-dark, #3d6b60); text-transform: uppercase; text-align: center; margin-bottom: 6px; }
+    .infographic-subtitle { font-size: 1.05rem; font-weight: 600; color: var(--text, #2c2c2c); text-align: center; margin-bottom: 24px; line-height: 1.5; }
+    .infographic-row { margin-bottom: 22px; }
+    .infographic-row:last-of-type { margin-bottom: 12px; }
+    .infographic-row-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; flex-wrap: wrap; gap: 8px; }
+    .infographic-row-head .group-name { font-size: 0.92rem; font-weight: 600; color: var(--text, #2c2c2c); }
+    .infographic-row-head .group-stat { font-size: 0.86rem; color: var(--text-muted, #7a7a7a); }
+    .infographic-row-head .group-stat strong { color: #c44a4a; font-weight: 700; font-size: 1rem; }
+    .dot-grid { display: grid; grid-template-columns: repeat(20, 1fr); gap: 4px; padding: 6px 0; }
+    .dot-grid .dot { aspect-ratio: 1 / 1; border-radius: 50%; background: #d8e2dc; }
+    .dot-grid .dot.event { background: #c44a4a; box-shadow: 0 0 0 1.5px rgba(196, 74, 74, 0.2); }
+    .infographic-divider { text-align: center; font-size: 1.2rem; color: var(--text-soft, #a0a0a0); margin: 14px 0 10px; letter-spacing: 4px; }
+    .infographic-result { background: linear-gradient(135deg, var(--primary-soft, #e8efe9) 0%, #d8e6e2 100%); border-radius: 8px; padding: 18px 22px; text-align: center; font-size: 1rem; color: var(--primary-dark, #3d6b60); font-weight: 600; line-height: 1.6; }
+    .infographic-result strong { font-size: 1.6rem; color: var(--primary-dark, #3d6b60); display: block; margin-bottom: 4px; }
+    .infographic-legend { display: flex; justify-content: center; gap: 20px; margin-top: 14px; font-size: 0.8rem; color: var(--text-muted, #7a7a7a); flex-wrap: wrap; }
+    .infographic-legend .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 50%; vertical-align: middle; margin-right: 4px; }
+    @media (max-width: 560px) { .dot-grid { grid-template-columns: repeat(20, 1fr); gap: 3px; } .infographic { padding: 24px 18px; } }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="site-title">劉俞旻醫師 <span>心臟內科</span></div>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="health.html">衛教資訊</a>
+      <a href="news.html" class="active">最新醫訊</a>
+      <a href="about.html">關於我</a>
+      <a href="research.html">研究成果</a>
+    </nav>
+  </header>
+
+  <div class="page-hero">
+    <h1>糖尿病沒冠心症，也該積極降膽固醇？</h1>
+    <p>VESALIUS-CV 試驗：PCSK9 抑制劑能否預防「第一次」心血管事件</p>
+  </div>
+
+  <main style="max-width: 800px; margin: 0 auto; padding: 0 20px 60px;">
+
+    <a href="news.html" class="back-link">← 返回最新醫訊</a>
+
+    <div class="article-body">
+
+      <div class="article-meta">
+        作者：劉俞旻醫師｜新竹馬偕紀念醫院 心臟內科暨心血管中心主任<br>
+        資料來源：<em>JAMA</em> 2026; 335(16):1400–1407
+      </div>
+
+      <!-- 30 秒重點 -->
+      <div class="tldr-box">
+        <span class="tldr-label">30 秒重點</span>
+        <ul>
+          <li>VESALIUS-CV 試驗納入 12,257 位<strong>高風險糖尿病患者</strong>，全部尚未發生過心肌梗塞或中風</li>
+          <li>在原有降脂藥物之上加用 <strong>evolocumab（PCSK9 抑制劑）</strong>，比較預防「首次」心血管事件的效果</li>
+          <li>5 年追蹤：首次重大心血管事件減少 <strong>31%</strong>（5.0% vs 7.1%）；總死亡率減少 24%</li>
+          <li>安全性與安慰劑相當；好處從第 2 年起才明顯顯現</li>
+          <li>顛覆過去「等心臟病發作才用最強藥」的觀念，<strong>支持高風險糖尿病人提早積極治療</strong></li>
+        </ul>
+      </div>
+
+      <!-- 適合誰閱讀 -->
+      <div class="audience-line">
+        <strong>適合閱讀對象：</strong>第二型糖尿病患者及家屬，特別是病程 ≥ 10 年、需每日使用胰島素、或已有微血管併發症（視網膜病變、神經病變、蛋白尿）的患者。
+      </div>
+
+      <!-- 關鍵數字 -->
+      <div class="big-number-row">
+        <div class="big-number">
+          <span class="num"><span class="arrow">↓</span>31<span style="font-size:1.4rem;">%</span></span>
+          <span class="label">首次重大心血管<br>事件相對風險</span>
+        </div>
+        <div class="big-number">
+          <span class="num">52<span style="font-size:1.2rem;"> mg/dL</span></span>
+          <span class="label">Evolocumab 達成的<br>LDL 中位數</span>
+        </div>
+        <div class="big-number">
+          <span class="num">12,257</span>
+          <span class="label">受試人數<br>（33 國 774 中心）</span>
+        </div>
+      </div>
+
+      <h2>為什麼這個研究重要？</h2>
+      <p>
+        <span class="lead-sentence">多年來，PCSK9 抑制劑（evolocumab、alirocumab 等強效降膽固醇針劑）主要用於「已經發生過心肌梗塞或中風」的患者——也就是「二級預防」。</span>
+        但糖尿病患者即使尚未發生事件，未來的心血管風險就已經接近心臟病患者。對於這群高風險、卻還沒「出事」的糖尿病患者，提早使用 PCSK9 抑制劑能不能預防「第一次」事件？這個問題過去沒有大型試驗給出明確答案。
+      </p>
+      <p>
+        2026 年 3 月發表於 <em>JAMA</em> 的 <strong>VESALIUS-CV 試驗</strong>，提供了第一份直接回答——而且結論很正面。
+      </p>
+
+      <h2>結論先講：減少三成首次心血管事件</h2>
+      <p>
+        <span class="lead-sentence">5 年追蹤期間，evolocumab 組首次重大心血管事件率為 5.0%，安慰劑組為 7.1%（風險比 0.69，p = 0.009），減少 31%。</span>
+        全因死亡率亦下降 24%（7.4% vs 9.5%）。
+      </p>
+
+      <!-- 圖解：100 位高風險糖尿病患者 5 年結果 -->
+      <div class="infographic">
+        <div class="infographic-title">📊 圖解</div>
+        <div class="infographic-subtitle">每 100 位高風險糖尿病患者，治療 5 年後……</div>
+
+        <div class="infographic-row">
+          <div class="infographic-row-head">
+            <span class="group-name">若未接受降脂治療 <em style="font-weight:400; color:var(--text-soft); font-size:0.82rem;">（歷史對照資料）</em></span>
+            <span class="group-stat"><strong>約 15 人</strong> 發生重大心血管事件</span>
+          </div>
+          <div class="dot-grid"><span class="dot event"></span><span class="dot event"></span><span class="dot event"></span><span class="dot event"></span><span class="dot event"></span><span class="dot event"></span><span class="dot event"></span><span class="dot event"></span><span class="dot event"></span><span class="dot event"></span><span class="dot event"></span><span class="dot event"></span><span class="dot event"></span><span class="dot event"></span><span class="dot event"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+        </div>
+
+        <div class="infographic-divider">▼</div>
+
+        <div class="infographic-row">
+          <div class="infographic-row-head">
+            <span class="group-name">標準治療：史他汀 ± Ezetimibe <em style="font-weight:400; color:var(--text-soft); font-size:0.82rem;">（VESALIUS-CV 安慰劑組）</em></span>
+            <span class="group-stat"><strong>約 7 人</strong> 發生重大心血管事件</span>
+          </div>
+          <div class="dot-grid"><span class="dot event"></span><span class="dot event"></span><span class="dot event"></span><span class="dot event"></span><span class="dot event"></span><span class="dot event"></span><span class="dot event"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+        </div>
+
+        <div class="infographic-divider">▼</div>
+
+        <div class="infographic-row">
+          <div class="infographic-row-head">
+            <span class="group-name">標準治療 + Evolocumab</span>
+            <span class="group-stat"><strong>約 5 人</strong> 發生重大心血管事件</span>
+          </div>
+          <div class="dot-grid"><span class="dot event"></span><span class="dot event"></span><span class="dot event"></span><span class="dot event"></span><span class="dot event"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+        </div>
+
+        <div class="infographic-result">
+          <strong>從 15 → 5：累積避免 10 位患者發生事件</strong>
+          其中 VESALIUS-CV 新研究貢獻最後的 2 位（PCSK9 抑制劑加在標準治療之上）
+        </div>
+
+        <div class="infographic-legend">
+          <span><span class="swatch" style="background:#c44a4a;"></span>發生事件</span>
+          <span><span class="swatch" style="background:#d8e2dc;"></span>未發生事件</span>
+        </div>
+
+        <p style="margin-top:18px; padding-top:14px; border-top:1px dashed var(--border); font-size:0.86rem; color:var(--text-muted); line-height:1.7;">
+          <strong style="color:var(--primary-dark);">為什麼這 2 位很重要？</strong>
+          這是<strong>「初級預防」</strong>數據——所有病人尚未發生過心臟病。在預防醫學中，能在「事情還沒發生」前就減少風險，是治療最有價值的時機。
+          NNT = 50（治療 50 人 5 年避免 1 起事件）對<strong>無症狀糖尿病初級預防</strong>而言已是很好的成績；相較之下，阿斯匹靈在類似族群的 NNT 通常 &gt; 200。
+        </p>
+      </div>
+
+      <h2>研究細節（給想看深度的讀者）</h2>
+      <p>
+        <span class="lead-sentence">VESALIUS-CV 是跨 33 國、774 家醫學中心的大型隨機試驗，本次分析聚焦於其中 3,655 位無已知顯著動脈硬化的糖尿病患者。</span>
+        受試者全為「初級預防」對象：無心肌梗塞、無中風、無冠狀動脈支架、無 ≥50% 血管狹窄、無高鈣化分數，但有糖尿病。
+      </p>
+      <p>
+        基本資料：平均年齡 65 歲、57% 為女性、平均 BMI 31.4、89% 高血壓、89% 已使用降脂藥（64% 為高強度史他汀）、基線 LDL-C 中位數 132 mg/dL。受試者隨機 1:1 接受 evolocumab 140 mg（皮下注射，每 2 週一次）或安慰劑。
+      </p>
+
+      <h2>結論先講：LDL 降到極低、各項事件一致下降</h2>
+      <p>
+        <span class="lead-sentence">Evolocumab 將 LDL-C 從 132 mg/dL 降到中位數 52 mg/dL（48 週）、44 mg/dL（96 週）——已達國際指引對「極高風險」患者的範圍。</span>
+      </p>
+      <table class="drug-table">
+        <thead>
+          <tr><th>事件類型</th><th>Evolocumab 組</th><th>安慰劑組</th><th>風險下降</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>3 項主要事件（冠心病死亡＋心梗＋缺血性中風）</td><td>5.0%</td><td>7.1%</td><td>↓ 31%</td></tr>
+          <tr><td>4 項主要事件（加上缺血導致的血管手術）</td><td>7.6%</td><td>10.5%</td><td>↓ 31%</td></tr>
+          <tr><td>心血管死亡</td><td>2.4%</td><td>3.5%</td><td>↓ 32%</td></tr>
+          <tr><td>全因死亡</td><td>7.8%</td><td>10.1%</td><td>↓ 24%</td></tr>
+        </tbody>
+      </table>
+
+      <div class="highlight-box">
+        💡 <strong>有趣的觀察：</strong>在「沒有已知動脈硬化」的糖尿病族群，evolocumab 的好處在治療<strong>第一年看不太出來</strong>，從第 2 年才明顯顯現。<br><br>
+        這提醒我們：對於還沒有明顯病變的患者，降膽固醇是<strong>長期投資</strong>，不能期待立竿見影。
+      </div>
+
+      <h2>結論先講：安全性與安慰劑相當</h2>
+      <p>
+        <span class="lead-sentence">在 5 年的追蹤中，evolocumab 與安慰劑兩組的不良事件發生率幾乎完全相同。</span>
+      </p>
+      <ul>
+        <li>整體不良事件：30.9% vs 31.5%</li>
+        <li>嚴重不良事件：24.5% vs 25.7%</li>
+        <li>因不良事件中斷治療：4.1% vs 4.3%</li>
+      </ul>
+      <p>
+        這與過去 FOURIER 試驗（在已發生心血管事件的患者中進行）的安全性結論一致。
+      </p>
+
+      <h2>結論先講：對台灣 200 萬糖尿病人意義重大</h2>
+      <p>
+        <span class="lead-sentence">台灣糖尿病人口超過 220 萬，其中許多人尚未發生心血管事件，但長期暴露在高血糖、高血壓、肥胖等多重風險中。</span>
+      </p>
+      <p>
+        VESALIUS-CV 收案的「高風險糖尿病」定義為符合下列至少一項：
+      </p>
+      <ul>
+        <li>糖尿病病程 ≥ 10 年</li>
+        <li>每日使用胰島素</li>
+        <li>有糖尿病微血管併發症（視網膜病變、神經病變、蛋白尿等）</li>
+      </ul>
+      <p>
+        若您屬於這群患者，且在最強耐受劑量的史他汀（必要時加 ezetimibe）治療下 LDL-C 仍高於 70 mg/dL，建議與您的醫師討論加用 PCSK9 抑制劑的可能性。
+      </p>
+
+      <div class="highlight-box">
+        ✅ <strong>台灣健保現況：</strong>目前 PCSK9 抑制劑在台灣健保有條件給付，主要適用對象仍是「已發生心血管事件且高強度史他汀治療後 LDL 仍未達標」的二級預防患者。VESALIUS-CV 的結果可能促使健保給付政策重新檢討，將部分極高風險的一級預防糖尿病患者也納入給付範圍。
+      </div>
+
+      <h2>研究的限制</h2>
+      <ul>
+        <li>本次分析是事先計畫好的「次族群分析」，並非完整試驗的主要結果；雖屬高品質證據，但仍需更多前瞻性研究確認</li>
+        <li>受試者以白人為主（92.6%），亞洲人僅佔 1.9%，台灣族群外推性有待確認</li>
+        <li>並非每位受試者都做了完整影像評估，可能有些人實際上已有未診斷的動脈硬化</li>
+        <li>研究對象都有糖尿病，結果未必能直接套用到「無糖尿病但有多重風險因子」的患者</li>
+      </ul>
+
+      <!-- 一句話總結 -->
+      <div class="one-liner">
+        <span class="icon">🎯</span>
+        對於高風險的糖尿病患者，即使尚未發生心臟病，<br>提早使用 PCSK9 抑制劑可顯著減少首次心血管事件與死亡。
+      </div>
+
+      <div class="warning-box">
+        ⚠️ <strong>重要提醒：</strong>本文僅為衛教資訊，不能取代醫師的個別評估。PCSK9 抑制劑是處方藥物，且涉及健保給付條件、自費考量、注射方便性等多重面向。是否適合使用、何時開始、目標數值如何設定，請與您的心臟科醫師或新陳代謝科醫師討論。切勿自行停用既有的降脂藥物。
+      </div>
+
+      <p style="font-size: 0.85rem; color: var(--text-soft); margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--border);">
+        <strong>研究來源：</strong>Marston NA, Bohula EA, Bhatia AK, et al. Evolocumab to Reduce First Major Cardiovascular Events in Patients Without Known Significant Atherosclerosis and With Diabetes: Results From the VESALIUS-CV Trial. <em>JAMA</em> 2026;335(16):1400–1407.
+        DOI: <a href="https://doi.org/10.1001/jama.2026.3277" target="_blank">10.1001/jama.2026.3277</a>
+      </p>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 劉俞旻醫師 Lawrence Yu-Min Liu, MD, PhD, FESC｜新竹馬偕紀念醫院 心臟內科</p>
+  </footer>
+
+</body>
+</html>

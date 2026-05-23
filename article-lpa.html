@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>脂蛋白(a)：認識被忽略的心血管危險因子｜劉俞旻醫師</title>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HD804754WT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HD804754WT');
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    /* === 閱讀友善元素（共用） === */
+    .tldr-box { background: linear-gradient(135deg, #f3e9d9 0%, #faf2e3 100%); border-left: 4px solid var(--accent, #c9a47a); border-radius: 10px; padding: 22px 26px; margin: 0 0 28px; }
+    .tldr-box .tldr-label { display: inline-block; font-size: 0.72rem; font-weight: 700; letter-spacing: 3px; color: #8a6f4a; background: rgba(255,255,255,0.6); padding: 4px 12px; border-radius: 999px; margin-bottom: 12px; text-transform: uppercase; }
+    .tldr-box ul { margin: 8px 0 0 18px; padding: 0; font-size: 0.96rem; line-height: 1.85; color: var(--text, #2c2c2c); }
+    .tldr-box ul li { margin-bottom: 6px; }
+    .tldr-box ul li strong { color: var(--primary-dark, #3d6b60); }
+    .audience-line { font-size: 0.9rem; color: var(--text-muted, #7a7a7a); padding: 10px 14px; background: var(--surface-soft, #f3efe7); border-radius: 6px; margin-bottom: 28px; letter-spacing: 0.3px; }
+    .audience-line strong { color: var(--primary-dark, #3d6b60); font-weight: 600; }
+    .big-number-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin: 28px 0; }
+    .big-number { background: var(--surface, #fff); border: 1px solid var(--border, #ece7dc); border-radius: 10px; padding: 22px 18px; text-align: center; }
+    .big-number .num { font-size: 2.6rem; font-weight: 700; color: var(--primary-dark, #3d6b60); line-height: 1; letter-spacing: -1px; display: block; margin-bottom: 6px; }
+    .big-number .num .arrow { display: inline-block; transform: translateY(-3px); color: var(--accent, #c9a47a); margin-right: 2px; }
+    .big-number .label { font-size: 0.82rem; color: var(--text-muted, #7a7a7a); line-height: 1.5; }
+    .lead-sentence { font-weight: 700; color: var(--text, #2c2c2c); }
+    .one-liner { background: var(--primary-soft, #e8efe9); border-radius: 10px; padding: 22px 26px; margin: 32px 0 16px; font-size: 1.02rem; line-height: 1.85; text-align: center; color: var(--primary-dark, #3d6b60); font-weight: 500; }
+    .one-liner .icon { display: block; font-size: 1.3rem; margin-bottom: 6px; }
+    .infographic { background: var(--surface, #fff); border: 1px solid var(--border, #ece7dc); border-radius: 12px; padding: 32px 28px; margin: 36px 0; box-shadow: 0 2px 12px rgba(60,50,40,0.04); }
+    .infographic-title { font-size: 0.78rem; font-weight: 700; letter-spacing: 3px; color: var(--primary-dark, #3d6b60); text-transform: uppercase; text-align: center; margin-bottom: 6px; }
+    .infographic-subtitle { font-size: 1.05rem; font-weight: 600; color: var(--text, #2c2c2c); text-align: center; margin-bottom: 24px; line-height: 1.5; }
+    .infographic-row { margin-bottom: 22px; }
+    .infographic-row:last-of-type { margin-bottom: 12px; }
+    .infographic-row-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; flex-wrap: wrap; gap: 8px; }
+    .infographic-row-head .group-name { font-size: 0.92rem; font-weight: 600; color: var(--text, #2c2c2c); }
+    .infographic-row-head .group-stat { font-size: 0.86rem; color: var(--text-muted, #7a7a7a); }
+    .infographic-row-head .group-stat strong { color: #b8853a; font-weight: 700; font-size: 1rem; }
+    .dot-grid { display: grid; grid-template-columns: repeat(20, 1fr); gap: 4px; padding: 6px 0; }
+    .dot-grid .dot { aspect-ratio: 1 / 1; border-radius: 50%; background: #d8e2dc; }
+    .dot-grid .dot.elevated { background: #c9a47a; box-shadow: 0 0 0 1.5px rgba(201, 164, 122, 0.25); }
+    .infographic-divider { text-align: center; font-size: 1.2rem; color: var(--text-soft, #a0a0a0); margin: 14px 0 10px; letter-spacing: 4px; }
+    .infographic-result { background: linear-gradient(135deg, var(--primary-soft, #e8efe9) 0%, #d8e6e2 100%); border-radius: 8px; padding: 18px 22px; text-align: center; font-size: 1rem; color: var(--primary-dark, #3d6b60); font-weight: 600; line-height: 1.6; }
+    .infographic-result strong { font-size: 1.6rem; color: var(--primary-dark, #3d6b60); display: block; margin-bottom: 4px; }
+    .infographic-legend { display: flex; justify-content: center; gap: 20px; margin-top: 14px; font-size: 0.8rem; color: var(--text-muted, #7a7a7a); flex-wrap: wrap; }
+    .infographic-legend .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 50%; vertical-align: middle; margin-right: 4px; }
+
+    /* Risk multiplication bars */
+    .risk-bars { margin: 24px 0 12px; padding: 18px 16px; background: var(--surface-soft, #f3efe7); border-radius: 10px; }
+    .risk-bar-title { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px; text-align: center; }
+    .risk-bar-row { display: grid; grid-template-columns: 1.2fr 3fr 0.4fr; gap: 12px; align-items: center; margin-bottom: 8px; }
+    .risk-bar-row .rb-label { font-size: 0.85rem; color: var(--text); font-weight: 500; }
+    .risk-bar-row .rb-track { background: white; border-radius: 6px; height: 22px; position: relative; overflow: hidden; border: 1px solid var(--border); }
+    .risk-bar-row .rb-fill { height: 100%; background: linear-gradient(90deg, #c9a47a 0%, #b8853a 100%); border-radius: 6px; transition: width 0.4s; }
+    .risk-bar-row .rb-mult { font-size: 0.95rem; font-weight: 700; color: #8a6f4a; text-align: right; }
+
+    @media (max-width: 560px) { .dot-grid { grid-template-columns: repeat(20, 1fr); gap: 3px; } .infographic { padding: 24px 18px; } }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="site-title">劉俞旻醫師 <span>心臟內科</span></div>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="health.html" class="active">衛教資訊</a>
+      <a href="news.html">最新醫訊</a>
+      <a href="about.html">關於我</a>
+      <a href="research.html">研究成果</a>
+    </nav>
+  </header>
+
+  <div class="page-hero">
+    <h1>脂蛋白(a)：被忽略的心血管危險因子</h1>
+    <p>什麼是 Lp(a)？為什麼重要？新一代藥物即將改變治療</p>
+  </div>
+
+  <main style="max-width: 800px; margin: 0 auto; padding: 0 20px 60px;">
+
+    <a href="health.html" class="back-link">← 返回衛教資訊</a>
+
+    <div class="article-body">
+
+      <div class="article-meta">
+        作者：劉俞旻醫師｜新竹馬偕紀念醫院 心臟內科暨心血管中心主任
+      </div>
+
+      <!-- 30 秒重點 -->
+      <div class="tldr-box">
+        <span class="tldr-label">30 秒重點</span>
+        <ul>
+          <li>Lp(a)（脂蛋白(a)）是一種<strong>由基因決定</strong>的血脂異常，飲食運動幾乎無法改變</li>
+          <li>全球<strong>1/5 成人</strong> Lp(a) 偏高，但絕大多數人沒驗過、不知道自己有</li>
+          <li>偏高者心肌梗塞風險增加 <strong>2–3 倍</strong>，主動脈瓣狹窄風險也較高</li>
+          <li>2026 國際指引建議<strong>每位成人一生至少抽一次</strong>（一次就用一輩子）</li>
+          <li>新一代標靶藥物（pelacarsen、olpasiran 等）正在臨床試驗，可降 Lp(a) 達 70–95%</li>
+        </ul>
+      </div>
+
+      <!-- 適合誰閱讀 -->
+      <div class="audience-line">
+        <strong>適合閱讀對象：</strong>所有關心心血管健康的成人；特別是家族中有早發心臟病或中風（男性 &lt; 55 歲、女性 &lt; 65 歲）的人；以及「膽固醇正常卻心臟出狀況」的患者。
+      </div>
+
+      <!-- 關鍵數字 -->
+      <div class="big-number-row">
+        <div class="big-number">
+          <span class="num">1<span style="font-size:1.2rem;">/</span>5</span>
+          <span class="label">成人有 Lp(a)<br>偏高</span>
+        </div>
+        <div class="big-number">
+          <span class="num">2–3<span style="font-size:1.4rem;">×</span></span>
+          <span class="label">心肌梗塞<br>風險倍數</span>
+        </div>
+        <div class="big-number">
+          <span class="num">1<span style="font-size:1rem;">次</span></span>
+          <span class="label">一生只需<br>檢驗一次</span>
+        </div>
+      </div>
+
+      <h2>為什麼這件事重要？</h2>
+      <p>
+        <span class="lead-sentence">「我的膽固醇都正常，為什麼還是心肌梗塞？」「家裡很多人很年輕就中風或心臟病，但我血脂都很好啊！」</span>
+        如果您有這樣的疑問，答案可能藏在一個常被忽略的血液指標——<strong>脂蛋白(a)</strong>（lipoprotein(a)，唸做「Lp little a」），簡稱 <strong>Lp(a)</strong>。
+      </p>
+      <p>
+        Lp(a) 是「會堵血管」的脂蛋白家族成員，但和壞膽固醇（LDL）不同：它的高低主要由<strong>基因決定</strong>，飲食運動幾乎無法改變，傳統的史他汀藥物也降不下來。長期被忽略的後果是，許多偏高的人從來不知道自己有，直到發生心肌梗塞才被發現。
+      </p>
+
+      <h2>結論先講：1/5 的人有，但大多不知道</h2>
+      <p>
+        <span class="lead-sentence">Lp(a) 偏高的盛行率非常高——全球約 1/5 的成人 Lp(a) 偏高，且在已知有動脈硬化心血管疾病的患者中，比例上升到 1/4。</span>
+        但因為過去不常規檢驗，絕大多數偏高的人從未被識別。
+      </p>
+
+      <!-- 圖解：1/5 在族群中 -->
+      <div class="infographic">
+        <div class="infographic-title">📊 圖解</div>
+        <div class="infographic-subtitle">每 100 位成人中，有多少人 Lp(a) 偏高？</div>
+
+        <div class="infographic-row">
+          <div class="infographic-row-head">
+            <span class="group-name">一般成人族群</span>
+            <span class="group-stat"><strong>約 20 人</strong>（1/5）Lp(a) 偏高</span>
+          </div>
+          <div class="dot-grid"><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+        </div>
+
+        <div class="infographic-divider">▼</div>
+
+        <div class="infographic-row">
+          <div class="infographic-row-head">
+            <span class="group-name">已有動脈硬化心血管疾病者</span>
+            <span class="group-stat"><strong>約 25 人</strong>（1/4）Lp(a) 偏高</span>
+          </div>
+          <div class="dot-grid"><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot elevated"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+        </div>
+
+        <div class="infographic-legend">
+          <span><span class="swatch" style="background:#c9a47a;"></span>Lp(a) 偏高</span>
+          <span><span class="swatch" style="background:#d8e2dc;"></span>Lp(a) 正常</span>
+        </div>
+
+        <!-- 風險倍數 -->
+        <div class="risk-bars">
+          <div class="risk-bar-title">Lp(a) 偏高者，心肌梗塞風險如何變化？</div>
+          <div class="risk-bar-row">
+            <div class="rb-label">Lp(a) 正常</div>
+            <div class="rb-track"><div class="rb-fill" style="width:33%;"></div></div>
+            <div class="rb-mult">1×</div>
+          </div>
+          <div class="risk-bar-row">
+            <div class="rb-label">Lp(a) 中度偏高</div>
+            <div class="rb-track"><div class="rb-fill" style="width:50%;"></div></div>
+            <div class="rb-mult">1.5×</div>
+          </div>
+          <div class="risk-bar-row">
+            <div class="rb-label">Lp(a) 嚴重偏高</div>
+            <div class="rb-track"><div class="rb-fill" style="width:100%;"></div></div>
+            <div class="rb-mult">2–3×</div>
+          </div>
+        </div>
+
+        <p style="margin-top:18px; padding-top:14px; border-top:1px dashed var(--border); font-size:0.86rem; color:var(--text-muted); line-height:1.7;">
+          <strong style="color:var(--primary-dark);">為什麼這件事在台灣特別重要？</strong>
+          台灣大多數人從未檢驗過 Lp(a)，且健保並未常規給付——意味著潛在的 400 萬以上偏高者多數不知情。
+          但<strong>一次檢驗就能用一輩子</strong>（自費約 NT$500–800），結果可協助您和家人提早採取保護措施，特別是有早發心血管疾病家族史的家庭。
+        </p>
+      </div>
+
+      <h2>什麼是 Lp(a)？</h2>
+      <p>
+        <span class="lead-sentence">Lp(a) 是血液中的一種特殊脂蛋白顆粒，結構上與壞膽固醇（LDL）類似，但多了一個叫做「apolipoprotein(a)」的特殊蛋白質尾巴。</span>
+        這個額外的「尾巴」讓 Lp(a) 變得特別「壞」：
+      </p>
+      <ul>
+        <li><strong>加速動脈硬化：</strong>Lp(a) 容易卡在血管壁，引起發炎與斑塊形成</li>
+        <li><strong>促進血栓：</strong>它的結構與「纖維蛋白溶解酶原」相似，會抑制身體溶解血栓的能力</li>
+        <li><strong>傷害主動脈瓣：</strong>長期偏高與主動脈瓣狹窄有關</li>
+      </ul>
+
+      <div class="highlight-box">
+        💡 簡單比喻：壞膽固醇（LDL）像「會卡在水管裡的油垢」，而 Lp(a) 是「油垢 + 一個會讓血變黏的成分」。所以 Lp(a) 偏高的人，不只是動脈硬化加速，連血栓風險也更高。
+      </div>
+
+      <h2>結論先講：基因決定，飲食運動幾乎沒用</h2>
+      <p>
+        <span class="lead-sentence">Lp(a) 的高低主要由基因決定——出生時就已經設定好。</span>
+        和 LDL 不同，飲食、運動、體重對 Lp(a) 的影響非常有限。Lp(a) 偏高通常會「家族性」出現——若父母或兄弟姊妹年輕就得心臟病，您應該檢查。
+      </p>
+
+      <h2>我該不該檢驗？</h2>
+      <p>
+        2026 國際指引（包括 ACC/AHA、ESC/EAS）都建議：<strong>每位成人一生中至少應檢驗一次 Lp(a)</strong>。理由是：
+      </p>
+      <ul>
+        <li>Lp(a) 一生變化不大，<strong>檢驗一次即可</strong>（不需要每年抽血）</li>
+        <li>結果可以協助醫師評估您的整體心血管風險</li>
+        <li>若家族中有人年輕發病，您的 Lp(a) 結果對子女也有參考價值</li>
+      </ul>
+      <p>
+        以下患者<strong>強烈建議檢驗</strong>：
+      </p>
+      <ul>
+        <li>家族中有早發心血管疾病（男性 &lt; 55 歲、女性 &lt; 65 歲）</li>
+        <li>自己年輕就有冠心病、心肌梗塞、或主動脈瓣狹窄</li>
+        <li>家族中曾有人被診斷為「家族性高膽固醇症」</li>
+        <li>儘管 LDL 控制良好，仍反覆發生心血管事件</li>
+      </ul>
+
+      <h2>數值怎麼看？</h2>
+      <table class="drug-table">
+        <thead>
+          <tr><th>Lp(a) 濃度</th><th>分類</th><th>意義</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>&lt; 30 mg/dL（~75 nmol/L）</td><td>正常</td><td>對心血管風險影響不大</td></tr>
+          <tr><td>30–50 mg/dL（75–125 nmol/L）</td><td>中等偏高</td><td>需與其他危險因子一起評估</td></tr>
+          <tr><td>50–180 mg/dL（125–450 nmol/L）</td><td>偏高</td><td>顯著增加心血管風險</td></tr>
+          <tr><td>&gt; 180 mg/dL（&gt; 450 nmol/L）</td><td>極高</td><td>等同於遺傳性高風險，需積極處置</td></tr>
+        </tbody>
+      </table>
+      <p>
+        注意：不同實驗室使用的單位可能不同（mg/dL 或 nmol/L），請以您的檢驗報告所附的參考範圍為準。
+      </p>
+
+      <h2>Lp(a) 偏高怎麼辦？</h2>
+
+      <h3 style="font-size:1.05rem; margin:20px 0 10px; color: var(--primary-dark);">1. 積極控制其他危險因子</h3>
+      <p>
+        目前還沒有專門的 Lp(a) 治療藥物上市（見下文），所以策略是「降低整體風險」：
+      </p>
+      <ul>
+        <li>把 LDL-C 降到更低（許多指引建議 Lp(a) 高者，LDL 目標再嚴一點）</li>
+        <li>控制血壓、戒菸、控制糖尿病</li>
+        <li>規律運動、健康飲食、維持理想體重</li>
+        <li>必要時使用阿斯匹靈做為一級預防（需與醫師討論）</li>
+      </ul>
+
+      <h3 style="font-size:1.05rem; margin:20px 0 10px; color: var(--primary-dark);">2. 既有藥物的有限效果</h3>
+      <ul>
+        <li><strong>史他汀類藥物：</strong>對 Lp(a) <em>沒有降低效果</em>，甚至可能略為上升（但仍需使用以降 LDL）</li>
+        <li><strong>Ezetimibe：</strong>對 Lp(a) 影響很小</li>
+        <li><strong>PCSK9 抑制劑：</strong>可降低 Lp(a) 約 20–25%，是目前最有效的核准藥物</li>
+        <li><strong>Niacin（菸鹼酸）：</strong>可降 Lp(a)，但副作用多，現已少用</li>
+      </ul>
+
+      <h3 style="font-size:1.05rem; margin:20px 0 10px; color: var(--primary-dark);">3. 血液淨化（Lipoprotein Apheresis）</h3>
+      <p>
+        對於 Lp(a) 極高且已發生反覆心血管事件的患者，可考慮「脂蛋白血液淨化」——類似洗腎的程序，把血液中的 Lp(a) 用機器濾掉。每次可降 Lp(a) 達 70%，但需<strong>每週進行</strong>，每次數小時，且非常昂貴（德國資料每年約 5 萬歐元）。台灣目前少有醫院提供這項服務。
+      </p>
+
+      <h2>突破：新一代 Lp(a) 標靶藥物</h2>
+      <p>
+        <span class="lead-sentence">過去幾年，多種專門針對 Lp(a) 的新藥進入第三期試驗。</span>
+        最具代表性的是 <strong>pelacarsen</strong>——一種「反義寡核苷酸」（antisense oligonucleotide），透過阻斷肝臟製造 Lp(a) 的訊息，從源頭減少 Lp(a) 生成。
+      </p>
+
+      <h3 style="font-size:1.05rem; margin:20px 0 10px; color: var(--primary-dark);">Lp(a)FRONTIERS APHERESIS 試驗（2026）</h3>
+      <p>
+        這個試驗在德國納入 51 位已在接受每週血液淨化、且 Lp(a) &gt; 60 mg/dL 的高風險患者，隨機分配每月皮下注射 pelacarsen 80 mg 或安慰劑，共 52 週。重要結果：
+      </p>
+      <ul>
+        <li>Pelacarsen 把 Lp(a) 降低了 <strong>72–77%</strong></li>
+        <li><strong>69% 的患者完全擺脫了血液淨化</strong>（vs 安慰劑組 0%）</li>
+        <li>從注射到擺脫血液淨化的中位時間約 <strong>6 週</strong></li>
+        <li>主要副作用為注射部位輕度紅斑（38.5%），多數輕微</li>
+        <li>無嚴重藥物相關不良事件</li>
+      </ul>
+
+      <div class="highlight-box">
+        🔬 <strong>還在進行的關鍵試驗：</strong>Lp(a)HORIZON 是更大型的試驗，超過 8,300 位 Lp(a) 偏高且有心血管疾病的患者，目的是直接證明 pelacarsen 能否減少心肌梗塞、中風、心血管死亡。預計 2026 年完成。若結果正面，Lp(a) 治療將進入全新時代。
+      </div>
+
+      <h3 style="font-size:1.05rem; margin:20px 0 10px; color: var(--primary-dark);">其他正在開發的 Lp(a) 標靶藥物</h3>
+      <table class="drug-table">
+        <thead>
+          <tr><th>藥物</th><th>機轉</th><th>降 Lp(a) 幅度</th><th>狀態</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Pelacarsen</td><td>反義寡核苷酸</td><td>~70–80%</td><td>第三期（Lp(a)HORIZON）</td></tr>
+          <tr><td>Olpasiran</td><td>siRNA（小干擾 RNA）</td><td>~95%</td><td>第三期（OCEAN(a)）</td></tr>
+          <tr><td>Lepodisiran</td><td>siRNA</td><td>~94%</td><td>第三期</td></tr>
+          <tr><td>Muvalaplin</td><td>口服小分子</td><td>~65%</td><td>第二期</td></tr>
+        </tbody>
+      </table>
+
+      <h2>對台灣患者的實用建議</h2>
+      <ol style="margin-left: 22px; color: var(--text); font-size: 0.97rem; line-height: 1.95;">
+        <li><strong>主動詢問醫師檢驗 Lp(a)</strong>——尤其是有早發心血管疾病家族史的人。一次檢驗、終身受用。</li>
+        <li><strong>不要因為「沒藥可治」就不檢驗</strong>——知道自己 Lp(a) 偏高，可幫助醫師決定 LDL 目標、是否使用 PCSK9、是否更積極控制其他風險因子。</li>
+        <li><strong>關注新藥進展</strong>——pelacarsen 等新藥若試驗成功，可能在 2026–2027 年陸續上市，對 Lp(a) 偏高患者將是重大突破。</li>
+        <li><strong>家族成員也應檢驗</strong>——Lp(a) 偏高有強烈遺傳性，建議告知一等親（父母、兄弟姊妹、子女）也接受檢測。</li>
+      </ol>
+
+      <!-- 一句話總結 -->
+      <div class="one-liner">
+        <span class="icon">🎯</span>
+        Lp(a) 是 1/5 成人都有、卻幾乎沒人知道的隱形危險因子——<br>請問問您的醫師，這輩子至少測一次。
+      </div>
+
+      <div class="warning-box">
+        ⚠️ <strong>重要提醒：</strong>本文僅為衛教資訊，不能取代醫師的個別評估。Lp(a) 偏高的意義必須結合您的整體心血管風險判讀。檢驗結果與後續處置請與您的心臟科醫師討論。文中提到的新藥（pelacarsen、olpasiran 等）尚未在台灣核准上市，目前僅供研究與資訊參考。
+      </div>
+
+      <p style="font-size: 0.85rem; color: var(--text-soft); margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--border);">
+        <strong>主要研究來源：</strong><br>
+        Parhofer KG, Julius U, Herzog AL, et al. Pelacarsen and lipoprotein(a) apheresis in secondary prevention: the Lp(a)FRONTIERS APHERESIS trial. <em>Eur Heart J</em> 2026.
+        DOI: <a href="https://doi.org/10.1093/eurheartj/ehag073" target="_blank">10.1093/eurheartj/ehag073</a>
+      </p>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 劉俞旻醫師 Lawrence Yu-Min Liu, MD, PhD, FESC｜新竹馬偕紀念醫院 心臟內科</p>
+  </footer>
+
+</body>
+</html>
