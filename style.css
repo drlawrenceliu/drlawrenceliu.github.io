@@ -145,6 +145,59 @@ nav a.active {
   margin: 0 auto;
 }
 
+/* Two-column variant with portrait photo */
+.landing-hero-inner.with-portrait {
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 56px;
+  align-items: center;
+  text-align: left;
+}
+
+.landing-hero-inner.with-portrait .lede {
+  max-width: none;
+  margin: 0 0 32px;
+}
+
+.landing-hero-inner.with-portrait .hero-cta {
+  justify-content: flex-start;
+}
+
+.hero-portrait {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 20px;
+  background:
+    url('dr-liu-portrait.jpg') center / cover no-repeat,
+    radial-gradient(ellipse at 30% 30%, rgba(201, 164, 122, 0.5) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 70%, rgba(90, 138, 126, 0.45) 0%, transparent 60%),
+    linear-gradient(135deg, #f3efe7 0%, #e8efe9 100%);
+  box-shadow: 0 14px 36px rgba(60, 50, 40, 0.14);
+  border: 4px solid white;
+}
+
+@media (max-width: 768px) {
+  .landing-hero-inner.with-portrait {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 32px;
+  }
+  .landing-hero-inner.with-portrait .lede {
+    margin: 0 auto 28px;
+    max-width: 580px;
+  }
+  .landing-hero-inner.with-portrait .hero-cta {
+    justify-content: center;
+  }
+  .hero-portrait {
+    max-width: 260px;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+}
+
 .eyebrow {
   display: inline-block;
   font-size: 0.78rem;
@@ -512,6 +565,52 @@ main.narrow { max-width: 800px; }
 
 .article-grid.three-col {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* Category sections (groups of articles by topic) */
+.category-section {
+  margin-bottom: 52px;
+}
+.category-section:last-of-type {
+  margin-bottom: 24px;
+}
+
+.category-head {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 22px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+.category-head .icon {
+  font-size: 1.5rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.category-head h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: 0.8px;
+  margin: 0;
+}
+.category-head .count {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-left: auto;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Inside category sections, use auto-fill so single cards don't stretch absurdly */
+.category-section .article-grid {
+  grid-template-columns: repeat(auto-fill, minmax(280px, 360px));
+  justify-content: start;
+}
+.category-section .article-grid.three-col {
+  grid-template-columns: repeat(auto-fill, minmax(260px, 340px));
 }
 
 .article-card {
