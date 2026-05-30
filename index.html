@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>劉俞旻醫師｜新竹馬偕紀念醫院 心臟內科</title>
-  <meta name="description" content="劉俞旻醫師｜新竹馬偕紀念醫院 心臟內科暨心血管中心主任。提供以實證醫學為基礎的衛教資訊與最新心臟醫療進展。" />
+  <meta name="description" content="劉俞旻醫師｜新竹馬偕紀念醫院 心臟內科暨心血管中心主任。以實證醫學為基礎的心臟衛教資訊與最新醫療進展。" />
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HD804754WT"></script>
   <script>
@@ -15,164 +15,338 @@
   </script>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- Navigation -->
-  <header>
-    <div class="site-title">劉俞旻醫師 <span>心臟內科</span></div>
-    <nav>
-      <a href="index.html" class="active">首頁</a>
-      <a href="health.html">衛教資訊</a>
-      <a href="news.html">最新醫訊</a>
-      <a href="about.html">關於我</a>
-      <a href="research.html">研究成果</a>
+  <!-- ============ Header / Nav ============ -->
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img class="brand-logo logo-blend" src="images/logo.png" alt="Lawrence Liu, MD" />
+      <span class="brand-text">
+        <span class="brand-name">劉俞旻 醫師</span>
+        <span class="brand-sub">Cardiology · Hsinchu</span>
+      </span>
+    </a>
+
+    <nav class="site-nav">
+      <a href="index.html" class="active">
+        <span class="nav-en">Home</span>
+        <span class="nav-tc">首頁</span>
+      </a>
+      <a href="health.html">
+        <span class="nav-en">Patient Education</span>
+        <span class="nav-tc">衛教資訊</span>
+      </a>
+      <a href="news.html">
+        <span class="nav-en">Medical Updates</span>
+        <span class="nav-tc">最新醫訊</span>
+      </a>
+      <a href="about.html">
+        <span class="nav-en">About</span>
+        <span class="nav-tc">關於我</span>
+      </a>
+      <a href="research.html">
+        <span class="nav-en">Research</span>
+        <span class="nav-tc">研究成果</span>
+      </a>
     </nav>
+
+    <a href="https://www.hc.mmh.org.tw/register_single_doctor.php?depid=14&did=150" target="_blank" rel="noopener" class="btn solid nav-cta">
+      <span>線上掛號</span><span class="arrow">→</span>
+    </a>
   </header>
 
-  <!-- Landing Hero -->
-  <section class="landing-hero">
-    <div class="landing-hero-inner with-portrait">
-      <div class="hero-text">
+  <!-- ============ Hero ============ -->
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow-row">
         <span class="eyebrow">Evidence-based Cardiology</span>
-        <h1>以實證醫學<br>守護<em>心臟健康</em></h1>
-        <p class="lede">
-          劉俞旻醫師，新竹馬偕紀念醫院心臟內科暨心血管中心主任。
-          在這裡，您可以閱讀以最新國際指引為依據的衛教資訊與醫療進展，
-          了解心臟疾病、預防與治療選擇。
-        </p>
-        <div class="hero-cta">
-          <a href="news.html" class="btn btn-primary">閱讀最新醫訊 →</a>
-          <a href="health.html" class="btn btn-ghost">心臟衛教專區</a>
-        </div>
       </div>
-      <div class="hero-portrait" role="img" aria-label="劉俞旻醫師"></div>
+      <h1>
+        以實證醫學<br />
+        守護<em>心臟健康</em>
+      </h1>
+      <p class="lede">
+        劉俞旻醫師，新竹馬偕紀念醫院心臟內科暨心血管中心主任。<br />
+        在這裡，您可以閱讀以最新國際指引為依據的衛教資訊與醫療進展，
+        了解心臟疾病、預防與治療選擇。
+      </p>
+      <div class="hero-cta">
+        <a href="news.html" class="btn solid"><span>閱讀最新醫訊</span><span class="arrow">→</span></a>
+        <a href="health.html" class="btn outline"><span>心臟衛教專區</span></a>
+      </div>
+
+      <!-- Animated ECG signature on a clean white card -->
+      <div class="signature-card">
+        <img class="logo-blend" src="images/logo-anim.gif" alt="Lawrence Liu, MD — signature in ECG" />
+        <span class="caption">Practice Signature · MD · PhD · FESC</span>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <img class="hero-photo" src="images/clinic-moment.png" alt="劉俞旻醫師在診間與病人對話" />
     </div>
   </section>
 
-  <!-- Latest Medical News -->
-  <section class="section">
+  <!-- ============ Motto strip ============ -->
+  <div class="divider-strip">
+    <span class="rule"></span>
+    <span class="motto">Evidence · Compassion · Continuity</span>
+    <span class="rule"></span>
+  </div>
+
+  <!-- ============ Latest medical updates ============ -->
+  <section class="section" id="news">
     <div class="section-head">
-      <div>
-        <span class="eyebrow">Latest Updates</span>
+      <div class="title-block">
+        <div class="eyebrow-row" style="margin-bottom: 16px;">
+          <span class="eyebrow">Latest Updates</span>
+        </div>
         <h2>最新醫訊</h2>
         <p>心臟科與相關醫學領域最新藥物、治療進展與研究發現</p>
       </div>
-      <a href="news.html" class="section-link">查看全部醫訊 →</a>
+      <a href="news.html" class="section-link">View all updates →</a>
     </div>
 
-    <div class="article-grid">
+    <div class="card-grid">
 
-      <a href="article-guideline2026.html" style="text-decoration:none;">
-        <div class="article-card">
-          <div class="article-card-thumb"></div>
-          <div class="article-card-body">
-            <span class="category">國際指引</span>
-            <h4>2026 全新血脂治療指引：對病人有什麼意義？</h4>
-            <p>美國 ACC/AHA 八年來首度大改版！從 Lp(a) 篩檢、新風險計算工具，到 PCSK9 抑制劑成為標準階梯——八個改變直接影響您的治療。</p>
-            <div class="article-card-link">閱讀全文 ›</div>
-          </div>
+      <a class="article-card" href="article-guideline2026.html">
+        <div class="article-card-thumb" style="background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&q=80&auto=format&fit=crop');"></div>
+        <div class="article-card-meta">
+          <span class="tag">Guidelines</span>
+          <span class="rule"></span>
+          <span class="date">2026.04.18</span>
         </div>
+        <h3>全新血脂治療指引：對病人有什麼意義？</h3>
+        <p>美國 ACC/AHA 八年來首度大改版——從 Lp(a) 篩檢、新風險計算工具，到 PCSK9 抑制劑成為標準階梯，八個改變直接影響您的治療。</p>
+        <span class="article-card-link">Read full article →</span>
       </a>
 
-      <a href="article-ezpave.html" style="text-decoration:none;">
-        <div class="article-card">
-          <div class="article-card-thumb"></div>
-          <div class="article-card-body">
-            <span class="category">大型臨床試驗</span>
-            <h4>壞膽固醇要降到多低？韓國 Ez-PAVE 研究的新答案</h4>
-            <p>2026 NEJM 韓國 3,048 人隨機試驗：LDL &lt; 55 比 &lt; 70 mg/dL 多減少 33% 重大心血管事件，副作用相當——亞洲人的直接證據。</p>
-            <div class="article-card-link">閱讀全文 ›</div>
-          </div>
+      <a class="article-card" href="article-ezpave.html">
+        <div class="article-card-thumb" style="background-image: url('https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=1200&q=80&auto=format&fit=crop');"></div>
+        <div class="article-card-meta">
+          <span class="tag">Clinical Trial</span>
+          <span class="rule"></span>
+          <span class="date">2026.03.22</span>
         </div>
+        <h3>壞膽固醇要降到多低？韓國 Ez-PAVE 研究的新答案</h3>
+        <p>NEJM 2026 韓國 3,048 人隨機試驗：LDL &lt; 55 比 &lt; 70 mg/dL 多減少 33% 重大心血管事件，副作用相當——亞洲人的直接證據。</p>
+        <span class="article-card-link">Read full article →</span>
+      </a>
+
+      <a class="article-card" href="article-oncocardiology.html">
+        <div class="article-card-thumb" style="background-image: url('https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1200&q=80&auto=format&fit=crop');"></div>
+        <div class="article-card-meta">
+          <span class="tag">Cardio-oncology</span>
+          <span class="rule"></span>
+          <span class="date">2026.02.10</span>
+        </div>
+        <h3>癌症治療與心臟保護：跨科整合的新模式</h3>
+        <p>新一代化療與標靶藥物可能造成心肌損傷。腫瘤心臟病學門診提供病人完整的心血管風險評估與長期追蹤。</p>
+        <span class="article-card-link">Read full article →</span>
       </a>
 
     </div>
   </section>
 
-  <!-- Featured Health Education -->
-  <section class="section" style="padding-top: 0;">
+  <!-- ============ Health education ============ -->
+  <section class="section alt" id="health">
     <div class="section-head">
-      <div>
-        <span class="eyebrow">For Patients</span>
+      <div class="title-block">
+        <div class="eyebrow-row" style="margin-bottom: 16px;">
+          <span class="eyebrow">For Patients</span>
+        </div>
         <h2>熱門衛教文章</h2>
         <p>用淺顯易懂的語言，介紹心臟疾病的成因、症狀、治療與日常照護</p>
       </div>
-      <a href="health.html" class="section-link">所有衛教文章 →</a>
+      <a href="health.html" class="section-link">All articles →</a>
     </div>
 
-    <div class="article-grid three-col">
+    <div class="card-grid">
 
-      <a href="article-catheterization.html" style="text-decoration:none;">
-        <div class="article-card">
-          <div class="article-card-thumb"></div>
-          <div class="article-card-body">
-            <span class="category">冠狀動脈疾病</span>
-            <h4>心導管手術是什麼？我需要害怕嗎？</h4>
-            <p>心導管檢查與介入手術是診斷和治療冠狀動脈疾病的重要工具。了解手術過程、風險與注意事項，幫助您做好準備。</p>
-            <div class="article-card-link">閱讀全文 ›</div>
-          </div>
+      <a class="health-card" href="article-catheterization.html">
+        <div class="thumb" style="background-image: url('https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=1200&q=80&auto=format&fit=crop');"></div>
+        <div class="body">
+          <div class="cat-en">Coronary Artery Disease</div>
+          <div class="cat-tc">冠狀動脈疾病</div>
+          <h3>心導管手術是什麼？我需要害怕嗎？</h3>
+          <p>了解心導管檢查與介入手術的過程、風險與注意事項，讓您做好充分準備。</p>
+          <span class="link">Read more →</span>
         </div>
       </a>
 
-      <a href="article-obesity.html" style="text-decoration:none;">
-        <div class="article-card">
-          <div class="article-card-thumb"></div>
-          <div class="article-card-body">
-            <span class="category">肥胖與代謝</span>
-            <h4>肥胖與心臟健康：認識肥胖、積極治療</h4>
-            <p>肥胖是心臟病、糖尿病、心房顫動的重要危險因子。了解肥胖如何傷害心臟，以及現代醫學提供的治療選項。</p>
-            <div class="article-card-link">閱讀全文 ›</div>
-          </div>
+      <a class="health-card" href="article-obesity.html">
+        <div class="thumb" style="background-image: url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1200&q=80&auto=format&fit=crop');"></div>
+        <div class="body">
+          <div class="cat-en">Obesity & Metabolism</div>
+          <div class="cat-tc">肥胖與代謝</div>
+          <h3>肥胖與心臟健康：認識肥胖、積極治療</h3>
+          <p>肥胖是心臟病、糖尿病、心房顫動的危險因子。了解現代醫學提供的治療選項。</p>
+          <span class="link">Read more →</span>
         </div>
       </a>
 
-      <a href="article-avf.html" style="text-decoration:none;">
-        <div class="article-card">
-          <div class="article-card-thumb"></div>
-          <div class="article-card-body">
-            <span class="category">腎臟照護</span>
-            <h4>洗腎廔管照護與 PTA 血管整形術</h4>
-            <p>廔管是洗腎患者的「生命線」。了解日常照護、常見問題警訊，以及當廔管狹窄時如何透過 PTA 微創手術恢復暢通。</p>
-            <div class="article-card-link">閱讀全文 ›</div>
-          </div>
+      <a class="health-card" href="article-avf.html">
+        <div class="thumb" style="background-image: url('https://images.unsplash.com/photo-1631217872822-1c2546d6b864?w=1200&q=80&auto=format&fit=crop');"></div>
+        <div class="body">
+          <div class="cat-en">Vascular Access Care</div>
+          <div class="cat-tc">腎臟照護</div>
+          <h3>洗腎廔管照護與 PTA 血管整形術</h3>
+          <p>廔管是洗腎患者的生命線。了解日常照護、警訊與 PTA 微創手術。</p>
+          <span class="link">Read more →</span>
         </div>
       </a>
 
     </div>
   </section>
 
-  <!-- About Teaser -->
-  <section class="section" style="padding-top: 0;">
-    <div class="about-teaser">
-      <div class="about-teaser-photo">♥</div>
-      <div class="about-teaser-text">
+  <!-- ============ About ============ -->
+  <section class="about-section" id="about">
+    <div class="about-photos">
+      <figure class="about-photo">
+        <img src="images/dr-liu-portrait.jpg" alt="劉俞旻醫師於歐洲心臟學會" />
+        <figcaption>
+          <span class="cap-en">FESC moment</span>
+          <span class="cap-tc">歐洲心臟學會 Fellow</span>
+        </figcaption>
+      </figure>
+      <figure class="about-photo offset">
+        <img src="images/cathlab-moment.png" alt="劉俞旻醫師在心導管室" />
+        <figcaption>
+          <span class="cap-en">Cath lab moment</span>
+          <span class="cap-tc">在心導管室執行介入治療</span>
+        </figcaption>
+      </figure>
+      <div class="director-quote">
+        <div class="label">From the Director</div>
+        <p>「每一個治療決定，都應該來自當下最好的證據——以及對眼前這位病人的理解。」</p>
+      </div>
+    </div>
+
+    <div class="about-copy">
+      <div class="eyebrow-row" style="margin-bottom: 18px;">
         <span class="eyebrow">About Dr. Liu</span>
-        <h3>劉俞旻 醫師</h3>
-        <div class="role">MD, PhD, FESC｜新竹馬偕紀念醫院 心臟內科暨心血管中心主任</div>
-        <p>
-          長年深耕心導管介入手術、心臟衰竭治療、腫瘤心臟病學與再生醫學，
-          擔任多項國際大型臨床試驗共同研究員，致力於將最新實證醫學成果帶給每一位病患。
-        </p>
-        <a href="about.html" class="btn btn-ghost">了解更多 →</a>
+      </div>
+      <h2>劉俞旻 醫師</h2>
+      <div class="creds-row">
+        <span>MD</span><span>·</span><span>PhD</span><span>·</span><span>FESC</span>
+      </div>
+      <p class="lead">
+        長年深耕心導管介入手術、心臟衰竭治療、腫瘤心臟病學與再生醫學，
+        擔任多項國際大型臨床試驗共同研究員，致力於將最新實證醫學成果帶給每一位病患。
+      </p>
+      <div class="bullets">
+        <div class="bullet">
+          <span class="b-label">臨床專長</span>
+          <span class="b-text">心導管介入治療、結構性心臟病、心臟衰竭、腫瘤心臟病學</span>
+        </div>
+        <div class="bullet">
+          <span class="b-label">學術職務</span>
+          <span class="b-text">歐洲心臟學會 Fellow (FESC) ／多項國際大型臨床試驗共同研究員</span>
+        </div>
+        <div class="bullet">
+          <span class="b-label">現任</span>
+          <span class="b-text">新竹馬偕紀念醫院 心臟內科暨心血管中心主任</span>
+        </div>
+      </div>
+      <a href="about.html" class="btn outline" style="margin-top: 40px;">
+        <span>了解更多</span><span class="arrow">→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ Research ============ -->
+  <section class="research-section" id="research">
+    <div class="section-head">
+      <div class="title-block">
+        <div class="eyebrow-row" style="margin-bottom: 18px;">
+          <span class="eyebrow">Research &amp; Publications</span>
+        </div>
+        <h2>研究成果</h2>
+      </div>
+      <a href="research.html" class="section-link">Publications &amp; trials →</a>
+    </div>
+
+    <div class="research-stats">
+      <div class="stat">
+        <span class="num">60+</span>
+        <span class="label">Peer-reviewed publications</span>
+      </div>
+      <div class="stat">
+        <span class="num">12</span>
+        <span class="label">International clinical trials</span>
+      </div>
+      <div class="stat">
+        <span class="num">4</span>
+        <span class="label">Areas of focus</span>
+      </div>
+    </div>
+
+    <div class="research-areas">
+      <div class="area">
+        <span class="n">01</span>
+        <span class="tc">心導管介入治療</span>
+        <span class="en">Coronary &amp; Structural Intervention</span>
+      </div>
+      <div class="area">
+        <span class="n">02</span>
+        <span class="tc">腫瘤心臟病學</span>
+        <span class="en">Cardio-oncology</span>
+      </div>
+      <div class="area">
+        <span class="n">03</span>
+        <span class="tc">心臟衰竭與再生醫學</span>
+        <span class="en">Heart Failure &amp; Regenerative Medicine</span>
+      </div>
+      <div class="area">
+        <span class="n">04</span>
+        <span class="tc">心血管預防醫學</span>
+        <span class="en">Preventive Cardiology</span>
       </div>
     </div>
   </section>
 
-  <!-- Appointment CTA -->
-  <section class="section" style="padding-top: 0;">
-    <div class="appointment-cta">
-      <h3>線上掛號</h3>
-      <p>新竹馬偕紀念醫院 心臟內科｜門診時間查詢與線上預約</p>
-      <a href="https://www.hc.mmh.org.tw/register_single_doctor.php?depid=14&did=150" target="_blank" class="btn">
-        前往掛號 →
-      </a>
-    </div>
-  </section>
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="row">
+      <div class="booking">
+        <div class="eyebrow-row" style="margin-bottom: 18px;">
+          <span class="eyebrow">Online Appointment</span>
+        </div>
+        <h3>線上掛號</h3>
+        <p>新竹馬偕紀念醫院 心臟內科<br />門診時間查詢與線上預約</p>
+        <a href="https://www.hc.mmh.org.tw/register_single_doctor.php?depid=14&did=150" target="_blank" rel="noopener" class="btn solid" style="margin-top: 28px;">
+          <span>前往掛號系統</span><span class="arrow">→</span>
+        </a>
+      </div>
 
-  <footer>
-    <p>© 2026 劉俞旻醫師 Lawrence Yu-Min Liu, MD, PhD, FESC｜新竹馬偕紀念醫院 心臟內科</p>
+      <div>
+        <div class="col-head">Quick Links</div>
+        <div class="quick-links">
+          <a href="index.html"><span class="en">Home</span><span class="tc">首頁</span></a>
+          <a href="health.html"><span class="en">Patient Education</span><span class="tc">衛教資訊</span></a>
+          <a href="news.html"><span class="en">Medical Updates</span><span class="tc">最新醫訊</span></a>
+          <a href="about.html"><span class="en">About</span><span class="tc">關於我</span></a>
+          <a href="research.html"><span class="en">Research</span><span class="tc">研究成果</span></a>
+        </div>
+      </div>
+
+      <div>
+        <div class="col-head">Practice</div>
+        <div class="practice-block">
+          新竹馬偕紀念醫院<br />
+          心臟內科暨心血管中心<br />
+          <span class="en">MacKay Memorial Hospital · Hsinchu</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="legal">
+      <span>© 2026 劉俞旻醫師 Lawrence Yu-Min Liu, MD, PhD, FESC</span>
+      <span class="motto">Evidence · Compassion · Continuity</span>
+    </div>
   </footer>
 
 </body>

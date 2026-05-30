@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>關於我｜劉俞旻醫師</title>
+  <meta name="description" content="劉俞旻醫師（Lawrence Yu-Min Liu, MD, PhD, FESC）——新竹馬偕紀念醫院心臟內科暨心血管中心主任。學經歷、臨床專長與學術服務。" />
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HD804754WT"></script>
   <script>
@@ -14,256 +15,327 @@
   </script>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- Navigation -->
-  <header>
-    <div class="site-title">劉俞旻醫師 <span>心臟內科</span></div>
-    <nav>
-      <a href="index.html">首頁</a>
-      <a href="health.html">衛教資訊</a>
-      <a href="news.html">最新醫訊</a>
-      <a href="about.html" class="active">關於我</a>
-      <a href="research.html">研究成果</a>
+  <!-- ============ Header / Nav ============ -->
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img class="brand-logo logo-blend" src="images/logo.png" alt="Lawrence Liu, MD" />
+      <span class="brand-text">
+        <span class="brand-name">劉俞旻 醫師</span>
+        <span class="brand-sub">Cardiology · Hsinchu</span>
+      </span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html"><span class="nav-en">Home</span><span class="nav-tc">首頁</span></a>
+      <a href="health.html"><span class="nav-en">Patient Education</span><span class="nav-tc">衛教資訊</span></a>
+      <a href="news.html"><span class="nav-en">Medical Updates</span><span class="nav-tc">最新醫訊</span></a>
+      <a href="about.html" class="active"><span class="nav-en">About</span><span class="nav-tc">關於我</span></a>
+      <a href="research.html"><span class="nav-en">Research</span><span class="nav-tc">研究成果</span></a>
     </nav>
+    <a href="https://www.hc.mmh.org.tw/register_single_doctor.php?depid=14&did=150" target="_blank" rel="noopener" class="btn solid nav-cta">
+      <span>線上掛號</span><span class="arrow">→</span>
+    </a>
   </header>
 
-  <!-- About Hero -->
-  <div class="about-hero">
-    <img src="ESC photo.jpg" alt="劉俞旻醫師" class="about-hero-photo" />
-    <div class="about-hero-text">
-      <span class="eyebrow">關於劉醫師</span>
-      <h1>劉俞旻 醫師</h1>
-      <h2>Lawrence Yu-Min Liu, MD, PhD, FESC</h2>
-      <h2>新竹馬偕紀念醫院 心臟內科暨心血管中心主任</h2>
-      <div class="about-hero-tags">
-        <span class="tag">心導管介入手術</span>
-        <span class="tag">心臟衰竭治療</span>
-        <span class="tag">腫瘤心臟病學</span>
-        <span class="tag">再生醫學</span>
-        <span class="tag">實證醫學</span>
+  <!-- ============ About hero ============ -->
+  <section class="about-page-hero">
+    <div class="visual-col">
+      <img class="portrait" src="images/dr-liu-portrait.jpg" alt="劉俞旻醫師於歐洲心臟學會" />
+      <div class="practice-note">
+        <span class="label">Practice</span>
+        <div class="text">
+          新竹馬偕紀念醫院<br />
+          心臟內科暨心血管中心主任<br />
+          內科部主任
+        </div>
       </div>
     </div>
-  </div>
+    <div class="copy-col">
+      <div class="eyebrow-row">
+        <span class="eyebrow">About Dr. Liu</span>
+      </div>
+      <h1>劉俞旻</h1>
+      <div class="en-name">Lawrence Yu-Min Liu</div>
+      <div class="creds">
+        <span>MD</span><span>·</span><span>PhD</span><span>·</span><span>FESC</span>
+      </div>
+      <p>
+        長年深耕心導管介入手術、心臟衰竭治療、腫瘤心臟病學與再生醫學，
+        擔任多項國際大型臨床試驗共同研究員，致力於將最新實證醫學成果帶給每一位病患。
+      </p>
+      <p>
+        臨床訓練起便深信，好的醫療必須建立在三件事之上——
+        當下最好的證據、對眼前這位病人的理解、以及不間斷的照護。
+      </p>
+    </div>
+  </section>
 
-  <main>
+  <!-- ============ Quote ============ -->
+  <section class="about-quote">
+    <div class="open-quote">&ldquo;</div>
+    <p>每一個治療決定，都應該來自當下最好的證據——以及對眼前這位病人的理解。</p>
+  </section>
 
-    <!-- Current Positions -->
-    <div class="card">
-      <h3>現職</h3>
-      <ul class="timeline">
+  <!-- ============ Expertise + Current Positions ============ -->
+  <section class="about-two-col">
+    <div class="col">
+      <div class="eyebrow-row">
+        <span class="eyebrow">Clinical Expertise</span>
+      </div>
+      <h2>臨床專長</h2>
+      <ul class="expertise-list">
         <li>
-          <span class="year">2024 – 迄今</span>
-          <div class="detail">
-            <strong>內科部主任</strong>
-            <span>新竹馬偕紀念醫院</span>
+          <span class="n">01.</span>
+          <div>
+            <span class="tc">心導管介入治療</span>
+            <span class="en">Coronary &amp; Structural Intervention</span>
           </div>
         </li>
         <li>
-          <span class="year">2024 – 迄今</span>
-          <div class="detail">
-            <strong>心臟內科暨心血管中心主任</strong>
-            <span>新竹馬偕紀念醫院</span>
+          <span class="n">02.</span>
+          <div>
+            <span class="tc">心臟衰竭治療</span>
+            <span class="en">Heart Failure &amp; GDMT optimisation</span>
           </div>
         </li>
         <li>
-          <span class="year">2007 – 迄今</span>
-          <div class="detail">
-            <strong>主治醫師</strong>
-            <span>新竹馬偕紀念醫院 心臟內科</span>
+          <span class="n">03.</span>
+          <div>
+            <span class="tc">腫瘤心臟病學</span>
+            <span class="en">Cardio-oncology</span>
           </div>
         </li>
         <li>
-          <span class="year">2020 – 迄今</span>
-          <div class="detail">
-            <strong>合聘助理教授</strong>
-            <span>國立清華大學 醫學科學系</span>
+          <span class="n">04.</span>
+          <div>
+            <span class="tc">再生醫學</span>
+            <span class="en">Regenerative Cardiology</span>
           </div>
         </li>
         <li>
-          <span class="year">2019 – 迄今</span>
-          <div class="detail">
-            <strong>部定助理教授</strong>
-            <span>馬偕醫學大學 醫學系</span>
+          <span class="n">05.</span>
+          <div>
+            <span class="tc">生物資訊學</span>
+            <span class="en">Bioinformatics</span>
+          </div>
+        </li>
+        <li>
+          <span class="n">06.</span>
+          <div>
+            <span class="tc">實證醫學</span>
+            <span class="en">Evidence-based Medicine</span>
+          </div>
+        </li>
+        <li>
+          <span class="n">07.</span>
+          <div>
+            <span class="tc">系統性回顧與統合分析</span>
+            <span class="en">Systematic Review &amp; Meta-analysis</span>
           </div>
         </li>
       </ul>
     </div>
 
-    <!-- Education -->
-    <div class="two-col">
-      <div class="card">
-        <h3>學歷</h3>
-        <ul class="timeline">
-          <li>
-            <span class="year">2010–2018</span>
-            <div class="detail">
-              <strong>生物醫學博士（PhD）</strong>
-              <span>國立清華大學<br>生物資訊與結構生物研究所</span>
-            </div>
-          </li>
-          <li>
-            <span class="year">1997–2001</span>
-            <div class="detail">
-              <strong>醫學博士（MD）</strong>
-              <span>菲律賓法蒂瑪醫學院</span>
-            </div>
-          </li>
-          <li>
-            <span class="year">1993–1997</span>
-            <div class="detail">
-              <strong>生物科學學士（BSc）</strong>
-              <span>加拿大英屬哥倫比亞大學（UBC）<br>主修：細胞生物與基因</span>
-            </div>
-          </li>
-        </ul>
+    <div class="col">
+      <div class="eyebrow-row">
+        <span class="eyebrow">Current Positions</span>
       </div>
+      <h2>現任職務</h2>
+      <ul class="timeline-list">
+        <li>
+          <span class="y">2024–</span>
+          <span class="t">內科部主任<span class="sub">新竹馬偕紀念醫院</span></span>
+        </li>
+        <li>
+          <span class="y">2024–</span>
+          <span class="t">心臟內科暨心血管中心主任<span class="sub">新竹馬偕紀念醫院</span></span>
+        </li>
+        <li>
+          <span class="y">2007–</span>
+          <span class="t">主治醫師<span class="sub">新竹馬偕紀念醫院 心臟內科</span></span>
+        </li>
+        <li>
+          <span class="y">2020–</span>
+          <span class="t">合聘助理教授<span class="sub">國立清華大學 醫學科學系</span></span>
+        </li>
+        <li>
+          <span class="y">2019–</span>
+          <span class="t">部定助理教授<span class="sub">馬偕醫學大學 醫學系</span></span>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-      <div class="card">
-        <h3>訓練經歷</h3>
-        <ul class="timeline">
-          <li>
-            <span class="year">2005–2007</span>
-            <div class="detail">
-              <strong>心臟內科專科訓練</strong>
-              <span>台北馬偕紀念醫院 心臟內科</span>
-            </div>
-          </li>
-          <li>
-            <span class="year">2002–2005</span>
-            <div class="detail">
-              <strong>內科住院醫師</strong>
-              <span>台北馬偕紀念醫院 內科部</span>
-            </div>
-          </li>
-          <li>
-            <span class="year">2000</span>
-            <div class="detail">
-              <strong>訪問醫學生</strong>
-              <span>麻省總醫院（MGH），波士頓<br>半島醫院中心，紐約</span>
-            </div>
-          </li>
-        </ul>
+  <!-- ============ Education + Training ============ -->
+  <section class="about-two-col" style="background: var(--paper-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
+    <div class="col">
+      <div class="eyebrow-row">
+        <span class="eyebrow">Education</span>
       </div>
+      <h2>學歷</h2>
+      <ul class="timeline-list">
+        <li>
+          <span class="y">2010–18</span>
+          <span class="t">生物醫學博士（PhD）<span class="sub">國立清華大學 生物資訊與結構生物研究所</span></span>
+        </li>
+        <li>
+          <span class="y">1997–01</span>
+          <span class="t">醫學博士（MD）<span class="sub">菲律賓法蒂瑪醫學院</span></span>
+        </li>
+        <li>
+          <span class="y">1993–97</span>
+          <span class="t">生物科學學士（BSc）<span class="sub">加拿大英屬哥倫比亞大學（UBC） · 主修細胞生物與基因</span></span>
+        </li>
+      </ul>
     </div>
 
-    <!-- Specialties -->
-    <div class="card">
-      <h3>專長領域</h3>
-      <div class="badge-list">
-        <span class="badge">心導管介入手術</span>
-        <span class="badge">心臟衰竭治療</span>
-        <span class="badge">腫瘤心臟病學</span>
-        <span class="badge">再生醫學</span>
-        <span class="badge">生物資訊學</span>
-        <span class="badge">實證醫學</span>
-        <span class="badge">系統性回顧與統合分析</span>
+    <div class="col">
+      <div class="eyebrow-row">
+        <span class="eyebrow">Postgraduate Training</span>
       </div>
+      <h2>訓練經歷</h2>
+      <ul class="timeline-list">
+        <li>
+          <span class="y">2005–07</span>
+          <span class="t">心臟內科專科訓練<span class="sub">台北馬偕紀念醫院 心臟內科</span></span>
+        </li>
+        <li>
+          <span class="y">2002–05</span>
+          <span class="t">內科住院醫師<span class="sub">台北馬偕紀念醫院 內科部</span></span>
+        </li>
+        <li>
+          <span class="y">2000</span>
+          <span class="t">訪問醫學生<span class="sub">麻省總醫院（MGH），波士頓<br />半島醫院中心，紐約</span></span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ Academic Service + Honors ============ -->
+  <section class="about-two-col">
+    <div class="col">
+      <div class="eyebrow-row">
+        <span class="eyebrow">Academic Service</span>
+      </div>
+      <h2>學術服務</h2>
+      <ul class="timeline-list">
+        <li>
+          <span class="y">2023–</span>
+          <span class="t">歐洲心臟學會院士（FESC）</span>
+        </li>
+        <li>
+          <span class="y">2025–</span>
+          <span class="t">台灣實證醫學學會 理事</span>
+        </li>
+        <li>
+          <span class="y">2025–</span>
+          <span class="t">國立清華大學 研究倫理委員會委員</span>
+        </li>
+        <li>
+          <span class="y">2023–</span>
+          <span class="t">馬偕紀念醫院 IRB 委員</span>
+        </li>
+        <li>
+          <span class="y">2024–</span>
+          <span class="t">台灣介入性心臟血管醫學會 甄審委員</span>
+        </li>
+      </ul>
     </div>
 
-    <!-- Honors & Service -->
-    <div class="two-col">
-      <div class="card">
-        <h3>學術服務</h3>
-        <ul class="timeline">
-          <li>
-            <span class="year">2023–</span>
-            <div class="detail">
-              <strong>歐洲心臟學會院士（FESC）</strong>
-            </div>
-          </li>
-          <li>
-            <span class="year">2025–</span>
-            <div class="detail">
-              <strong>台灣實證醫學學會 理事</strong>
-            </div>
-          </li>
-          <li>
-            <span class="year">2025–</span>
-            <div class="detail">
-              <strong>國立清華大學 研究倫理委員會委員</strong>
-            </div>
-          </li>
-          <li>
-            <span class="year">2023–</span>
-            <div class="detail">
-              <strong>馬偕紀念醫院 IRB 委員</strong>
-            </div>
-          </li>
-          <li>
-            <span class="year">2024–</span>
-            <div class="detail">
-              <strong>台灣介入性心臟血管醫學會 甄審委員</strong>
-            </div>
-          </li>
-        </ul>
+    <div class="col">
+      <div class="eyebrow-row">
+        <span class="eyebrow">Honors &amp; Certifications</span>
       </div>
+      <h2>榮譽與認證</h2>
+      <ul class="timeline-list">
+        <li>
+          <span class="y">2019</span>
+          <span class="t">最佳論文獎<span class="sub">亞太心臟學會（APSC）</span></span>
+        </li>
+        <li>
+          <span class="y">2016</span>
+          <span class="t">最佳壁報獎<span class="sub">歐洲心臟學會（ESC）</span></span>
+        </li>
+        <li>
+          <span class="y">2007</span>
+          <span class="t">心臟科及介入性心臟科專科醫師<span class="sub">中華民國</span></span>
+        </li>
+        <li>
+          <span class="y">2005</span>
+          <span class="t">內科專科醫師<span class="sub">中華民國</span></span>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-      <div class="card">
-        <h3>榮譽</h3>
-        <ul class="timeline">
-          <li>
-            <span class="year">2019</span>
-            <div class="detail">
-              <strong>最佳論文獎</strong>
-              <span>亞太心臟學會（APSC）</span>
-            </div>
-          </li>
-          <li>
-            <span class="year">2016</span>
-            <div class="detail">
-              <strong>最佳壁報獎</strong>
-              <span>歐洲心臟學會（ESC）</span>
-            </div>
-          </li>
-          <li>
-            <span class="year">2007</span>
-            <div class="detail">
-              <strong>心臟科及介入性心臟科專科醫師</strong>
-              <span>中華民國</span>
-            </div>
-          </li>
-          <li>
-            <span class="year">2005</span>
-            <div class="detail">
-              <strong>內科專科醫師</strong>
-              <span>中華民國</span>
-            </div>
-          </li>
-        </ul>
+  <!-- ============ Contact ============ -->
+  <section class="about-contact">
+    <div class="head">
+      <div class="eyebrow-row" style="margin-bottom: 6px;">
+        <span class="eyebrow">Get in Touch</span>
       </div>
+      <h2>聯絡方式</h2>
     </div>
-
-    <!-- Appointment -->
-    <div class="appointment-cta">
-      <h3>線上掛號</h3>
-      <p>新竹馬偕紀念醫院 心臟內科｜門診時間查詢與線上預約</p>
-      <a href="https://www.hc.mmh.org.tw/register_single_doctor.php?depid=14&did=150" target="_blank" class="btn">
-        前往掛號 →
-      </a>
-    </div>
-
-    <!-- Contact -->
-    <div class="card">
-      <h3>聯絡方式</h3>
-      <div class="contact-grid">
-        <span class="label">醫院</span>
+    <div class="grid">
+      <div class="item">
+        <span class="label">Hospital</span>
         <span class="value">新竹馬偕紀念醫院 心臟內科</span>
-        <span class="label">地址</span>
-        <span class="value">新竹市光復路二段 690 號（郵遞區號 30071）</span>
-        <span class="label">電話</span>
+      </div>
+      <div class="item">
+        <span class="label">Address</span>
+        <span class="value">新竹市光復路二段 690 號（30071）</span>
+      </div>
+      <div class="item">
+        <span class="label">Phone</span>
         <span class="value">(03) 688-9595 分機 2331</span>
-        <span class="label">電子郵件</span>
+      </div>
+      <div class="item">
+        <span class="label">Email</span>
         <span class="value"><a href="mailto:drlawrenceliu@gmail.com">drlawrenceliu@gmail.com</a></span>
       </div>
     </div>
+  </section>
 
-  </main>
-
-  <footer>
-    <p>© 2026 劉俞旻醫師 Lawrence Yu-Min Liu, MD, PhD, FESC｜新竹馬偕紀念醫院 心臟內科</p>
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="row">
+      <div class="booking">
+        <div class="eyebrow-row" style="margin-bottom: 18px;">
+          <span class="eyebrow">Online Appointment</span>
+        </div>
+        <h3>線上掛號</h3>
+        <p>新竹馬偕紀念醫院 心臟內科<br />門診時間查詢與線上預約</p>
+        <a href="https://www.hc.mmh.org.tw/register_single_doctor.php?depid=14&did=150" target="_blank" rel="noopener" class="btn solid" style="margin-top: 28px;">
+          <span>前往掛號系統</span><span class="arrow">→</span>
+        </a>
+      </div>
+      <div>
+        <div class="col-head">Quick Links</div>
+        <div class="quick-links">
+          <a href="index.html"><span class="en">Home</span><span class="tc">首頁</span></a>
+          <a href="health.html"><span class="en">Patient Education</span><span class="tc">衛教資訊</span></a>
+          <a href="news.html"><span class="en">Medical Updates</span><span class="tc">最新醫訊</span></a>
+          <a href="about.html"><span class="en">About</span><span class="tc">關於我</span></a>
+          <a href="research.html"><span class="en">Research</span><span class="tc">研究成果</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="col-head">Practice</div>
+        <div class="practice-block">
+          新竹馬偕紀念醫院<br />
+          心臟內科暨心血管中心<br />
+          <span class="en">MacKay Memorial Hospital · Hsinchu</span>
+        </div>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 劉俞旻醫師 Lawrence Yu-Min Liu, MD, PhD, FESC</span>
+      <span class="motto">Evidence · Compassion · Continuity</span>
+    </div>
   </footer>
 
 </body>

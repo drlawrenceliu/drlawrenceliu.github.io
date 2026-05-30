@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>衛教資訊｜劉俞旻醫師</title>
+  <meta name="description" content="劉俞旻醫師心臟衛教專欄——用淺顯易懂的語言介紹心臟疾病的成因、症狀、治療與日常照護。" />
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HD804754WT"></script>
   <script>
@@ -14,210 +15,178 @@
   </script>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- Navigation -->
-  <header>
-    <div class="site-title">劉俞旻醫師 <span>心臟內科</span></div>
-    <nav>
-      <a href="index.html">首頁</a>
-      <a href="health.html" class="active">衛教資訊</a>
-      <a href="news.html">最新醫訊</a>
-      <a href="about.html">關於我</a>
-      <a href="research.html">研究成果</a>
+  <!-- ============ Header / Nav ============ -->
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img class="brand-logo logo-blend" src="images/logo.png" alt="Lawrence Liu, MD" />
+      <span class="brand-text">
+        <span class="brand-name">劉俞旻 醫師</span>
+        <span class="brand-sub">Cardiology · Hsinchu</span>
+      </span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html"><span class="nav-en">Home</span><span class="nav-tc">首頁</span></a>
+      <a href="health.html" class="active"><span class="nav-en">Patient Education</span><span class="nav-tc">衛教資訊</span></a>
+      <a href="news.html"><span class="nav-en">Medical Updates</span><span class="nav-tc">最新醫訊</span></a>
+      <a href="about.html"><span class="nav-en">About</span><span class="nav-tc">關於我</span></a>
+      <a href="research.html"><span class="nav-en">Research</span><span class="nav-tc">研究成果</span></a>
     </nav>
+    <a href="https://www.hc.mmh.org.tw/register_single_doctor.php?depid=14&did=150" target="_blank" rel="noopener" class="btn solid nav-cta">
+      <span>線上掛號</span><span class="arrow">→</span>
+    </a>
   </header>
 
-  <!-- Page Hero -->
-  <div class="page-hero">
-    <h1>心臟健康衛教資訊</h1>
-    <p>依主題分類整理，幫助您快速找到所需文章。內容涵蓋心臟相關疾病的預防、診斷與治療。</p>
+  <!-- ============ Page header ============ -->
+  <section class="listing-header">
+    <div class="eyebrow-row">
+      <span class="eyebrow">For Patients · Patient Education</span>
+    </div>
+    <h1>衛教資訊</h1>
+    <p class="lead">
+      用淺顯易懂的語言，介紹心臟疾病的成因、症狀、治療與日常照護。
+      每篇文章皆以最新國際指引為基礎，並標註原始參考來源。
+    </p>
+  </section>
+
+  <!-- ============ Filter row ============ -->
+  <div class="filter-row">
+    <span class="filter-label">Filter</span>
+    <a href="#all" class="active"><span class="cat-tc">全部</span><span class="cat-count">09</span></a>
+    <a href="#coronary"><span class="cat-tc">冠狀動脈疾病</span><span class="cat-count">01</span></a>
+    <a href="#lipid"><span class="cat-tc">血脂與代謝</span><span class="cat-count">03</span></a>
+    <a href="#prevention"><span class="cat-tc">預防保健</span><span class="cat-count">01</span></a>
+    <a href="#heartfailure"><span class="cat-tc">心臟衰竭</span><span class="cat-count">01</span></a>
+    <a href="#arrhythmia"><span class="cat-tc">心律不整</span><span class="cat-count">01</span></a>
+    <a href="#special"><span class="cat-tc">特殊族群照護</span><span class="cat-count">02</span></a>
   </div>
 
-  <main>
+  <!-- ============ Article grid ============ -->
+  <section class="listing-grid">
 
-    <!-- 冠狀動脈疾病 -->
-    <div class="category-section">
-      <div class="category-head">
-        <span class="icon">🫀</span>
-        <h3>冠狀動脈疾病</h3>
-        <span class="count">1 篇</span>
-      </div>
-      <div class="article-grid three-col">
-        <a href="article-catheterization.html" style="text-decoration:none;">
-          <div class="article-card">
-            <div class="article-card-thumb"></div>
-            <div class="article-card-body">
-              <span class="category">冠狀動脈疾病</span>
-              <h4>心導管手術是什麼？我需要害怕嗎？</h4>
-              <p>心導管檢查與介入手術是診斷和治療冠狀動脈疾病的重要工具。了解手術過程、風險與注意事項，幫助您做好準備。</p>
-              <div class="article-card-link">閱讀全文 ›</div>
-            </div>
-          </div>
+    <a class="listing-card" href="article-catheterization.html">
+      <div class="thumb" style="background-image: url('https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=1200&q=80&auto=format&fit=crop');"></div>
+      <div class="cat-en">Coronary Artery Disease</div>
+      <div class="cat-tc">冠狀動脈疾病</div>
+      <h3>心導管手術是什麼？我需要害怕嗎？</h3>
+      <p>了解心導管檢查與介入手術的過程、風險與注意事項，讓您做好充分準備。</p>
+      <span class="read-link">Read article →</span>
+    </a>
+
+    <a class="listing-card" href="article-lpa.html">
+      <div class="thumb" style="background-image: url('https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=1200&q=80&auto=format&fit=crop');"></div>
+      <div class="cat-en">Lipoprotein(a)</div>
+      <div class="cat-tc">血脂與遺傳</div>
+      <h3>脂蛋白(a)：被忽略的心血管危險因子</h3>
+      <p>每 5 位成人就有 1 人 Lp(a) 偏高、心肌梗塞風險增加 2–3 倍。一生只需測一次，新一代標靶藥物正在改變治療。</p>
+      <span class="read-link">Read article →</span>
+    </a>
+
+    <a class="listing-card" href="article-obesity.html">
+      <div class="thumb" style="background-image: url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1200&q=80&auto=format&fit=crop');"></div>
+      <div class="cat-en">Obesity &amp; Metabolism</div>
+      <div class="cat-tc">肥胖與代謝</div>
+      <h3>肥胖與心臟健康：認識肥胖、積極治療</h3>
+      <p>肥胖是心臟病、糖尿病、心房顫動的重要危險因子。了解現代醫學提供的飲食、藥物與手術治療選項。</p>
+      <span class="read-link">Read article →</span>
+    </a>
+
+    <a class="listing-card" href="article-sglt2.html">
+      <div class="thumb" style="background-image: url('https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=1200&q=80&auto=format&fit=crop');"></div>
+      <div class="cat-en">Diabetes &amp; Heart</div>
+      <div class="cat-tc">糖尿病與心臟</div>
+      <h3>糖尿病患者如何保護心臟？SGLT2 抑制劑的新發現</h3>
+      <p>SGLT2 抑制劑除了控制血糖，還能顯著降低心臟衰竭住院率與心血管死亡風險。</p>
+      <span class="read-link">Read article →</span>
+    </a>
+
+    <a class="listing-card" href="article-lifestyle.html">
+      <div class="thumb" style="background-image: url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1200&q=80&auto=format&fit=crop');"></div>
+      <div class="cat-en">Preventive Care</div>
+      <div class="cat-tc">預防保健</div>
+      <h3>護心生活習慣：從飲食、運動到壓力管理</h3>
+      <p>心臟病的預防從日常生活開始。均衡飲食、規律運動、戒菸、控制體重——維持心臟健康最有效的方法。</p>
+      <span class="read-link">Read article →</span>
+    </a>
+
+    <a class="listing-card" href="article-heartfailure.html">
+      <div class="thumb" style="background-image: url('https://images.unsplash.com/photo-1631815587646-b85a1bb027e1?w=1200&q=80&auto=format&fit=crop');"></div>
+      <div class="cat-en">Heart Failure</div>
+      <div class="cat-tc">心臟衰竭</div>
+      <h3>什麼是心臟衰竭？如何早期發現？</h3>
+      <p>心臟衰竭並不代表心臟「停了」，而是幫浦功能下降，無法提供身體足夠的血液。了解症狀與早期診斷。</p>
+      <span class="read-link">Read article →</span>
+    </a>
+
+    <a class="listing-card" href="article-afib.html">
+      <div class="thumb" style="background-image: url('https://images.unsplash.com/photo-1559757175-7cb036e0d465?w=1200&q=80&auto=format&fit=crop');"></div>
+      <div class="cat-en">Arrhythmia</div>
+      <div class="cat-tc">心律不整</div>
+      <h3>心房顫動：認識中風風險與治療選擇</h3>
+      <p>心房顫動是最常見的心律不整，會大幅增加中風風險。了解抗凝血藥物、心律控制與何時需要進一步檢查。</p>
+      <span class="read-link">Read article →</span>
+    </a>
+
+    <a class="listing-card" href="article-oncocardiology.html">
+      <div class="thumb" style="background-image: url('https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=1200&q=80&auto=format&fit=crop');"></div>
+      <div class="cat-en">Cardio-oncology</div>
+      <div class="cat-tc">腫瘤心臟病學</div>
+      <h3>癌症治療與心臟：您需要了解的事</h3>
+      <p>部分化療或標靶藥物可能影響心臟功能。腫瘤心臟病學幫助癌症患者在治療期間同時保護心血管健康。</p>
+      <span class="read-link">Read article →</span>
+    </a>
+
+    <a class="listing-card" href="article-avf.html">
+      <div class="thumb" style="background-image: url('https://images.unsplash.com/photo-1631217872822-1c2546d6b864?w=1200&q=80&auto=format&fit=crop');"></div>
+      <div class="cat-en">Vascular Access Care</div>
+      <div class="cat-tc">腎臟照護</div>
+      <h3>洗腎廔管照護與 PTA 血管整形術</h3>
+      <p>廔管是洗腎患者的「生命線」。了解廔管的日常照護、警訊，以及廔管狹窄時的 PTA 微創手術。</p>
+      <span class="read-link">Read article →</span>
+    </a>
+
+  </section>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="row">
+      <div class="booking">
+        <div class="eyebrow-row" style="margin-bottom: 18px;">
+          <span class="eyebrow">Online Appointment</span>
+        </div>
+        <h3>線上掛號</h3>
+        <p>新竹馬偕紀念醫院 心臟內科<br />門診時間查詢與線上預約</p>
+        <a href="https://www.hc.mmh.org.tw/register_single_doctor.php?depid=14&did=150" target="_blank" rel="noopener" class="btn solid" style="margin-top: 28px;">
+          <span>前往掛號系統</span><span class="arrow">→</span>
         </a>
+      </div>
+      <div>
+        <div class="col-head">Quick Links</div>
+        <div class="quick-links">
+          <a href="index.html"><span class="en">Home</span><span class="tc">首頁</span></a>
+          <a href="health.html"><span class="en">Patient Education</span><span class="tc">衛教資訊</span></a>
+          <a href="news.html"><span class="en">Medical Updates</span><span class="tc">最新醫訊</span></a>
+          <a href="about.html"><span class="en">About</span><span class="tc">關於我</span></a>
+          <a href="research.html"><span class="en">Research</span><span class="tc">研究成果</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="col-head">Practice</div>
+        <div class="practice-block">
+          新竹馬偕紀念醫院<br />
+          心臟內科暨心血管中心<br />
+          <span class="en">MacKay Memorial Hospital · Hsinchu</span>
+        </div>
       </div>
     </div>
-
-    <!-- 血脂與代謝 -->
-    <div class="category-section">
-      <div class="category-head">
-        <span class="icon">🧬</span>
-        <h3>血脂與代謝</h3>
-        <span class="count">3 篇</span>
-      </div>
-      <div class="article-grid three-col">
-        <a href="article-lpa.html" style="text-decoration:none;">
-          <div class="article-card">
-            <div class="article-card-thumb"></div>
-            <div class="article-card-body">
-              <span class="category">血脂與遺傳</span>
-              <h4>脂蛋白(a)：被忽略的心血管危險因子</h4>
-              <p>每 5 位成人就有 1 人 Lp(a) 偏高、心肌梗塞風險增加 2–3 倍，但絕大多數人從未檢驗。一生只需測一次，新一代標靶藥物正在改變治療。</p>
-              <div class="article-card-link">閱讀全文 ›</div>
-            </div>
-          </div>
-        </a>
-
-        <a href="article-obesity.html" style="text-decoration:none;">
-          <div class="article-card">
-            <div class="article-card-thumb"></div>
-            <div class="article-card-body">
-              <span class="category">肥胖與代謝</span>
-              <h4>肥胖與心臟健康：認識肥胖、積極治療</h4>
-              <p>肥胖是心臟病、糖尿病、心房顫動的重要危險因子。了解肥胖如何傷害心臟，以及現代醫學提供的飲食、藥物與手術治療選項。</p>
-              <div class="article-card-link">閱讀全文 ›</div>
-            </div>
-          </div>
-        </a>
-
-        <a href="article-sglt2.html" style="text-decoration:none;">
-          <div class="article-card">
-            <div class="article-card-thumb"></div>
-            <div class="article-card-body">
-              <span class="category">糖尿病與心臟</span>
-              <h4>糖尿病患者如何保護心臟？SGLT2 抑制劑的新發現</h4>
-              <p>近年研究顯示，SGLT2 抑制劑（如恩格列淨、達格列淨）除了控制血糖，還能顯著降低心臟衰竭住院率與心血管死亡風險。</p>
-              <div class="article-card-link">閱讀全文 ›</div>
-            </div>
-          </div>
-        </a>
-      </div>
+    <div class="legal">
+      <span>© 2026 劉俞旻醫師 Lawrence Yu-Min Liu, MD, PhD, FESC</span>
+      <span class="motto">Evidence · Compassion · Continuity</span>
     </div>
-
-    <!-- 預防保健 -->
-    <div class="category-section">
-      <div class="category-head">
-        <span class="icon">🌿</span>
-        <h3>預防保健</h3>
-        <span class="count">1 篇</span>
-      </div>
-      <div class="article-grid three-col">
-        <a href="article-lifestyle.html" style="text-decoration:none;">
-          <div class="article-card">
-            <div class="article-card-thumb"></div>
-            <div class="article-card-body">
-              <span class="category">預防保健</span>
-              <h4>護心生活習慣：從飲食、運動到壓力管理</h4>
-              <p>心臟病的預防從日常生活開始。均衡飲食、規律運動、戒菸、控制體重，是維持心臟健康最有效的方法。</p>
-              <div class="article-card-link">閱讀全文 ›</div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <!-- 心臟衰竭 -->
-    <div class="category-section">
-      <div class="category-head">
-        <span class="icon">💗</span>
-        <h3>心臟衰竭</h3>
-        <span class="count">1 篇</span>
-      </div>
-      <div class="article-grid three-col">
-        <a href="article-heartfailure.html" style="text-decoration:none;">
-          <div class="article-card">
-            <div class="article-card-thumb"></div>
-            <div class="article-card-body">
-              <span class="category">心臟衰竭</span>
-              <h4>什麼是心臟衰竭？如何早期發現？</h4>
-              <p>心臟衰竭並不代表心臟「停了」，而是心臟的幫浦功能下降，無法提供身體足夠的血液。了解症狀、早期診斷是治療成功的關鍵。</p>
-              <div class="article-card-link">閱讀全文 ›</div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <!-- 心律不整 -->
-    <div class="category-section">
-      <div class="category-head">
-        <span class="icon">⚡</span>
-        <h3>心律不整</h3>
-        <span class="count">1 篇</span>
-      </div>
-      <div class="article-grid three-col">
-        <a href="article-afib.html" style="text-decoration:none;">
-          <div class="article-card">
-            <div class="article-card-thumb"></div>
-            <div class="article-card-body">
-              <span class="category">心律不整</span>
-              <h4>心房顫動：認識中風風險與治療選擇</h4>
-              <p>心房顫動是最常見的心律不整，會大幅增加中風風險。了解抗凝血藥物治療、心律控制策略，以及何時需要進一步檢查。</p>
-              <div class="article-card-link">閱讀全文 ›</div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <!-- 特殊族群照護 -->
-    <div class="category-section">
-      <div class="category-head">
-        <span class="icon">🎗️</span>
-        <h3>特殊族群照護</h3>
-        <span class="count">2 篇</span>
-      </div>
-      <div class="article-grid three-col">
-        <a href="article-oncocardiology.html" style="text-decoration:none;">
-          <div class="article-card">
-            <div class="article-card-thumb"></div>
-            <div class="article-card-body">
-              <span class="category">腫瘤心臟病學</span>
-              <h4>癌症治療與心臟：您需要了解的事</h4>
-              <p>部分化療或標靶藥物可能影響心臟功能。腫瘤心臟病學幫助癌症患者在治療期間同時保護心血管健康，兼顧抗癌與護心。</p>
-              <div class="article-card-link">閱讀全文 ›</div>
-            </div>
-          </div>
-        </a>
-
-        <a href="article-avf.html" style="text-decoration:none;">
-          <div class="article-card">
-            <div class="article-card-thumb"></div>
-            <div class="article-card-body">
-              <span class="category">腎臟照護</span>
-              <h4>洗腎廔管照護與 PTA 血管整形術</h4>
-              <p>廔管是洗腎患者的「生命線」。了解廔管的日常照護、常見問題警訊，以及當廔管狹窄時如何透過 PTA 微創手術恢復暢通。</p>
-              <div class="article-card-link">閱讀全文 ›</div>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <!-- Notice -->
-    <div class="card" style="margin-top: 40px; text-align: center;">
-      <p style="color: var(--text-muted); font-size: 0.92rem;">
-        本頁文章將陸續更新。如有急性症狀（胸痛、喘不過氣、心悸），請立即就醫或撥打 <strong>119</strong>。<br>
-        衛教內容僅供參考，無法取代醫師的診療建議。
-      </p>
-    </div>
-
-  </main>
-
-  <footer>
-    <p>© 2026 劉俞旻醫師 Lawrence Yu-Min Liu, MD, PhD, FESC｜新竹馬偕紀念醫院 心臟內科</p>
   </footer>
 
 </body>
