@@ -355,15 +355,21 @@ header:not(.site-header) nav a.active { color: var(--accent); }
 
 /* =====================
    Homepage hero
+   Desktop grid: left column = copy (top) + signature card (bottom),
+   right column = photo spanning both rows.
    ===================== */
 .hero {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
+  column-gap: 80px;
+  row-gap: 24px;
   padding: 100px 64px 120px;
-  gap: 80px;
   align-items: center;
   background: var(--paper);
 }
+.hero .hero-copy      { grid-column: 1; grid-row: 1; }
+.hero .hero-visual    { grid-column: 2; grid-row: 1 / span 2; align-self: stretch; }
+.hero .signature-card { grid-column: 1; grid-row: 2; }
 
 .hero-copy h1 {
   font-family: var(--serif-tc);
@@ -2340,9 +2346,14 @@ main.narrow { max-width: 800px; }
   .hero,
   .about-section {
     grid-template-columns: 1fr;
-    gap: 56px;
+    gap: 40px;
     padding: 80px 32px;
   }
+  /* On mobile the three hero children stack and reorder so the photo
+     sits between the buttons and the animated signature card. */
+  .hero .hero-copy      { grid-column: 1; grid-row: auto; order: 1; }
+  .hero .hero-visual    { grid-column: 1; grid-row: auto; order: 2; align-self: auto; }
+  .hero .signature-card { grid-column: 1; grid-row: auto; order: 3; margin-top: 0; }
   .hero-copy h1 { font-size: 56px; }
   .hero-visual .hero-photo { max-height: 560px; }
   .section,
@@ -2370,11 +2381,20 @@ main.narrow { max-width: 800px; }
   .card-grid,
   .research-stats,
   .research-areas,
-  .about-photos,
   .two-col,
   .two-box {
     grid-template-columns: 1fr;
   }
+  /* About-section photos stay side-by-side on phone but at half size. */
+  .about-photos { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .about-photos .about-photo img { height: 200px; }
+  .about-photos .about-photo.offset { margin-top: 0; }
+  .about-photos .about-photo figcaption { margin-top: 8px; }
+  .about-photos .about-photo .cap-en { font-size: 10px; letter-spacing: 0.22em; }
+  .about-photos .about-photo .cap-tc { font-size: 13px; }
+  /* Brand name stays on one line on phone, slightly smaller font. */
+  .site-header .brand-name { font-size: 14px; white-space: nowrap; }
+  .site-header .brand-sub  { font-size: 11px; white-space: nowrap; }
   .director-quote { grid-column: 1 / 2; }
   .article-body { padding: 32px 24px; }
   .card { padding: 26px 22px; }
