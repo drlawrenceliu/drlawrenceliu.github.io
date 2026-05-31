@@ -37,6 +37,19 @@
   --accent-2: #7A2222;
   --accent-3: #C44F3E;
 
+  /* Pagefind UI — match editorial palette / flat aesthetic */
+  --pagefind-ui-scale: 1;
+  --pagefind-ui-primary: var(--accent);
+  --pagefind-ui-text: var(--ink-2);
+  --pagefind-ui-background: var(--paper);
+  --pagefind-ui-border: var(--line);
+  --pagefind-ui-tag: var(--paper-2);
+  --pagefind-ui-border-width: 1px;
+  --pagefind-ui-border-radius: 0;
+  --pagefind-ui-image-border-radius: 0;
+  --pagefind-ui-image-box-ratio: 3 / 2;
+  --pagefind-ui-font: var(--sans-tc);
+
   /* Legacy aliases — keep existing article/page styles working */
   --bg: var(--paper);
   --surface: var(--paper);
@@ -1073,6 +1086,20 @@ footer:not(.site-footer) p { line-height: 1.7; }
   letter-spacing: 0.03em;
 }
 
+/* Search bar (Pagefind UI host — sits between page header and filter/grid) */
+.search-section {
+  padding: 28px 64px;
+  background: var(--paper-2);
+  border-bottom: 1px solid var(--line);
+}
+.search-section .search-wrap { max-width: 720px; margin: 0 auto; }
+.search-section .pagefind-ui form { background: var(--paper); }
+.search-section .pagefind-ui__search-input,
+.search-section .pagefind-ui__search-clear {
+  font-family: var(--sans-tc) !important;
+  letter-spacing: 0.02em;
+}
+
 /* Filter row (health page categories) */
 .filter-row {
   padding: 28px 64px;
@@ -1794,6 +1821,7 @@ footer:not(.site-footer) p { line-height: 1.7; }
 /* Responsive overrides for the new editorial layouts */
 @media (max-width: 1100px) {
   .listing-header { padding: 64px 32px; }
+  .search-section { padding: 20px 32px; }
   .filter-row { padding: 22px 32px; }
   .listing-grid { padding: 56px 32px 80px; grid-template-columns: repeat(2, 1fr); }
   .news-featured { padding: 56px 32px 32px; }

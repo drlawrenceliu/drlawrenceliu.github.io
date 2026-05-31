@@ -14,6 +14,7 @@
     gtag('config', 'G-HD804754WT');
   </script>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
@@ -51,6 +52,11 @@
       用淺顯易懂的語言，介紹心臟疾病的成因、症狀、治療與日常照護。
       每篇文章皆以最新國際指引為基礎，並標註原始參考來源。
     </p>
+  </section>
+
+  <!-- ============ Search ============ -->
+  <section class="search-section">
+    <div class="search-wrap"><div id="search"></div></div>
   </section>
 
   <!-- ============ Filter row ============ -->
@@ -188,6 +194,30 @@
       <span class="motto">Evidence · Compassion · Continuity</span>
     </div>
   </footer>
+
+  <!-- Pagefind UI init (search index is built by GitHub Actions at /pagefind/) -->
+  <script src="/pagefind/pagefind-ui.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      new PagefindUI({
+        element: "#search",
+        showSubResults: true,
+        translations: {
+          placeholder: "搜尋衛教文章…",
+          clear_search: "清除",
+          load_more: "載入更多結果",
+          search_label: "搜尋",
+          filters_label: "篩選",
+          zero_results: "沒有找到符合「[SEARCH_TERM]」的文章",
+          many_results: "[COUNT] 篇符合「[SEARCH_TERM]」的文章",
+          one_result: "[COUNT] 篇符合「[SEARCH_TERM]」的文章",
+          alt_search: "「[SEARCH_TERM]」沒有結果。改顯示「[DIFFERENT_TERM]」的結果",
+          search_suggestion: "「[SEARCH_TERM]」沒有結果。試試以下關鍵字：",
+          searching: "搜尋「[SEARCH_TERM]」中…"
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
