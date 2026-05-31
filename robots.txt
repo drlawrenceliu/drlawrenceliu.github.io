@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://drlawrenceliu.com/sitemap.xml
