@@ -21,6 +21,15 @@
   --paper-3:  #EAE6DC;
   --paper-4:  #1A1715;
 
+  /* Ink + accent values for use ON the dark --paper-4 band.
+     The normal --accent (#9B2C2C) only reaches ~2:1 against #1A1715,
+     so dark sections use the lightened warm red instead. */
+  --ink-on-dark:    #F4F1EA;
+  --ink-on-dark-2:  #C9C4B8;
+  --ink-on-dark-3:  #9A958A;
+  --accent-on-dark: #E39B96;
+  --line-on-dark:   #38322E;
+
   /* Ink */
   --ink:      #0F0F0F;
   --ink-2:    #2D2D2D;
@@ -561,6 +570,15 @@ header:not(.site-header) nav a.active { color: var(--accent); }
   border-bottom: 1px solid var(--line);
 }
 
+/* Deeper cream band. The old .alt step (#FAFAF7 → #F2EFE8) is barely 2%
+   of lightness apart and reads as one continuous wall on a phone screen;
+   .band steps far enough that the section actually separates. */
+.section.band {
+  background: var(--paper-3);
+  border-top: 1px solid var(--line-2);
+  border-bottom: 1px solid var(--line-2);
+}
+
 .section-head {
   display: flex;
   justify-content: space-between;
@@ -609,6 +627,15 @@ header:not(.site-header) nav a.active { color: var(--accent); }
   grid-template-columns: repeat(3, 1fr);
   gap: 36px;
 }
+
+/* Two-up variant — homepage previews show 2 cards, the full set lives on
+   the listing page behind the section link. */
+.card-grid.two {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+}
+.card-grid.two .article-card-thumb { height: 300px; }
+.card-grid.two .health-card .thumb { height: 260px; }
 
 .article-card {
   background: transparent;
@@ -689,9 +716,9 @@ header:not(.site-header) nav a.active { color: var(--accent); }
   letter-spacing: 0.04em;
 }
 
-/* Health cards: paper inset, padded body */
+/* Health cards: soft inset against the plain-paper section, padded body */
 .health-card {
-  background: var(--paper);
+  background: var(--paper-2);
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -757,10 +784,12 @@ header:not(.site-header) nav a.active { color: var(--accent); }
   align-items: center;
 }
 
+/* One portrait + the director quote stacked beneath it. (Was a 2-up photo
+   pair; the second offset photo was cut to calm the section down.) */
 .about-photos {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
+  grid-template-columns: 1fr;
+  gap: 24px;
 }
 .about-photos .about-photo {
   margin: 0;
@@ -799,7 +828,7 @@ header:not(.site-header) nav a.active { color: var(--accent); }
 }
 
 .director-quote {
-  grid-column: 1 / 3;
+  grid-column: 1 / -1;
   padding: 32px 28px;
   background: var(--paper-2);
   border-left: 2px solid var(--accent);
@@ -876,6 +905,43 @@ header:not(.site-header) nav a.active { color: var(--accent); }
   font-size: 15px;
   line-height: 1.8;
   color: var(--ink-2);
+}
+
+/* ---------------------
+   Dark variant of the homepage About block.
+   Closes the page on the near-black --paper-4 so the four homepage
+   sections read as four distinct bands rather than one cream field.
+   All ink + accent values swap to their -on-dark counterparts.
+   --------------------- */
+.about-section.dark {
+  background: var(--paper-4);
+  border-top: 1px solid var(--paper-4);
+}
+.about-section.dark .about-copy h2 { color: var(--ink-on-dark); }
+.about-section.dark .about-copy .creds-row { color: var(--ink-on-dark-2); }
+.about-section.dark .about-copy .lead { color: var(--ink-on-dark-2); }
+.about-section.dark .eyebrow { color: var(--accent-on-dark); }
+.about-section.dark .eyebrow-row::before { background: var(--accent-on-dark); }
+
+.about-section.dark .about-photo figcaption .cap-en { color: var(--accent-on-dark); }
+.about-section.dark .about-photo figcaption .cap-tc { color: var(--ink-on-dark-2); }
+
+.about-section.dark .director-quote {
+  background: transparent;
+  border-left: 2px solid var(--accent-on-dark);
+}
+.about-section.dark .director-quote .label { color: var(--accent-on-dark); }
+.about-section.dark .director-quote p { color: var(--ink-on-dark); }
+
+/* Outline button has to invert on the dark band or it disappears. */
+.about-section.dark .btn.outline {
+  color: var(--ink-on-dark);
+  border-color: var(--ink-on-dark-3);
+}
+.about-section.dark .btn.outline:hover {
+  background: var(--ink-on-dark);
+  color: var(--paper-4);
+  border-color: var(--ink-on-dark);
 }
 
 /* =====================
@@ -966,6 +1032,18 @@ header:not(.site-header) nav a.active { color: var(--accent); }
    Tighter padding since there's no upper booking/links/practice block. */
 .site-footer.minimal { padding: 32px 64px; }
 .site-footer.minimal .legal { margin-top: 0; }
+/* When the minimal footer sits directly under the dark About band it carries
+   the dark through, so the page closes on one base instead of flashing back
+   to cream for a 32px legal strip. */
+.about-section.dark + .site-footer.minimal {
+  background: var(--paper-4);
+  border-top: 1px solid var(--line-on-dark);
+  color: var(--ink-on-dark-3);
+}
+.about-section.dark + .site-footer.minimal .legal,
+.about-section.dark + .site-footer.minimal .legal .motto {
+  color: var(--ink-on-dark-3);
+}
 .site-footer .row {
   display: grid;
   grid-template-columns: 1.2fr 1fr 1fr;
@@ -2077,7 +2155,14 @@ main.narrow { max-width: 800px; }
   margin-bottom: 14px;
   line-height: 1.95;
   letter-spacing: 0.02em;
+  /* Journal citations contain unbreakable runs like
+     "ACC/AHA/AACVPR/ABC/ACPM/ADA/AGS/APhA/ASPC/NLA/PCNA" that are wider than
+     a phone screen and would otherwise force the page to scroll sideways. */
+  overflow-wrap: break-word;
 }
+.article-body li,
+.article-body h2,
+.article-body h3 { overflow-wrap: break-word; }
 
 .article-body ul {
   margin: 0 0 16px 22px;
@@ -2158,6 +2243,24 @@ main.narrow { max-width: 800px; }
 }
 .score-table tr:nth-child(even) td,
 .drug-table tr:nth-child(even) td { background: var(--paper-2); }
+
+/* On a phone these tables are wider than the viewport and used to push the
+   whole page sideways. Make each table its own horizontal scroll area so the
+   article column itself never scrolls. */
+@media (max-width: 760px) {
+  .score-table,
+  .drug-table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    font-size: 0.85rem;
+  }
+  .score-table th,
+  .drug-table th,
+  .score-table td,
+  .drug-table td { padding: 10px 12px; }
+}
 
 .two-box {
   display: grid;
@@ -2411,15 +2514,16 @@ main.narrow { max-width: 800px; }
   .section-head { flex-direction: column; align-items: flex-start; }
   .section-head h2 { font-size: 36px; }
   .card-grid,
+  .card-grid.two,
   .research-stats,
   .research-areas,
   .two-col,
   .two-box {
     grid-template-columns: 1fr;
   }
-  /* About-section photos stay side-by-side on phone but at half size. */
-  .about-photos { grid-template-columns: 1fr 1fr; gap: 12px; }
-  .about-photos .about-photo img { height: 200px; }
+  /* Single About photo now spans the full width on phone. */
+  .about-photos { grid-template-columns: 1fr; gap: 16px; }
+  .about-photos .about-photo img { height: 240px; }
   .about-photos .about-photo.offset { margin-top: 0; }
   .about-photos .about-photo figcaption { margin-top: 8px; }
   .about-photos .about-photo .cap-en { font-size: 10px; letter-spacing: 0.22em; }
@@ -2427,8 +2531,13 @@ main.narrow { max-width: 800px; }
   /* Brand name stays on one line on phone, slightly smaller font. */
   .site-header .brand-name { font-size: 14px; white-space: nowrap; }
   .site-header .brand-sub  { font-size: 11px; white-space: nowrap; }
-  /* Quote spans both columns (photos are 2-col on mobile too) */
-  .director-quote { grid-column: 1 / 3; padding: 24px 20px; }
+  /* Shrink the signature logo and tighten its gaps so the brand and the
+     booking CTA share one row — otherwise the CTA wraps onto a line of its
+     own and the header eats three rows before any content appears. */
+  .site-header .brand-logo { height: 36px; }
+  .site-header .brand { gap: 10px; }
+  .site-header .brand-text { padding-left: 10px; }
+  .director-quote { padding: 24px 20px; }
   .director-quote p { font-size: 15px; }
   /* About-section big name shrinks so 劉俞旻 醫師 doesn't break into two lines */
   .about-copy h2 { font-size: 40px; white-space: nowrap; }
@@ -2474,4 +2583,72 @@ main.narrow { max-width: 800px; }
     white-space: nowrap;
   }
   .site-footer .legal { flex-direction: column; gap: 8px; }
+
+  /* ---------------------------------------------------------------
+     Mobile density pass — the phone layout was a very long scroll of
+     full-length card blurbs. Below: clamp the prose, shrink the
+     thumbnails, and drop decorative elements that cost height and
+     bandwidth without carrying information on a small screen.
+     --------------------------------------------------------------- */
+
+  /* Card blurbs clamp to 2 lines. The full text is on the article page;
+     on a phone these paragraphs were running 4–5 lines each. */
+  .article-card p,
+  .health-card p,
+  .listing-grid .listing-card p,
+  .news-archive .item p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.7;
+  }
+
+  /* Shorter thumbnails — 260px of photo before every headline pushed the
+     second card entirely below the fold. */
+  .article-card-thumb,
+  .card-grid.two .article-card-thumb { height: 180px; margin-bottom: 16px; }
+  .health-card .thumb,
+  .card-grid.two .health-card .thumb,
+  .listing-grid .listing-card .thumb { height: 170px; }
+  .health-card .body { padding: 20px 20px 24px; }
+
+  /* The animated ECG signature is a desktop flourish: an autoplaying GIF
+     that adds ~220px of height and carries no information. */
+  .signature-card { display: none; }
+
+  /* Section headings and gaps tighten up. */
+  .section-head { margin-bottom: 36px; }
+  .section-head p { font-size: 14px; line-height: 1.75; margin-top: 12px; }
+  .card-grid, .card-grid.two { gap: 32px; }
+  .about-section { padding: 64px 20px; }
+  .about-copy .lead { font-size: 15px; line-height: 1.9; margin-top: 24px; }
+  .about-copy .creds-row { font-size: 14px; }
+
+  /* Hero: the lede was the single biggest text block above the fold. */
+  .hero { padding: 56px 20px 64px; gap: 32px; }
+  .hero-copy .lede { font-size: 15px; line-height: 1.85; margin-top: 24px; }
+  .hero-cta { margin-top: 32px; gap: 12px; }
+  .hero-cta .btn { padding: 12px 20px; font-size: 13px; }
+
+  /* Listing pages: tighter cards + smaller category labels. */
+  .listing-grid { gap: 36px; }
+  .listing-grid .listing-card h3 { font-size: 19px; }
+  .listing-grid .listing-card .cat-en { font-size: 11px; letter-spacing: 0.14em; }
+  .listing-header { padding: 48px 20px; }
+  .news-featured { padding: 40px 20px 24px; }
+  .news-featured .photo { height: 220px; }
+  .news-archive { padding: 40px 20px 64px; }
+  .article-hero-image { height: 200px; margin-bottom: 32px; }
+}
+
+/* Narrow phones — one more step down on the largest display type. */
+@media (max-width: 420px) {
+  .hero-copy h1 { font-size: 30px; }
+  .section-head h2 { font-size: 30px; }
+  .about-copy h2 { font-size: 32px; }
+  .article-card h3, .health-card h3 { font-size: 19px; }
+  .site-nav { gap: 12px; }
+  .site-nav .nav-tc { font-size: 13px; }
 }
