@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>算一算：未來 10 年心血管風險與壞膽固醇目標｜PREVENT 計算器｜劉俞旻醫師</title>
+  <meta name="description" content="依 2026 ACC/AHA 血脂指引與美國心臟協會 PREVENT 公式設計的線上計算器：輸入血壓、膽固醇、腎功能等數值，估算未來 10 年與 30 年心肌梗塞或中風風險，並對照您的 LDL（壞膽固醇）目標。" />
+
+  <link rel="canonical" href="https://drlawrenceliu.com/article-prevent.html" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://drlawrenceliu.com/article-prevent.html" />
+  <meta property="og:title" content="算一算：未來 10 年心血管風險與壞膽固醇目標｜PREVENT 計算器" />
+  <meta property="og:description" content="依 2026 ACC/AHA 血脂指引設計：估算未來 10 年心肌梗塞或中風風險，並對照您的 LDL（壞膽固醇）目標。" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=1600&q=80&auto=format&fit=crop" />
+  <meta property="og:locale" content="zh_TW" />
+  <meta property="og:site_name" content="劉俞旻醫師" />
+  <meta property="article:author" content="劉俞旻 Lawrence Yu-Min Liu" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="算一算：未來 10 年心血管風險與壞膽固醇目標｜PREVENT 計算器" />
+  <meta name="twitter:description" content="依 2026 ACC/AHA 血脂指引設計：估算未來 10 年心肌梗塞或中風風險，並對照您的 LDL（壞膽固醇）目標。" />
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=1600&q=80&auto=format&fit=crop" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "url": "https://drlawrenceliu.com/article-prevent.html",
+    "name": "算一算：未來 10 年心血管風險與壞膽固醇目標（PREVENT 計算器）",
+    "headline": "算一算：未來 10 年心血管風險與壞膽固醇目標（PREVENT 計算器）",
+    "description": "依 2026 ACC/AHA 血脂指引與 AHA PREVENT 公式設計的線上計算器，估算 10 年與 30 年動脈硬化心血管疾病風險，並對照 LDL-C 治療目標。",
+    "image": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=1600&q=80&auto=format&fit=crop",
+    "datePublished": "2026-09-27",
+    "dateModified": "2026-09-27",
+    "inLanguage": "zh-Hant",
+    "author": {
+      "@type": "Physician",
+      "name": "劉俞旻 Lawrence Yu-Min Liu",
+      "honorificSuffix": "MD, PhD, FESC",
+      "url": "https://drlawrenceliu.com/about.html"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "劉俞旻醫師",
+      "url": "https://drlawrenceliu.com/"
+    },
+    "audience": {"@type": "PatientsAudience"},
+    "about": {"@type": "MedicalCondition", "name": "Atherosclerotic cardiovascular disease"},
+    "citation": [
+      "https://doi.org/10.1161/CIR.0000000000001423",
+      "https://doi.org/10.1161/CIRCULATIONAHA.123.067626"
+    ]
+  }
+  </script>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HD804754WT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HD804754WT');
+  </script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
+  <style>
+    /* === v2 article elements (same as other v2 articles) === */
+    .tldr-box { background: var(--paper-2); border-left: 3px solid var(--accent); padding: 22px 26px; margin: 0 0 24px; }
+    .tldr-box .tldr-label { display: block; font-family: var(--label); font-style: italic; font-size: 1rem; color: var(--accent); margin-bottom: 8px; letter-spacing: 0.04em; }
+    .tldr-box ul { margin: 0 0 0 18px; }
+    .audience-line { font-size: 0.9rem; color: var(--ink-3); padding: 12px 16px; border: 1px solid var(--line); margin-bottom: 28px; line-height: 1.8; }
+    .audience-line strong { color: var(--ink); font-weight: 600; }
+    .big-number-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin: 28px 0 36px; border-top: 1px solid var(--line-2); border-bottom: 1px solid var(--line-2); }
+    .big-number { padding: 22px 14px; text-align: center; }
+    .big-number + .big-number { border-left: 1px solid var(--line); }
+    .big-number .num { font-size: 2.2rem; font-weight: 700; color: var(--ink); line-height: 1.1; display: block; margin-bottom: 8px; }
+    .big-number .num small { font-size: 1rem; font-weight: 600; }
+    .big-number .lbl { font-size: 0.82rem; color: var(--ink-3); line-height: 1.6; display: block; }
+    .lead-sentence { font-weight: 700; color: var(--ink); }
+    .one-liner { border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); padding: 22px 12px; margin: 36px 0 16px; font-size: 1.05rem; line-height: 1.85; text-align: center; color: var(--ink); font-weight: 500; }
+    .refs { font-size: 0.85rem; color: var(--ink-3); margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--line); line-height: 1.8; }
+    .refs ol { margin: 8px 0 0 20px; }
+    .refs li { margin-bottom: 6px; overflow-wrap: break-word; }
+    .refs a { color: var(--accent); }
+
+    .dot-grid { display: grid; grid-template-columns: repeat(20, 1fr); gap: 4px; }
+    .dot-grid .dot { aspect-ratio: 1 / 1; border-radius: 50%; background: var(--paper-3); }
+    .dot-grid .dot.ev { background: var(--accent); }
+
+    .goal-table { width: 100%; border-collapse: collapse; margin: 18px 0 8px; font-size: 0.93rem; }
+    .goal-table th, .goal-table td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: top; color: var(--ink-2); line-height: 1.7; }
+    .goal-table th { font-weight: 600; color: var(--ink); border-bottom: 2px solid var(--ink); font-size: 0.85rem; }
+    .goal-table td:first-child { font-weight: 600; color: var(--ink); }
+    .goal-table td.goal { font-weight: 700; color: var(--ink); white-space: nowrap; }
+    .goal-table tr.group td { background: var(--paper-2); font-size: 0.8rem; color: var(--ink-3); font-weight: 600; letter-spacing: 0.06em; padding: 6px 8px; }
+
+    /* === Calculator === */
+    .calc { border: 1px solid var(--ink); background: var(--paper); margin: 8px 0 40px; }
+    .calc-head { padding: 22px 26px 18px; border-bottom: 1px solid var(--line-2); background: var(--paper-2); }
+    .calc-head .eyebrow-en { display: block; font-family: var(--label); font-style: italic; color: var(--accent); font-size: 1rem; letter-spacing: 0.04em; }
+    .calc-head h3 { font-size: 1.25rem; font-weight: 700; color: var(--ink); margin: 2px 0 6px; }
+    .calc-head p { font-size: 0.85rem !important; color: var(--ink-3) !important; margin: 0 !important; line-height: 1.7 !important; }
+    .calc-body { padding: 22px 26px 26px; }
+    .calc fieldset { border: 0; padding: 0; margin: 0 0 22px; min-width: 0; }
+    .calc legend { font-weight: 600; color: var(--ink); font-size: 1rem; margin-bottom: 8px; padding: 0; }
+    .calc .hint { font-size: 0.85rem !important; color: var(--ink-3) !important; line-height: 1.75 !important; margin: 0 0 10px !important; }
+
+    .seg { display: inline-flex; border: 1px solid var(--ink); }
+    .seg label { position: relative; cursor: pointer; }
+    .seg input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+    .seg span { display: block; padding: 8px 22px; font-size: 0.95rem; color: var(--ink-2); min-width: 64px; text-align: center; }
+    .seg label + label span { border-left: 1px solid var(--ink); }
+    .seg input:checked + span { background: var(--ink); color: var(--paper); font-weight: 600; }
+    .seg input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+    .field-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 22px; margin-bottom: 22px; }
+    .field label.fl { display: block; font-size: 0.92rem; font-weight: 600; color: var(--ink); margin-bottom: 6px; }
+    .field label.fl small { font-weight: 400; color: var(--ink-4); margin-left: 4px; }
+    .field .inp { display: flex; align-items: stretch; border: 1px solid var(--line-2); background: #fff; }
+    .field .inp:focus-within { border-color: var(--ink); }
+    .field input[type=number] { flex: 1; min-width: 0; border: 0; padding: 10px 12px; font: inherit; font-size: 1rem; color: var(--ink); background: transparent; border-radius: 0; -moz-appearance: textfield; }
+    .field input[type=number]::-webkit-outer-spin-button, .field input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+    .field input:focus { outline: none; }
+    .field .unit { padding: 10px 12px; font-size: 0.82rem; color: var(--ink-4); border-left: 1px solid var(--line); background: var(--paper-2); white-space: nowrap; display: flex; align-items: center; }
+    .field .sub { font-size: 0.78rem; color: var(--ink-4); margin-top: 4px; line-height: 1.6; }
+    .field .sub button { background: none; border: 0; padding: 0; color: var(--accent); font: inherit; text-decoration: underline; cursor: pointer; }
+    .field.full { grid-column: 1 / -1; }
+    .field.hidden, .hidden { display: none !important; }
+    .field.err .inp { border-color: var(--accent); }
+    .field .errmsg { font-size: 0.78rem; color: var(--accent); margin-top: 4px; display: none; }
+    .field.err .errmsg { display: block; }
+
+    .checks { border-top: 1px solid var(--line); margin-bottom: 22px; }
+    .check { display: flex; gap: 12px; align-items: flex-start; padding: 11px 2px; border-bottom: 1px solid var(--line); cursor: pointer; font-size: 0.95rem; color: var(--ink-2); line-height: 1.65; }
+    .check input { appearance: none; -webkit-appearance: none; flex: 0 0 18px; width: 18px; height: 18px; border: 1px solid var(--ink); margin: 3px 0 0; background: #fff; border-radius: 0; cursor: pointer; display: grid; place-content: center; }
+    .check input::before { content: ""; width: 10px; height: 10px; background: var(--ink); transform: scale(0); }
+    .check input:checked::before { transform: scale(1); }
+    .check input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .check b { color: var(--ink); font-weight: 600; }
+    .check small { display: block; color: var(--ink-4); font-size: 0.8rem; }
+    .checks-title { font-size: 0.85rem; font-weight: 600; color: var(--ink-3); margin: 0 0 6px; letter-spacing: 0.04em; }
+
+    .calc-actions { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+    .calc-actions button { font: inherit; cursor: pointer; }
+    .calc-actions .btn { border-radius: 0; }
+    .calc-actions .reset { background: none; border: 0; color: var(--ink-3); text-decoration: underline; font-size: 0.9rem; padding: 6px 4px; }
+    .form-err { color: var(--accent); font-size: 0.88rem; margin-top: 10px; display: none; }
+
+    /* Result */
+    .result { border-top: 1px solid var(--ink); padding: 26px 26px 28px; background: var(--paper); }
+    .result h4 { font-size: 1rem; font-weight: 600; color: var(--ink); margin: 26px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--line-2); }
+    .result p { font-size: 0.95rem !important; line-height: 1.85 !important; margin-bottom: 10px !important; }
+    .result ul { font-size: 0.93rem !important; margin: 0 0 10px 20px !important; line-height: 1.85 !important; }
+    .result .r-eyebrow { font-family: var(--label); font-style: italic; color: var(--accent); font-size: 1rem; letter-spacing: 0.04em; }
+    .r-headline { display: grid; grid-template-columns: auto 1fr; gap: 6px 22px; align-items: end; margin: 6px 0 18px; }
+    .r-big { font-size: 3.4rem; font-weight: 700; line-height: 1; color: var(--ink); }
+    .r-big small { font-size: 1.4rem; font-weight: 600; }
+    .r-cat { font-size: 1.05rem; font-weight: 700; color: var(--ink); }
+    .r-cat .pill { display: inline-block; padding: 2px 12px; margin-left: 4px; font-size: 0.9rem; border: 1px solid var(--ink); }
+    .r-cat .pill.hi { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .r-cat .pill.mid { background: var(--ink); color: var(--paper); }
+    .r-sub { grid-column: 1 / -1; font-size: 0.92rem; color: var(--ink-3); line-height: 1.7; }
+
+    .band { position: relative; margin: 34px 0 34px; }
+    .band-track { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--ink); }
+    .band-track div { height: 12px; }
+    .band-track div:nth-child(1) { background: var(--paper-3); }
+    .band-track div:nth-child(2) { background: var(--line-2); }
+    .band-track div:nth-child(3) { background: var(--ink-4); }
+    .band-track div:nth-child(4) { background: var(--accent); }
+    .band-labels { display: grid; grid-template-columns: repeat(4, 1fr); font-size: 0.75rem; color: var(--ink-3); margin-top: 6px; line-height: 1.4; }
+    .band-labels span { padding-right: 4px; }
+    .band-marker { position: absolute; top: -8px; width: 2px; height: 28px; background: var(--ink); transform: translateX(-1px); }
+    .band-marker::after { content: "您"; position: absolute; top: -20px; left: 50%; transform: translateX(-50%); font-size: 0.75rem; font-weight: 700; color: var(--ink); white-space: nowrap; }
+
+    .r-dots { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 8px 0 6px; }
+    .r-dots .cap { font-size: 0.88rem; color: var(--ink-2); margin-bottom: 8px; line-height: 1.6; }
+    .r-dots .cap strong { color: var(--accent); font-size: 1.05rem; }
+
+    .r-goal { border: 2px solid var(--ink); padding: 18px 22px; margin: 6px 0 10px; display: grid; grid-template-columns: auto 1fr; gap: 6px 26px; align-items: center; }
+    .r-goal .g-label { font-size: 0.8rem; color: var(--ink-3); font-weight: 600; letter-spacing: 0.06em; }
+    .r-goal .g-num { font-size: 2.3rem; font-weight: 700; color: var(--ink); line-height: 1.1; white-space: nowrap; }
+    .r-goal .g-num small { font-size: 0.95rem; font-weight: 500; color: var(--ink-3); }
+    .r-goal .g-num.none { font-size: 1.2rem; }
+    .r-goal .g-side { font-size: 0.92rem; color: var(--ink-2); line-height: 1.75; }
+    .r-goal .g-side strong { color: var(--ink); }
+    .r-goal .g-side .gap { color: var(--accent); font-weight: 700; }
+    .r-note { font-size: 0.85rem !important; color: var(--ink-3) !important; background: var(--paper-2); padding: 10px 14px; line-height: 1.75 !important; }
+    .r-cor { display: inline-block; font-size: 0.72rem; font-weight: 600; padding: 0 6px; border: 1px solid var(--ink-3); color: var(--ink-3); margin-left: 6px; white-space: nowrap; vertical-align: 2px; }
+    .r-print { margin-top: 18px; font-size: 0.85rem; }
+    .r-print button { background: none; border: 0; padding: 0; color: var(--accent); text-decoration: underline; cursor: pointer; font: inherit; }
+
+    @media (max-width: 760px) {
+      .big-number-row { grid-template-columns: 1fr; }
+      .big-number + .big-number { border-left: 0; border-top: 1px solid var(--line); }
+      .big-number { padding: 16px 10px; }
+      .calc-head, .calc-body, .result { padding-left: 16px; padding-right: 16px; }
+      .field-grid { grid-template-columns: 1fr; gap: 14px; }
+      .seg span { padding: 8px 16px; }
+      .r-big { font-size: 2.8rem; }
+      .r-dots { grid-template-columns: 1fr; gap: 16px; }
+      .r-goal { grid-template-columns: 1fr; padding: 16px; }
+      .band-labels { font-size: 0.68rem; }
+      .goal-table { display: block; overflow-x: auto; }
+      .goal-table td.goal { white-space: normal; }
+    }
+
+    @media print {
+      .site-header, .page-hero, .article-hero-image, .back-link, .site-footer, .calc-head, .calc-body, .r-print { display: none !important; }
+      .article-body > *:not(.calc) { display: none !important; }
+      .calc { border: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header" data-pagefind-ignore>
+    <a class="brand" href="index.html">
+      <img class="brand-logo logo-blend" src="images/logo.png" alt="Lawrence Liu, MD" />
+      <span class="brand-text">
+        <span class="brand-name">劉俞旻 醫師</span>
+        <span class="brand-sub">Cardiology · Hsinchu</span>
+      </span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html"><span class="nav-en">Home</span><span class="nav-tc">首頁</span></a>
+      <a href="health.html"><span class="nav-en">Patient Education</span><span class="nav-tc">衛教資訊</span></a>
+      <a href="news.html" class="active"><span class="nav-en">Medical Updates</span><span class="nav-tc">最新醫訊</span></a>
+      <a href="about.html"><span class="nav-en">About</span><span class="nav-tc">關於我</span></a>
+      <a href="research.html"><span class="nav-en">Research</span><span class="nav-tc">研究成果</span></a>
+    </nav>
+    <a href="https://www.hc.mmh.org.tw/register_single_doctor.php?depid=14&did=150" target="_blank" rel="noopener" class="btn solid nav-cta">
+      <span>線上掛號</span><span class="arrow">→</span>
+    </a>
+  </header>
+
+  <div class="page-hero">
+    <h1>算一算：您未來 10 年的心血管風險，壞膽固醇該降到多少？</h1>
+    <p>依 2026 美國 ACC/AHA 血脂指引與 PREVENT 公式設計的線上計算器</p>
+  </div>
+
+  <div class="article-hero-image" style="background-image: url('https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=1600&q=80&auto=format&fit=crop');"></div>
+
+  <main style="max-width: 800px; margin: 0 auto; padding: 0 20px 60px;">
+
+    <a href="news.html" class="back-link">← 返回最新醫訊</a>
+
+    <div class="article-body">
+
+      <div class="article-meta">
+        作者：劉俞旻醫師｜新竹馬偕紀念醫院 心臟內科暨心血管中心主任｜2026 年 9 月
+      </div>
+
+      <!-- 30 秒重點 -->
+      <div class="tldr-box">
+        <span class="tldr-label">In 30 seconds · 30 秒重點</span>
+        <ul>
+          <li>2026 年美國血脂指引改用新的 <strong>PREVENT 公式</strong>，估算您「未來 10 年發生心肌梗塞或中風」的機率，取代舊的 PCE 公式</li>
+          <li>新公式算出的數字通常比舊公式<strong>低 40–50%</strong>，所以「開始考慮吃藥」的門檻也從 5% 降到 <strong>3%</strong></li>
+          <li>風險分成 4 級：低（&lt;3%）、臨界（3–5%）、中度（5–10%）、高（≥10%）。<strong>風險越高，壞膽固醇（LDL）目標越低</strong></li>
+          <li>已經有心肌梗塞、中風、放過支架的人<strong>不用算</strong>——大多數人的 LDL 目標是 <strong>&lt;55 mg/dL</strong></li>
+          <li>下面的計算器只在您的手機或電腦上計算，<strong>不會上傳任何資料</strong>；結果僅供和醫師討論時參考</li>
+        </ul>
+      </div>
+
+      <div class="audience-line">
+        <strong>適合閱讀對象：</strong>30–79 歲、手上有抽血報告（膽固醇、腎功能）與血壓數字，想知道「我到底需不需要吃降膽固醇藥」「我的壞膽固醇要降到多少」的人；以及已經在吃藥、想確認自己有沒有達標的人。
+      </div>
+
+      <div class="big-number-row">
+        <div class="big-number">
+          <span class="num">3<small>%</small></span>
+          <span class="lbl">10 年風險達到這裡<br>就可以開始討論用藥</span>
+        </div>
+        <div class="big-number">
+          <span class="num">30–79<small> 歲</small></span>
+          <span class="lbl">PREVENT 公式<br>適用的年齡</span>
+        </div>
+        <div class="big-number">
+          <span class="num">&lt;55</span>
+          <span class="lbl">多數已有心血管疾病者的<br>LDL 目標（mg/dL）</span>
+        </div>
+      </div>
+
+      <h2>動手算：您的風險與 LDL 目標</h2>
+      <p><span class="lead-sentence">準備好最近一次的抽血報告和血壓，大約 1 分鐘就能完成。</span>報告上常見的英文縮寫：總膽固醇＝T-CHO 或 TC；好膽固醇＝HDL-C；壞膽固醇＝LDL-C；腎絲球過濾率＝eGFR；肌酸酐＝Creatinine（Cr）。</p>
+
+      <!-- ================= Calculator ================= -->
+      <div class="calc" id="calc">
+        <div class="calc-head">
+          <span class="eyebrow-en">PREVENT-ASCVD Calculator</span>
+          <h3>心血管風險與 LDL 目標計算器</h3>
+          <p>公式：美國心臟協會 PREVENT 基本模型（Khan et al., Circulation 2024）｜目標：2026 ACC/AHA 血脂指引｜所有計算都在您的裝置上進行，不會傳送或儲存。</p>
+        </div>
+
+        <form class="calc-body" id="calc-form" novalidate>
+
+          <fieldset>
+            <legend>1. 您是否曾經有過下列任何一種狀況？</legend>
+            <p class="hint">心肌梗塞（心臟病發作）、不穩定型心絞痛、因冠狀動脈狹窄做過心導管放支架或繞道手術、缺血性中風或小中風（暫時性腦缺血）、有症狀的周邊動脈阻塞（例如走路腳痛、做過腳的血管手術）</p>
+            <div class="seg" role="radiogroup">
+              <label><input type="radio" name="ascvd" value="no" checked /><span>沒有</span></label>
+              <label><input type="radio" name="ascvd" value="yes" /><span>有</span></label>
+            </div>
+          </fieldset>
+
+          <!-- ---------- Primary prevention ---------- -->
+          <div id="panel-primary">
+            <fieldset>
+              <legend>2. 基本資料</legend>
+              <div class="seg" role="radiogroup" aria-label="性別">
+                <label><input type="radio" name="sex" value="m" checked /><span>男性</span></label>
+                <label><input type="radio" name="sex" value="f" /><span>女性</span></label>
+              </div>
+            </fieldset>
+
+            <div class="field-grid">
+              <div class="field" data-f="age">
+                <label class="fl" for="age">年齡</label>
+                <div class="inp"><input type="number" id="age" inputmode="numeric" min="18" max="100" step="1" /><span class="unit">歲</span></div>
+                <div class="errmsg">請輸入年齡</div>
+              </div>
+              <div class="field" data-f="sbp">
+                <label class="fl" for="sbp">收縮壓 <small>血壓的「上面」數字</small></label>
+                <div class="inp"><input type="number" id="sbp" inputmode="numeric" min="70" max="250" step="1" /><span class="unit">mmHg</span></div>
+                <div class="errmsg">請輸入 70–250 之間的數字</div>
+              </div>
+              <div class="field" data-f="tc">
+                <label class="fl" for="tc">總膽固醇 <small>TC / T-CHO</small></label>
+                <div class="inp"><input type="number" id="tc" inputmode="numeric" min="60" max="500" step="1" /><span class="unit">mg/dL</span></div>
+                <div class="errmsg">請輸入 60–500 之間的數字</div>
+              </div>
+              <div class="field" data-f="hdl">
+                <label class="fl" for="hdl">好膽固醇 <small>HDL-C</small></label>
+                <div class="inp"><input type="number" id="hdl" inputmode="numeric" min="10" max="150" step="1" /><span class="unit">mg/dL</span></div>
+                <div class="errmsg">請輸入 10–150 之間，且小於總膽固醇</div>
+              </div>
+              <div class="field" data-f="ldl">
+                <label class="fl" for="ldl">壞膽固醇 <small>LDL-C</small></label>
+                <div class="inp"><input type="number" id="ldl" inputmode="numeric" min="10" max="400" step="1" /><span class="unit">mg/dL</span></div>
+                <div class="errmsg">請輸入 10–400 之間的數字</div>
+              </div>
+              <div class="field" data-f="egfr">
+                <label class="fl" for="egfr">腎絲球過濾率 <small>eGFR</small></label>
+                <div class="inp"><input type="number" id="egfr" inputmode="numeric" min="5" max="150" step="1" /><span class="unit">mL/min</span></div>
+                <div class="sub">報告上沒有 eGFR？<button type="button" id="toggle-cr">改填肌酸酐（Creatinine）</button></div>
+                <div class="errmsg">請輸入 5–150 之間的數字</div>
+              </div>
+              <div class="field hidden" data-f="cr">
+                <label class="fl" for="cr">肌酸酐 <small>Creatinine</small></label>
+                <div class="inp"><input type="number" id="cr" inputmode="decimal" min="0.2" max="15" step="0.01" /><span class="unit">mg/dL</span></div>
+                <div class="sub">將以 CKD-EPI 2021 公式換算為 eGFR。<button type="button" id="toggle-egfr">改填 eGFR</button></div>
+                <div class="errmsg">請輸入 0.2–15 之間的數字</div>
+              </div>
+            </div>
+
+            <p class="checks-title">3. 符合的請打勾</p>
+            <div class="checks">
+              <label class="check"><input type="checkbox" id="bptx" /><span>正在吃<b>降血壓藥</b></span></label>
+              <label class="check"><input type="checkbox" id="statin" /><span>正在吃<b>降膽固醇藥</b><small>例如他汀類藥物（statin），如 Lipitor 立普妥、Crestor 冠脂妥等</small></span></label>
+              <label class="check"><input type="checkbox" id="dm" /><span>有<b>糖尿病</b></span></label>
+              <label class="check"><input type="checkbox" id="smoke" /><span>目前有<b>抽菸</b></span></label>
+              <label class="check"><input type="checkbox" id="fh" /><span><b>還沒吃藥時</b>，LDL 曾經 ≥190 mg/dL，或被醫師診斷為<b>家族性高膽固醇血症</b></span></label>
+            </div>
+          </div>
+
+          <!-- ---------- Secondary prevention ---------- -->
+          <div id="panel-secondary" class="hidden">
+            <div class="field-grid">
+              <div class="field" data-f="ldl2">
+                <label class="fl" for="ldl2">目前的壞膽固醇 <small>LDL-C</small></label>
+                <div class="inp"><input type="number" id="ldl2" inputmode="numeric" min="10" max="400" step="1" /><span class="unit">mg/dL</span></div>
+                <div class="errmsg">請輸入 10–400 之間的數字</div>
+              </div>
+            </div>
+
+            <p class="checks-title">2. 您曾經發生過哪些「重大心血管事件」？（可複選）</p>
+            <div class="checks" id="events">
+              <label class="check"><input type="checkbox" class="ev" /><span>過去 <b>12 個月內</b>發生過急性心肌梗塞或不穩定型心絞痛（急性冠心症）</span></label>
+              <label class="check"><input type="checkbox" class="ev" /><span><b>更早之前</b>發生過心肌梗塞</span></label>
+              <label class="check"><input type="checkbox" class="ev" /><span>曾經<b>缺血性中風</b></span></label>
+              <label class="check"><input type="checkbox" class="ev" /><span>有症狀的<b>周邊動脈阻塞</b></span></label>
+            </div>
+
+            <p class="checks-title">3. 您有下列哪些狀況？（可複選）</p>
+            <div class="checks" id="conds">
+              <label class="check"><input type="checkbox" class="cd" /><span>年齡 <b>超過 65 歲</b></span></label>
+              <label class="check"><input type="checkbox" class="cd" /><span>做過冠狀動脈<b>支架或繞道手術</b></span></label>
+              <label class="check"><input type="checkbox" class="cd" /><span>目前有<b>抽菸</b></span></label>
+              <label class="check"><input type="checkbox" class="cd" /><span>有<b>糖尿病</b></span></label>
+              <label class="check"><input type="checkbox" class="cd" /><span>有<b>心臟衰竭</b></span></label>
+              <label class="check"><input type="checkbox" class="cd" /><span>有<b>高血壓</b></span></label>
+              <label class="check"><input type="checkbox" class="cd" /><span>已經吃到最高可耐受劑量的他汀類藥物（statin）<b>加上怡妥錠（ezetimibe）</b>，LDL 仍 &gt;100 mg/dL</span></label>
+            </div>
+          </div>
+
+          <div class="calc-actions">
+            <button type="submit" class="btn solid"><span>計算結果</span><span class="arrow">→</span></button>
+            <button type="button" class="reset" id="calc-reset">清除重填</button>
+          </div>
+          <p class="form-err" id="form-err">有欄位尚未填寫或數值不合理，請檢查標示紅框的欄位。</p>
+        </form>
+
+        <div class="result hidden" id="result" aria-live="polite"></div>
+      </div>
+      <!-- ================= /Calculator ================= -->
+
+      <h2>為什麼要算「風險」，而不是只看膽固醇數字？</h2>
+      <p><span class="lead-sentence">同樣的膽固醇數字，放在不同的人身上，危險程度可以差到幾十倍。</span>例如一位 35 歲、不抽菸、血壓正常的女性，未來 10 年發生心肌梗塞或中風的機率大約只有 0.3%；一位 65 歲、有糖尿病、高血壓又抽菸的男性，即使膽固醇只高一點點，機率卻超過 20%——<strong>相差 60 倍以上</strong>。</p>
+      <p>吃降膽固醇藥（statin）大約能讓這個風險<strong>相對減少 3 成左右</strong>。但「3 成」要乘在您本來的風險上，才知道實際能幫多少：本來 20% 的人，可以少掉約 7 個百分點；本來 1% 的人，只少掉 0.3 個百分點。所以<strong>先知道自己的風險有多高，才能判斷吃藥划不划算</strong>——這就是指引要醫師先「算風險」的原因。</p>
+
+      <h2>PREVENT 是什麼？和舊的公式有什麼不同？</h2>
+      <p><span class="lead-sentence">PREVENT 是美國心臟協會在 2023–2024 年發表的新一代心血管風險公式，2026 年的血脂指引正式建議用它取代舊的 PCE 公式。</span></p>
+      <ul>
+        <li><strong>資料更新、更大量：</strong>用約 330 萬名近代美國成人建立公式，再用另外約 330 萬人驗證；舊公式只用了約 2 萬 5 千人，其中不少人出生在 1930 年代以前。</li>
+        <li><strong>更準：</strong>舊公式常常<strong>高估</strong>風險。同樣條件下，PREVENT 算出來的 10 年風險通常低 40–50%。</li>
+        <li><strong>加入腎功能：</strong>腎臟、心臟、代謝（血糖、體重）彼此影響，所以新公式把 eGFR 也算進去。</li>
+        <li><strong>不再用「種族」當變數：</strong>研究發現加入種族並不會讓預測更準。</li>
+        <li><strong>年齡往下延伸到 30 歲，並可算 30 年風險：</strong>年輕人 10 年風險通常很低，但 30 年風險可能不低，這對「要不要早點處理」很有幫助。</li>
+      </ul>
+      <p>因為新公式的數字比較低，指引也把門檻一起往下調，所以<strong>大致上會被建議治療的是同一群人</strong>：</p>
+      <table class="goal-table">
+        <thead><tr><th>風險等級</th><th>舊公式（PCE）</th><th>新公式（PREVENT）</th></tr></thead>
+        <tbody>
+          <tr><td>低風險</td><td>&lt;5%</td><td>&lt;3%</td></tr>
+          <tr><td>臨界風險</td><td>5% 到 &lt;7.5%</td><td>3% 到 &lt;5%</td></tr>
+          <tr><td>中度風險</td><td>7.5% 到 &lt;20%</td><td>5% 到 &lt;10%</td></tr>
+          <tr><td>高風險</td><td>≥20%</td><td>≥10%</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size: 0.85rem; color: var(--ink-3);">資料來源：2026 ACC/AHA 血脂指引 Table 12。</p>
+
+      <h3>為什麼門檻是 3%？</h3>
+      <p><span class="lead-sentence">3% 是「吃藥的好處開始大於壞處」的那條線。</span>statin 最常被提到的壞處，是讓原本就接近糖尿病（糖尿病前期）的人提早被診斷為糖尿病。指引委員會把「每治療幾個人能避免 1 次心肌梗塞或中風」和「每治療幾個人會多 1 位糖尿病」放在一起比較，發現中強度 statin 大約在 10 年風險 3% 時兩者打平，超過 3% 好處就越來越明顯。</p>
+      <p>用數字來看（假設中強度 statin 減少約 35% 風險）：10 年風險 3% 的人，大約要治療 95 人 10 年才能多避免 1 次事件；風險 10% 的人，大約治療 29 人就能避免 1 次；風險 20% 的人，約 14 人。<strong>風險越高，吃藥越划算</strong>。而且心肌梗塞、中風往往是一輩子的影響，而膽固醇的傷害是「累積」的——越早、越長期把 LDL 控制好，幾十年下來的好處會比 10 年的數字更大。</p>
+
+      <h2>結論先講：風險越高，LDL 目標越低</h2>
+      <p><span class="lead-sentence">2026 年指引最大的改變之一，就是「LDL 目標數字」回來了。</span>2018 年版只說「降低百分之多少」，這次則同時訂出清楚的數字目標，方便病人和醫師追蹤。</p>
+      <table class="goal-table">
+        <thead><tr><th>您的狀況</th><th>指引建議</th><th>LDL 目標</th><th>non-HDL 目標</th></tr></thead>
+        <tbody>
+          <tr class="group"><td colspan="4">還沒有心血管疾病（用 PREVENT 算 10 年風險）</td></tr>
+          <tr><td>低風險 &lt;3%</td><td>以生活型態為主；若 LDL 160–189，或 30 年風險 ≥10%，可考慮中強度 statin</td><td class="goal">無特定數字</td><td>—</td></tr>
+          <tr><td>臨界風險 3–&lt;5%</td><td>和醫師討論；有「風險增強因子」時更傾向用藥</td><td class="goal">&lt;100</td><td>&lt;130</td></tr>
+          <tr><td>中度風險 5–&lt;10%</td><td>建議至少中強度 statin（LDL 降 30–49%）</td><td class="goal">&lt;100</td><td>&lt;130</td></tr>
+          <tr><td>高風險 ≥10%</td><td>建議高強度 statin（LDL 降 ≥50%），不夠再加 ezetimibe</td><td class="goal">&lt;70</td><td>&lt;100</td></tr>
+          <tr class="group"><td colspan="4">特殊族群（不必等風險分數，直接建議治療）</td></tr>
+          <tr><td>糖尿病（40–75 歲）</td><td>建議中強度 statin；有多項危險因子或 10 年風險 ≥10% 時，可用高強度</td><td class="goal">&lt;100<br>（高風險 &lt;70）</td><td>&lt;130<br>（&lt;100）</td></tr>
+          <tr><td>LDL ≥190（未用藥時）</td><td>高強度 statin；不夠再加 ezetimibe、PCSK9 抑制劑等</td><td class="goal">&lt;100<br>（合併家族性高膽固醇血症或其他危險因子 &lt;70）</td><td>&lt;130<br>（&lt;100）</td></tr>
+          <tr><td>慢性腎臟病第 3 期以上（40–75 歲）</td><td>建議中強度 statin，或 statin 加 ezetimibe</td><td class="goal">依風險等級</td><td>—</td></tr>
+          <tr class="group"><td colspan="4">已經有心血管疾病（不必算 PREVENT）</td></tr>
+          <tr><td>非「極高風險」</td><td>高強度 statin；可加藥進一步降到 &lt;55</td><td class="goal">&lt;70<br>（可考慮 &lt;55）</td><td>&lt;100</td></tr>
+          <tr><td>極高風險（大多數病人）</td><td>高強度 statin，不夠就加 ezetimibe 和／或 PCSK9 抑制劑</td><td class="goal">&lt;55</td><td>&lt;85</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size: 0.85rem; color: var(--ink-3);">單位皆為 mg/dL。non-HDL 膽固醇＝總膽固醇 − 好膽固醇，包含了所有會造成動脈硬化的膽固醇，三酸甘油酯高的人特別有參考價值。「極高風險」是指發生過 2 次以上重大心血管事件，或 1 次重大事件加上 2 項以上高風險狀況（年齡 &gt;65 歲、做過支架或繞道、抽菸、糖尿病、心臟衰竭、高血壓等）。</p>
+      <p>想了解為什麼 &lt;55 比 &lt;70 更好，可以參考 <a href="article-ezpave.html">韓國 Ez-PAVE 研究</a>；想知道整份新指引改了什麼，請看 <a href="article-guideline2026.html">2026 全新血脂治療指引：對病人有什麼意義？</a></p>
+
+      <h2>計算器沒算到的事：這些情況會讓真實風險更高</h2>
+      <p><span class="lead-sentence">PREVENT 只用了最常見的幾個數字，有些重要的風險因素並不在公式裡。</span>指引稱之為「風險增強因子」，如果您有下列任何一項，實際風險可能比計算器顯示的更高，特別是結果落在臨界或中度風險時，更值得和醫師討論提早治療：</p>
+      <ul>
+        <li><strong>家族史：</strong>父母或兄弟姊妹很年輕就發生心血管疾病（男性 &lt;55 歲、女性 &lt;65 歲）</li>
+        <li><strong>脂蛋白(a)〔Lp(a)〕偏高：</strong>≥50 mg/dL 或 ≥125 nmol/L。新指引建議<strong>每個成人一生至少驗一次</strong>，詳見 <a href="article-lpa.html">Lp(a) 衛教文章</a></li>
+        <li><strong>LDL 長期在 160–189 mg/dL</strong>，或 non-HDL 190–219 mg/dL、apoB ≥120 mg/dL</li>
+        <li><strong>三酸甘油酯持續偏高</strong>（空腹 ≥150 mg/dL）</li>
+        <li><strong>慢性發炎性疾病：</strong>紅斑性狼瘡、類風濕性關節炎、嚴重乾癬等</li>
+        <li><strong>高敏感度 C 反應蛋白（hsCRP）</strong>兩次以上 ≥2 mg/L</li>
+        <li><strong>女性特有：</strong>45 歲前停經、懷孕時有妊娠高血壓、子癲前症、妊娠糖尿病或早產</li>
+        <li><strong>心腎代謝症候群：</strong>肥胖、代謝症候群、蛋白尿等</li>
+        <li><strong>祖源：</strong>南亞裔（印度、巴基斯坦等）、菲律賓裔</li>
+      </ul>
+
+      <h3>還是拿不定主意？可以考慮「冠狀動脈鈣化分數」</h3>
+      <p><span class="lead-sentence">如果算出來是臨界或中度風險，又還在猶豫要不要吃藥，指引建議可以做冠狀動脈鈣化分數（CAC）電腦斷層。</span>它直接看您的心臟血管是不是已經開始硬化：</p>
+      <ul>
+        <li><strong>CAC＝0：</strong>若沒有糖尿病、抽菸、嚴重家族史或 LDL ≥190，可以先以生活型態為主，3–7 年後再追蹤</li>
+        <li><strong>CAC 1–99：</strong>建議中強度 statin，LDL 目標 &lt;100</li>
+        <li><strong>CAC ≥100（或同年齡同性別前 25%）：</strong>建議治療，LDL 目標 &lt;70</li>
+        <li><strong>CAC ≥1000：</strong>風險和已經有心臟病的人相近，LDL 目標 &lt;55</li>
+      </ul>
+      <p>另外，如果您曾經因為其他原因做過胸部電腦斷層，報告上若寫到「冠狀動脈鈣化」，也請帶給醫師參考——新指引明確建議要把這個發現納入治療決定。</p>
+
+      <h2>台灣讀者使用時要注意的地方</h2>
+      <ul>
+        <li><span class="lead-sentence">PREVENT 是用美國人的資料建立的。</span>台灣人的心肌梗塞比例和美國不同，中風比例相對較高，這個公式用在台灣人身上到底準不準，還需要更多本土研究確認。請把結果當作「大方向」，而不是精確的預言。</li>
+        <li><strong>這是 PREVENT 的「基本版」。</strong>美國心臟協會官方計算器還可以加入糖化血色素（HbA1c）、尿蛋白（UACR）和美國郵遞區號，在台灣只有前兩項適用；有這些數值的人，實際風險請以醫師評估為準。</li>
+        <li><strong>已經在吃降膽固醇藥的人：</strong>公式會把「有沒有吃 statin」一起考慮，但算出來的風險主要用來判斷「要不要開始治療」。如果您已經在治療，最重要的是看 LDL 有沒有達到目標。</li>
+        <li><strong>健保給付規定和國際指引不完全相同。</strong>是否能用健保開藥、可以用哪些藥，請和您的醫師討論；已經在吃藥的人，請勿因為計算結果自行停藥或減藥。</li>
+        <li><strong>75 歲以上：</strong>要不要開始用藥，需要一起考慮整體健康與個人意願，可參考 <a href="article-staree.html">STAREE 研究</a>。</li>
+      </ul>
+
+      <h2>拿著結果，怎麼和醫師討論？</h2>
+      <p><span class="lead-sentence">指引建議醫師用「CPR」三步驟和您一起決定：</span></p>
+      <ol>
+        <li><strong>Calculate 計算：</strong>先用 PREVENT 算出 10 年風險（就是上面的計算器）。</li>
+        <li><strong>Personalize 個人化：</strong>再把公式沒算到的因素加進來——家族史、Lp(a)、女性懷孕史、慢性發炎疾病等。</li>
+        <li><strong>Reclassify 重新分類：</strong>如果還是猶豫，可以做冠狀動脈鈣化分數，看看血管實際的狀況。</li>
+      </ol>
+      <p>看診時可以問醫師這幾個問題：「我的風險算起來是多少？」「我的 LDL 目標是多少？」「吃藥大概能幫我減少多少風險、可能有什麼副作用？」「如果先不吃藥，我要改變哪些生活習慣、多久後再檢查？」</p>
+      <p>無論風險高低，<strong>不抽菸、控制血壓與血糖、規律運動、維持健康體重，以及以蔬菜、全穀、豆類、魚類為主的飲食</strong>，都是所有治療的基礎。</p>
+
+      <div class="one-liner">
+        先算風險，再訂目標——<br>風險越高，壞膽固醇要降得越低。<br>把計算結果帶去門診，和您的醫師一起決定最適合您的方式。
+      </div>
+
+      <div class="warning-box">
+        <strong>重要提醒：</strong>本計算器與文章僅為衛教資訊，不能取代醫師的個別評估。計算結果是根據美國族群資料建立的統計估計，無法預測個人一定會或不會發生疾病。是否需要開始降膽固醇藥、使用哪一種與多少劑量，需依您的整體風險、肝腎功能與正在使用的藥物決定，並請與醫師討論是否符合健保給付條件。<strong>已經在服用降膽固醇藥的人，請勿自行停藥。</strong>
+      </div>
+
+      <div class="refs">
+        <strong>主要參考文獻</strong>
+        <ol>
+          <li>Blumenthal RS, Morris PB, Gaudino M, et al. 2026 ACC/AHA/AACVPR/ABC/ACPM/ADA/AGS/APhA/ASPC/NLA/PCNA Guideline on the Management of Dyslipidemia. <em>Circulation</em> 2026;153:e1154–e1276. DOI: <a href="https://doi.org/10.1161/CIR.0000000000001423" target="_blank" rel="noopener">10.1161/CIR.0000000000001423</a></li>
+          <li>Khan SS, Matsushita K, Sang Y, et al. Development and validation of the American Heart Association's PREVENT equations. <em>Circulation</em> 2024;149:430–449. DOI: <a href="https://doi.org/10.1161/CIRCULATIONAHA.123.067626" target="_blank" rel="noopener">10.1161/CIRCULATIONAHA.123.067626</a></li>
+          <li>Khan SS, Coresh J, Pencina MJ, et al. Novel prediction equations for absolute risk assessment of total cardiovascular disease incorporating cardiovascular-kidney-metabolic health: a scientific statement from the American Heart Association. <em>Circulation</em> 2023;148:1982–2004. DOI: <a href="https://doi.org/10.1161/CIR.0000000000001191" target="_blank" rel="noopener">10.1161/CIR.0000000000001191</a></li>
+          <li>Watson KE, Fonarow GC. The 2026 ACC/AHA multisociety guideline on the management of dyslipidemia: perspective. <em>Circulation</em> 2026;153:1265–1267. DOI: <a href="https://doi.org/10.1161/CIRCULATIONAHA.126.079538" target="_blank" rel="noopener">10.1161/CIRCULATIONAHA.126.079538</a></li>
+          <li>Inker LA, Eneanya ND, Coresh J, et al. New creatinine- and cystatin C–based equations to estimate GFR without race. <em>N Engl J Med</em> 2021;385:1737–1749. DOI: <a href="https://doi.org/10.1056/NEJMoa2102953" target="_blank" rel="noopener">10.1056/NEJMoa2102953</a></li>
+        </ol>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer" data-pagefind-ignore>
+    <div class="row">
+      <div class="booking">
+        <div class="eyebrow-row" style="margin-bottom: 18px;">
+          <span class="eyebrow">Online Appointment</span>
+        </div>
+        <h3>線上掛號</h3>
+        <p>新竹馬偕紀念醫院 心臟內科<br />門診時間查詢與線上預約</p>
+        <a href="https://www.hc.mmh.org.tw/register_single_doctor.php?depid=14&did=150" target="_blank" rel="noopener" class="btn solid" style="margin-top: 28px;">
+          <span>前往掛號系統</span><span class="arrow">→</span>
+        </a>
+      </div>
+      <div>
+        <div class="col-head">Quick Links</div>
+        <div class="quick-links">
+          <a href="index.html"><span class="en">Home</span><span class="tc">首頁</span></a>
+          <a href="health.html"><span class="en">Patient Education</span><span class="tc">衛教資訊</span></a>
+          <a href="news.html"><span class="en">Medical Updates</span><span class="tc">最新醫訊</span></a>
+          <a href="about.html"><span class="en">About</span><span class="tc">關於我</span></a>
+          <a href="research.html"><span class="en">Research</span><span class="tc">研究成果</span></a>
+        </div>
+      </div>
+      <div>
+        <div class="col-head">Practice</div>
+        <div class="practice-block">
+          新竹馬偕紀念醫院<br />
+          心臟內科暨心血管中心<br />
+          <span class="en">MacKay Memorial Hospital · Hsinchu</span>
+        </div>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 劉俞旻醫師 Lawrence Yu-Min Liu, MD, PhD, FESC</span>
+      <span class="motto">Evidence · Compassion · Continuity</span>
+    </div>
+  </footer>
+
+  <script>
+  (function () {
+    'use strict';
+
+    /* ------------------------------------------------------------------
+       AHA PREVENT base model, ASCVD outcome (Khan SS et al. Circulation
+       2024;149:430-449, Supplemental Tables). Coefficients cross-checked
+       against the `preventr` R package; its test case (50 y, SBP 160 on
+       treatment, TC 200, HDL 45, diabetes, eGFR 90) gives 10-y 9.2% /
+       30-y 35.4% (female) and 10.2% / 34.9% (male) - reproduced exactly.
+       ------------------------------------------------------------------ */
+    var COEF = {
+      f10: { age: 0.7198830, age2: 0, nhdl: 0.1176967, hdl: -0.1511850, sbpLo: -0.0835358, sbpHi: 0.3592852, dm: 0.8348585, smk: 0.4831078, egfrLo: 0.4864619, egfrHi: 0.0397779, bptx: 0.2265309, statin: -0.0592374, bptxSbp: -0.0395762, statinNhdl: 0.0844423, ageNhdl: -0.0567839, ageHdl: 0.0325692, ageSbp: -0.1035985, ageDm: -0.2417542, ageSmk: -0.0791142, ageEgfr: -0.1671492, c: -3.8199750 },
+      m10: { age: 0.7099847, age2: 0, nhdl: 0.1658663, hdl: -0.1144285, sbpLo: -0.2837212, sbpHi: 0.3239977, dm: 0.7189597, smk: 0.3956973, egfrLo: 0.3690075, egfrHi: 0.0203619, bptx: 0.2036522, statin: -0.0865581, bptxSbp: -0.0322916, statinNhdl: 0.1145630, ageNhdl: -0.0300005, ageHdl: 0.0232747, ageSbp: -0.0927024, ageDm: -0.2018525, ageSmk: -0.0970527, ageEgfr: -0.1217081, c: -3.5006550 },
+      f30: { age: 0.4669202, age2: -0.0893118, nhdl: 0.1256901, hdl: -0.1542255, sbpLo: -0.0018093, sbpHi: 0.3229490, dm: 0.6296707, smk: 0.2682920, egfrLo: 0.1001060, egfrHi: 0.0499663, bptx: 0.1875292, statin: 0.0152476, bptxSbp: -0.0276123, statinNhdl: 0.0736147, ageNhdl: -0.0521962, ageHdl: 0.0316918, ageSbp: -0.1046101, ageDm: -0.2727793, ageSmk: -0.1530907, ageEgfr: -0.1299149, c: -1.9740740 },
+      m30: { age: 0.3994099, age2: -0.0937484, nhdl: 0.1744643, hdl: -0.1202030, sbpLo: -0.0665117, sbpHi: 0.2753037, dm: 0.4790257, smk: 0.1782635, egfrLo: -0.0218789, egfrHi: 0.0602553, bptx: 0.1421182, statin: 0.0135996, bptxSbp: -0.0218265, statinNhdl: 0.1013148, ageNhdl: -0.0312619, ageHdl: 0.0206730, ageSbp: -0.0920935, ageDm: -0.2159947, ageSmk: -0.1548811, ageEgfr: -0.0712547, c: -1.7364440 }
+    };
+    var MG_TO_MMOL = 0.02586;
+
+    function prevent(key, p) {
+      var b = COEF[key];
+      var a = (p.age - 55) / 10;
+      var nh = (p.tc - p.hdl) * MG_TO_MMOL - 3.5;
+      var h = (p.hdl * MG_TO_MMOL - 1.3) / 0.3;
+      var sLo = (Math.min(p.sbp, 110) - 110) / 20;
+      var sHi = (Math.max(p.sbp, 110) - 130) / 20;
+      var eLo = (Math.min(p.egfr, 60) - 60) / -15;
+      var eHi = (Math.max(p.egfr, 60) - 90) / -15;
+      var x = b.c + b.age * a + b.age2 * a * a + b.nhdl * nh + b.hdl * h +
+        b.sbpLo * sLo + b.sbpHi * sHi + b.dm * p.dm + b.smk * p.smk +
+        b.egfrLo * eLo + b.egfrHi * eHi + b.bptx * p.bptx + b.statin * p.statin +
+        b.bptxSbp * p.bptx * sHi + b.statinNhdl * p.statin * nh +
+        b.ageNhdl * a * nh + b.ageHdl * a * h + b.ageSbp * a * sHi +
+        b.ageDm * a * p.dm + b.ageSmk * a * p.smk + b.ageEgfr * a * eLo;
+      return 100 / (1 + Math.exp(-x));
+    }
+
+    // CKD-EPI 2021 (race-free), creatinine in mg/dL
+    function ckdEpi2021(cr, age, sex) {
+      var k = sex === 'f' ? 0.7 : 0.9;
+      var a = sex === 'f' ? -0.241 : -0.302;
+      var v = 142 * Math.pow(Math.min(cr / k, 1), a) * Math.pow(Math.max(cr / k, 1), -1.2) * Math.pow(0.9938, age);
+      return sex === 'f' ? v * 1.012 : v;
+    }
+
+    function clamp(v, lo, hi) { return Math.min(hi, Math.max(lo, v)); }
+    function fmtPct(v) { return v >= 99.95 ? '>99' : v.toFixed(1); }
+
+    /* ---------------- DOM ---------------- */
+    var form = document.getElementById('calc-form');
+    var resultEl = document.getElementById('result');
+    var panelP = document.getElementById('panel-primary');
+    var panelS = document.getElementById('panel-secondary');
+    var useCr = false;
+
+    function $(id) { return document.getElementById(id); }
+    function radio(name) { var r = form.querySelector('input[name="' + name + '"]:checked'); return r ? r.value : null; }
+    function fieldEl(f) { return form.querySelector('.field[data-f="' + f + '"]'); }
+
+    function setMode() {
+      var sec = radio('ascvd') === 'yes';
+      panelP.classList.toggle('hidden', sec);
+      panelS.classList.toggle('hidden', !sec);
+      resultEl.classList.add('hidden');
+    }
+    form.querySelectorAll('input[name="ascvd"]').forEach(function (r) { r.addEventListener('change', setMode); });
+
+    function setCr(on) {
+      useCr = on;
+      fieldEl('egfr').classList.toggle('hidden', on);
+      fieldEl('cr').classList.toggle('hidden', !on);
+    }
+    $('toggle-cr').addEventListener('click', function () { setCr(true); $('cr').focus(); });
+    $('toggle-egfr').addEventListener('click', function () { setCr(false); $('egfr').focus(); });
+
+    $('calc-reset').addEventListener('click', function () {
+      form.reset(); setCr(false); setMode();
+      form.querySelectorAll('.field.err').forEach(function (f) { f.classList.remove('err'); });
+      $('form-err').style.display = 'none';
+    });
+
+    function num(id, lo, hi) {
+      var el = $(id), f = el.closest('.field');
+      var v = parseFloat(el.value);
+      var ok = !isNaN(v) && v >= lo && v <= hi;
+      f.classList.toggle('err', !ok);
+      return ok ? v : null;
+    }
+
+    /* ---------------- Helpers for output ---------------- */
+    function dots(n) {
+      var k = Math.round(n), s = '';
+      for (var i = 0; i < 100; i++) s += '<span class="dot' + (i < k ? ' ev' : '') + '"></span>';
+      return '<div class="dot-grid" aria-hidden="true">' + s + '</div>';
+    }
+    function peopleText(r) {
+      var k = Math.round(r);
+      return k < 1 ? '不到 1 位' : '約 <strong>' + k + '</strong> 位';
+    }
+    function bandPos(r) {
+      // 4 equal segments: 0-3, 3-5, 5-10, 10-30(+)
+      var seg, frac;
+      if (r < 3) { seg = 0; frac = r / 3; }
+      else if (r < 5) { seg = 1; frac = (r - 3) / 2; }
+      else if (r < 10) { seg = 2; frac = (r - 5) / 5; }
+      else { seg = 3; frac = Math.min((r - 10) / 20, 0.97); }
+      return (seg + frac) * 25;
+    }
+    function goalBlock(goal, ldl, noGoalText, extra) {
+      var side = '';
+      if (goal) {
+        side = '<div class="g-side">non-HDL 膽固醇目標 <strong>&lt; ' + (goal + 30) + ' mg/dL</strong><br>';
+        if (ldl != null) {
+          if (ldl < goal) side += '您目前 LDL ' + ldl + ' mg/dL：<strong>已達到目標</strong>。';
+          else {
+            var need = ldl - goal + 1, pct = Math.round(need / ldl * 100);
+            side += '您目前 LDL ' + ldl + ' mg/dL：還需要再降約 <span class="gap">' + need + ' mg/dL（約 ' + pct + '%）</span>。';
+          }
+        }
+        side += (extra || '') + '</div>';
+        return '<div class="r-goal"><div><div class="g-label">建議 LDL 目標</div><div class="g-num">&lt; ' + goal + ' <small>mg/dL</small></div></div>' + side + '</div>';
+      }
+      return '<div class="r-goal"><div><div class="g-label">建議 LDL 目標</div><div class="g-num none">無特定數字</div></div><div class="g-side">' + noGoalText + (extra || '') + '</div></div>';
+    }
+    function cor(c) { return '<span class="r-cor">建議等級 ' + c + '</span>'; }
+    function footer() {
+      return '<p class="r-note">這是依統計公式與美國指引做出的估計，不是診斷。請把這個結果帶到門診，和醫師一起討論是否需要治療、以及適合您的藥物與劑量。已經在吃藥的人請勿自行停藥。</p>' +
+        '<div class="r-print"><button type="button" onclick="window.print()">列印這份結果</button>（方便帶去門診）</div>';
+    }
+    function show(html) {
+      resultEl.innerHTML = html;
+      resultEl.classList.remove('hidden');
+      resultEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    /* ---------------- Secondary prevention ---------------- */
+    function runSecondary() {
+      var ldl = num('ldl2', 10, 400);
+      if (ldl == null) return false;
+      var ev = form.querySelectorAll('#events .ev:checked').length;
+      var cd = form.querySelectorAll('#conds .cd:checked').length;
+      var veryHigh = ev >= 2 || (ev >= 1 && cd >= 2);
+      var goal = veryHigh ? 55 : 70;
+      var h = '<span class="r-eyebrow">Your Result · 您的結果</span>';
+      h += '<div class="r-headline"><div class="r-cat">您屬於：<span class="pill hi">已有心血管疾病' + (veryHigh ? '・極高風險' : '') + '</span></div>' +
+        '<div class="r-sub">已經發生過心血管疾病的人，再次發生的風險明顯高於一般人，所以<strong>不需要再用 PREVENT 計算</strong>，直接依指引積極治療。</div></div>';
+      h += goalBlock(goal, ldl, '', veryHigh ? '' : '<br>若進一步降到 &lt; 55 mg/dL，可再多減少心血管事件，可和醫師討論。');
+      h += '<h4>指引怎麼說</h4><ul>';
+      if (veryHigh) {
+        h += '<li>建議使用<strong>高強度他汀類藥物（statin）</strong>，讓 LDL 至少下降 50%，並達到 &lt;55 mg/dL。' + cor('1') + '</li>';
+        h += '<li>吃到最高可耐受劑量仍未達標時，應加上 <strong>怡妥錠（ezetimibe）和／或 PCSK9 抑制劑</strong>。' + cor('1') + '</li>';
+        h += '<li>也可考慮 bempedoic acid，或每半年打一次的 inclisiran。' + cor('2a') + '</li>';
+      } else {
+        h += '<li>建議使用<strong>高強度他汀類藥物（statin）</strong>，讓 LDL 至少下降 50%，並達到 &lt;70 mg/dL。' + cor('1') + '</li>';
+        h += '<li>吃到最高可耐受劑量仍未達標，可加上怡妥錠（ezetimibe）、PCSK9 抑制劑或 bempedoic acid；也可以進一步降到 &lt;55 mg/dL。' + cor('2a') + '</li>';
+        h += '<li>指引特別說明：<strong>大多數有心血管疾病的人其實都符合「極高風險」</strong>，目標是 &lt;55。若您不確定上面的勾選是否完整，請和醫師確認。</li>';
+      }
+      h += '</ul>';
+      h += footer();
+      show(h);
+      return true;
+    }
+
+    /* ---------------- Primary prevention ---------------- */
+    function runPrimary() {
+      var sex = radio('sex');
+      var age = num('age', 18, 100);
+      var sbp = num('sbp', 70, 250);
+      var tc = num('tc', 60, 500);
+      var hdl = num('hdl', 10, 150);
+      var ldl = num('ldl', 10, 400);
+      var egfr = null;
+      if (useCr) {
+        var cr = num('cr', 0.2, 15);
+        if (cr != null && age != null) egfr = ckdEpi2021(cr, age, sex);
+      } else {
+        egfr = num('egfr', 5, 150);
+      }
+      if (tc != null && hdl != null && hdl >= tc) { fieldEl('hdl').classList.add('err'); hdl = null; }
+      if ([age, sbp, tc, hdl, ldl, egfr].some(function (v) { return v == null; })) return false;
+
+      var bptx = $('bptx').checked ? 1 : 0, statin = $('statin').checked ? 1 : 0;
+      var dm = $('dm').checked ? 1 : 0, smk = $('smoke').checked ? 1 : 0;
+      var fh = $('fh').checked || (!statin && ldl >= 190);
+      var h = '<span class="r-eyebrow">Your Result · 您的結果</span>';
+      var recs = [], notes = [];
+
+      /* --- Severe hypercholesterolaemia / FH: PREVENT not used --- */
+      if (fh) {
+        var otherRf = smk || dm || bptx || sbp >= 140;
+        var g = ($('fh').checked || otherRf) ? 70 : 100;
+        h += '<div class="r-headline"><div class="r-cat">您屬於：<span class="pill hi">嚴重高膽固醇（LDL ≥190）</span></div>' +
+          '<div class="r-sub">未用藥時 LDL ≥190 mg/dL 的人，從年輕開始血管就長期暴露在高膽固醇下，一般的風險公式<strong>會低估</strong>您的風險，所以指引建議<strong>不用 PREVENT 計算</strong>，直接治療。</div></div>';
+        h += goalBlock(g, ldl, '', g === 70 ? '<br>若確診家族性高膽固醇血症、合併其他危險因子，或檢查發現冠狀動脈鈣化，目標是 &lt;70。' : '<br>若之後確診家族性高膽固醇血症、發現其他危險因子或冠狀動脈鈣化，目標會改為 &lt;70。');
+        h += '<h4>指引怎麼說</h4><ul>' +
+          '<li>建議使用<strong>高強度他汀類藥物（statin）</strong>。' + cor('1') + '</li>' +
+          '<li>吃到最高可耐受劑量仍未達標，建議加上怡妥錠（ezetimibe）、PCSK9 抑制劑和／或 bempedoic acid。' + cor('1') + '</li>' +
+          '<li>找不到其他原因（如甲狀腺功能低下、腎病症候群）時，可以考慮做<strong>家族性高膽固醇血症基因檢測</strong>，並建議家人也檢查膽固醇。' + cor('2a') + '</li>' +
+          '</ul>';
+        h += footer();
+        show(h);
+        return true;
+      }
+
+      /* --- Outside PREVENT age range --- */
+      if (age < 30 || age > 79) {
+        h += '<div class="r-headline"><div class="r-cat">PREVENT 公式適用於 30–79 歲</div>' +
+          '<div class="r-sub">您輸入的年齡是 ' + age + ' 歲，超出公式建立時的年齡範圍，無法可靠估算。</div></div><ul>';
+        if (age < 30) {
+          h += '<li>年輕人的 10 年風險通常很低，但膽固醇對血管的傷害是一輩子累積的。指引建議：<strong>LDL ≥160 mg/dL</strong> 或有<strong>早發心血管疾病家族史</strong>的年輕成人，應及早和醫師討論是否需要治療。</li>';
+          if (dm) h += '<li>20–39 歲的糖尿病患者，若糖尿病病程長、有蛋白尿、eGFR &lt;60、視網膜或神經病變，可以考慮中強度他汀類藥物（statin）。' + cor('2b') + '</li>';
+        } else {
+          h += '<li>80 歲以上是否使用降膽固醇藥，需考慮整體健康、其他疾病、預期壽命與個人意願，請和醫師討論。可參考本站 <a href="article-staree.html">STAREE 研究</a>一文。</li>';
+        }
+        h += '</ul>' + footer();
+        show(h);
+        return true;
+      }
+
+      /* --- PREVENT --- */
+      var cTc = clamp(tc, 130, 320), cHdl = clamp(hdl, 20, 100), cSbp = clamp(sbp, 90, 180), cEgfr = clamp(egfr, 15, 140);
+      if (cTc !== tc || cHdl !== hdl || cSbp !== sbp || cEgfr !== egfr) {
+        notes.push('部分數值超出公式建立時的範圍（總膽固醇 130–320、HDL 20–100、收縮壓 90–180、eGFR 15–140），已用最接近的邊界值計算，結果誤差可能較大。');
+      }
+      if (useCr) notes.push('依您輸入的肌酸酐，換算 eGFR 約 ' + Math.round(egfr) + ' mL/min/1.73m²。');
+      var p = { age: age, tc: cTc, hdl: cHdl, sbp: cSbp, egfr: cEgfr, bptx: bptx, statin: statin, dm: dm, smk: smk };
+      var r10 = prevent(sex + '10', p);
+      var r30 = age <= 59 ? prevent(sex + '30', p) : null;
+      var ideal = prevent(sex + '10', { age: age, tc: 170, hdl: 50, sbp: 110, egfr: 90, bptx: 0, statin: 0, dm: 0, smk: 0 });
+
+      var cat, pill, goal = null, noGoal = '';
+      if (r10 < 3) { cat = '低風險'; pill = ''; }
+      else if (r10 < 5) { cat = '臨界風險'; pill = ''; }
+      else if (r10 < 10) { cat = '中度風險'; pill = 'mid'; }
+      else { cat = '高風險'; pill = 'hi'; }
+
+      if (r10 < 3) {
+        if (ldl >= 160 || (r30 != null && r30 >= 10)) {
+          recs.push('雖然 10 年風險低，但' + (ldl >= 160 ? '您的 LDL ≥160 mg/dL' : '您的 30 年風險 ≥10%') + '。在先努力改善生活習慣後，可以考慮<strong>中強度他汀類藥物（statin）</strong>，減少膽固醇對血管長年累積的傷害（LDL 下降約 30–49%）。' + cor('2a'));
+          noGoal = '指引對這個族群沒有訂定數字目標；若開始用藥，目標是讓 LDL 下降約 30–49%。';
+        } else {
+          recs.push('以<strong>健康生活型態</strong>為主：飲食、運動、不抽菸、控制體重，一般不需要吃降膽固醇藥。' + cor('1'));
+          noGoal = '指引對低風險族群沒有訂定數字目標，重點是維持健康生活，定期追蹤。';
+        }
+      } else if (r10 < 5) {
+        recs.push('可以和醫師討論是否開始他汀類藥物（statin）。若您有下方列出的「風險增強因子」，會更傾向建議用藥。' + cor('2a'));
+        recs.push('若決定用藥，<strong>中強度他汀類藥物（statin）</strong>（LDL 下降 30–49%）通常就足夠。' + cor('2a'));
+        recs.push('若驗過 hsCRP 且兩次都 ≥2 mg/L，可以考慮高強度他汀類藥物（statin）。' + cor('2a'));
+        recs.push('如果還是猶豫，可以做<strong>冠狀動脈鈣化分數</strong>協助決定。' + cor('1'));
+        goal = 100;
+      } else if (r10 < 10) {
+        recs.push('建議使用<strong>至少中強度的他汀類藥物（statin）</strong>（LDL 下降 30–49%）；風險接近 10% 的人，用高強度他汀類藥物（statin，LDL 下降 ≥50%）會更有幫助。' + cor('1'));
+        recs.push('如果還在猶豫要不要吃藥，可以做<strong>冠狀動脈鈣化分數</strong>協助決定。' + cor('1'));
+        goal = 100;
+      } else {
+        recs.push('建議使用<strong>高強度他汀類藥物（statin）</strong>，讓 LDL 下降 50% 以上。' + cor('1'));
+        recs.push('吃到最高可耐受劑量仍未達標，可以加上 <strong>怡妥錠（ezetimibe）</strong>。' + cor('2a'));
+        goal = 70;
+      }
+
+      // Diabetes 40-75: statin regardless of risk; tighter goal with multiple risk factors or risk >= 10%
+      if (dm && age >= 40 && age <= 75) {
+        var rf = 0;
+        if ((sex === 'm' && age >= 55) || (sex === 'f' && age >= 65)) rf++;
+        if (smk) rf++;
+        if (bptx || sbp >= 140) rf++;
+        if ((sex === 'm' && hdl <= 40) || (sex === 'f' && hdl <= 50)) rf++;
+        if (egfr < 60) rf++;
+        var dmGoal = (rf >= 2 || r10 >= 10) ? 70 : 100;
+        recs.push('您有<strong>糖尿病</strong>：40–75 歲的糖尿病患者，不論風險分數，都建議使用<strong>中強度他汀類藥物（statin）</strong>，LDL 目標 &lt;100。' + cor('1'));
+        if (dmGoal === 70) recs.push('您同時有' + (r10 >= 10 ? ' 10 年風險 ≥10%' : '多項危險因子（如年齡、抽菸、高血壓、HDL 偏低、腎功能下降）') + '，可以考慮<strong>高強度他汀類藥物（statin）</strong>，LDL 目標 &lt;70。' + cor('2a'));
+        goal = goal ? Math.min(goal, dmGoal) : dmGoal;
+      }
+
+      // CKD stage 3+ (eGFR < 60), 40-75
+      if (egfr < 60 && age >= 40 && age <= 75) {
+        recs.push('您的 eGFR &lt;60（<strong>慢性腎臟病第 3 期以上</strong>）：40–75 歲、LDL 70–189 mg/dL 的腎臟病患者，建議使用中強度他汀類藥物（statin），或他汀類藥物加怡妥錠（ezetimibe）。' + cor('1'));
+        if (!goal) {
+          recs = recs.filter(function (x) { return x.indexOf('一般不需要吃降膽固醇藥') < 0; });
+          noGoal = '指引對這個族群沒有另外訂定數字目標；開始用藥後，目標是讓 LDL 下降約 30–49% 以上。';
+        }
+      }
+
+      if (dm && age < 40) {
+        recs.push('您有<strong>糖尿病</strong>：20–39 歲的糖尿病患者，若糖尿病病程較長（第 2 型 ≥10 年、第 1 型 ≥20 年）、有蛋白尿、eGFR &lt;60、視網膜或神經病變，可以考慮中強度他汀類藥物（statin）。' + cor('2b'));
+      }
+
+      if (age > 75) notes.push('75 歲以上是否開始降膽固醇藥，需要和醫師一起評估整體健康與個人意願，可參考 <a href="article-staree.html">STAREE 研究</a>。');
+      if (statin) notes.push('您目前已在服用降膽固醇藥：上面的風險是「在現在治療下」的估計。最重要的是看 LDL 有沒有達標，而不是自行停藥。');
+      if (ldl < 70 && !statin) notes.push('您的 LDL 低於 70 mg/dL。指引建議的 PREVENT 使用範圍是 LDL 70–189 mg/dL，在這個範圍外，是否需要治療更需要醫師個別判斷。');
+
+      /* --- Render --- */
+      h += '<div class="r-headline"><div class="r-big">' + fmtPct(r10) + '<small>%</small></div>' +
+        '<div class="r-cat">未來 10 年<br>發生心肌梗塞或中風的機率<br><span class="pill ' + pill + '">' + cat + '</span></div></div>';
+
+      h += '<div class="band"><div class="band-marker" style="left:' + bandPos(r10).toFixed(1) + '%"></div>' +
+        '<div class="band-track"><div></div><div></div><div></div><div></div></div>' +
+        '<div class="band-labels"><span>低 &lt;3%</span><span>臨界 3–5%</span><span>中度 5–10%</span><span>高 ≥10%</span></div></div>';
+
+      h += '<div class="r-dots">' +
+        '<div><div class="cap">100 位和您條件相同的人，10 年內' + peopleText(r10) + '會發生</div>' + dots(r10) + '</div>' +
+        '<div><div class="cap">同年齡、同性別，但血壓、膽固醇、血糖都理想、不抽菸、腎功能正常的人：' + peopleText(ideal) + '（' + fmtPct(ideal) + '%）</div>' + dots(ideal) + '</div>' +
+        '</div>';
+      if (ideal < r10 - 0.5) {
+        h += '<p>兩者之間的差距，主要來自<strong>可以改變的因素</strong>——血壓、膽固醇、血糖、抽菸。這些正是治療和生活調整能夠幫忙的地方。</p>';
+      }
+
+      if (r30 != null) {
+        h += '<h4>未來 30 年的風險：' + fmtPct(r30) + '%</h4>' +
+          '<p>30–59 歲的人 10 年風險通常不高，但膽固醇的傷害是長年累積的。指引建議：即使 10 年風險低於 3%，<strong>30 年風險 ≥10%</strong> 的人，也可以考慮及早治療。' +
+          (r30 >= 10 ? '您的 30 年風險<strong>已達 10% 以上</strong>。' : '您的 30 年風險低於 10%。') + '</p>';
+      }
+
+      h += '<h4>您的 LDL 目標</h4>' + goalBlock(goal, ldl, noGoal);
+      h += '<h4>指引怎麼說</h4><ul>';
+      recs.forEach(function (x) { h += '<li>' + x + '</li>'; });
+      h += '<li>無論風險高低，<strong>健康生活型態</strong>都是治療的基礎。</li></ul>';
+      h += '<h4>公式沒算到、但會讓風險更高的因素</h4>' +
+        '<p>如果您有<strong>早發心血管疾病家族史、Lp(a) 偏高、LDL 長期 ≥160、三酸甘油酯偏高、慢性發炎疾病、女性提早停經或懷孕時有子癲前症／妊娠糖尿病</strong>等，實際風險可能比上面的數字更高，請一併告訴醫師（詳見下方文章）。</p>';
+      notes.forEach(function (n) { h += '<p class="r-note">' + n + '</p>'; });
+      h += footer();
+      show(h);
+      return true;
+    }
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      form.querySelectorAll('.field.err').forEach(function (f) { f.classList.remove('err'); });
+      var ok = radio('ascvd') === 'yes' ? runSecondary() : runPrimary();
+      $('form-err').style.display = ok ? 'none' : 'block';
+      if (!ok) resultEl.classList.add('hidden');
+    });
+  })();
+  </script>
+
+</body>
+</html>
